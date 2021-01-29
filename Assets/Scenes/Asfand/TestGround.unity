@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &85927895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3463082405348608706, guid: f060c81f22ed434499da111e3004f027, type: 3}
+  m_PrefabInstance: {fileID: 3463082404947010384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &294790568 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3110575961664876702, guid: f060c81f22ed434499da111e3004f027, type: 3}
@@ -190,6 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 1
+  isQueueBack: 0
   QueueOrder: 1
 --- !u!1 &705507993
 GameObject:
@@ -397,6 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 1
+  isQueueBack: 0
   QueueOrder: 1
 --- !u!1 &963194225
 GameObject:
@@ -599,6 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 1
+  isQueueBack: 0
   QueueOrder: 1
 --- !u!1 &1124731327
 GameObject:
@@ -644,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 0
+  isQueueBack: 1
   QueueOrder: 3
 --- !u!4 &1131657750 stripped
 Transform:
@@ -873,6 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 0
+  isQueueBack: 0
   QueueOrder: 2
 --- !u!1 &1754787382 stripped
 GameObject:
@@ -892,6 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 0
+  isQueueBack: 1
   QueueOrder: 2
 --- !u!4 &1757110599 stripped
 Transform:
@@ -926,7 +937,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQueueFront: 0
+  isQueueBack: 0
   QueueOrder: 2
+--- !u!1 &1876654459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876654460}
+  - component: {fileID: 1876654461}
+  m_Layer: 0
+  m_Name: Waypoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1876654460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876654459}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.04, y: 0, z: -4.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 85927895}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1876654461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876654459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34222f8fc26c3784b8efefead32a5ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQueueFront: 0
+  isQueueBack: 1
+  QueueOrder: 3
 --- !u!1 &1916429234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3110575961664876702, guid: f060c81f22ed434499da111e3004f027, type: 3}
       propertyPath: _queues.Array.data[1]._queueSpots.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3110575961664876702, guid: f060c81f22ed434499da111e3004f027, type: 3}
       propertyPath: _queues.Array.data[2]._queueSpots.Array.size
@@ -1258,6 +1316,10 @@ PrefabInstance:
       propertyPath: _queues.Array.data[0]._queueSpots.Array.data[2]
       value: 
       objectReference: {fileID: 1124731329}
+    - target: {fileID: 3110575961664876702, guid: f060c81f22ed434499da111e3004f027, type: 3}
+      propertyPath: _queues.Array.data[1]._queueSpots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1876654461}
     - target: {fileID: 3463082403473828530, guid: f060c81f22ed434499da111e3004f027, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.31

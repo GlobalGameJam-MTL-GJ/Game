@@ -45,37 +45,44 @@ public class QueueController : MonoBehaviour
         return null;
     }
 
-    public void RelinquishQueueSpot(QueueSpot queueSpot)
+    private int? GetQueueSpotIndex(QueueSpot queueSpot)
     {
         var queue = GetQueue(queueSpot);
 
-        /*
-        foreach (var _queueSpot in queue._queueSpots)
+        for (int i = 0; i < queue._queueSpots.Count; i++)
         {
-            if(!_queueSpot.IsEmpty && _queueSpot != queueSpot && queueSpot.QueueOrder+1 == _queueSpot.QueueOrder)
+            if(queueSpot == queue._queueSpots[i])
             {
-                _queueSpot.IsEmpty = true;
-                OnQueueSpotOpenedUp?.Invoke(_queueSpot, queueSpot);
+                return i;
             }
         }
-        */
+        return null;
+    }
+
+    public void RelinquishQueueSpot(QueueSpot queueSpot)
+    { 
+        var queue = GetQueue(queueSpot);
+
+        int index = queue._queueSpots.Count;
+        
+        if(queue.GetFullSpots() == 1)
+        {
+            queueSpot.IsEmpty = true;
+        }
 
         for (int i = 0; i < queue._queueSpots.Count; i++)
         {
             if (!queue._queueSpots[i].IsEmpty && queue._queueSpots[i] != queueSpot && queueSpot.QueueOrder + 1 == queue._queueSpots[i].QueueOrder)
             {
-                queue._queueSpots[i].IsEmpty = true;
-                OnQueueSpotOpenedUp?.Invoke(queue._queueSpots[i], queueSpot);
-
-                for (int j = i; j >= 0; j--)
-                {
-                    if (!queue._queueSpots[j].IsEmpty && queue._queueSpots[j] != queueSpot && queueSpot.QueueOrder + 1 == queue._queueSpots[j].QueueOrder)
-                    {
-                        queue._queueSpots[j].IsEmpty = true;
-                        OnQueueSpotOpenedUp?.Invoke(queue._queueSpots[j], queueSpot);
-                    }
-                }
+                index = i;
             }
+        }
+
+        for (int j = index; j < queue._queueSpots.Count; j++)
+        {
+
+            queue._queueSpots[j].IsEmpty = true;
+            OnQueueSpotOpenedUp?.Invoke(queue._queueSpots[j], queue._queueSpots[j-1]);
         }
     }
 
@@ -89,6 +96,19 @@ public class QueueController : MonoBehaviour
                 {
                     return queue;
                 }
+            }
+        }
+        return null;
+    }
+
+    private QueueSpot GetLowestQueueSpot(Queue _queue)
+    {
+        foreach (var queueSpot in _queue._queueSpots)
+        {
+            if(queueSpot.IsEmpty)
+            {
+                queueSpot.IsEmpty = false;
+                return queueSpot;
             }
         }
         return null;

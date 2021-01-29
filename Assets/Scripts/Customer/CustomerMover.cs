@@ -61,6 +61,7 @@ public class CustomerMover : MonoBehaviour
         {
             //OnCustomerRelinquishQueueSpot?.Invoke(_queueSpot);
             _queueSpot = newQueueSpot;
+            _queueSpot.IsEmpty = false;
             LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
         }
     }

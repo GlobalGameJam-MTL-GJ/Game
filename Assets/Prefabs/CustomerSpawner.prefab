@@ -45,5 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customersDefinitions:
   - {fileID: 11400000, guid: 1ec28a96f993da34b9f665510efd2166, type: 2}
-  _waypointsParent: []
-  _spawnRate: 1
+  _spawnpoint: {fileID: 0}
+  _spawnRate: 6
+  _queueController: {fileID: 0}

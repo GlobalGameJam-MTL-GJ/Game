@@ -36,4 +36,17 @@ public class Queue
         }
         return null;
     }
+
+    public int GetFullSpots()
+    {
+        int fullSpots = 0;
+        foreach (var queueSpot in _queueSpots)
+        {
+            if(!queueSpot.IsEmpty)
+            {
+                fullSpots++;
+            }
+        }
+        return fullSpots;
+    }
 }
