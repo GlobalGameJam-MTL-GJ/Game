@@ -7,7 +7,6 @@ using Random = System.Random;
 
 public class PropsSpawn : MonoBehaviour
 {
-    private GameObject propsPrefab;
     [SerializeField] private Transform spawnTrajectoryHolder;
     [SerializeField] private Transform[] spawnThrowPoints;
     [Range(-180, 0)]
@@ -17,30 +16,24 @@ public class PropsSpawn : MonoBehaviour
 
     private LTSpline ltSpline;
     private Vector3[] points = new Vector3[7];
-    private void Awake()
-    {
-        propsPrefab = Resources.Load<GameObject>("Prefabs/Props");
-    }
-
-    // Start is called before the first frame update
-    void Start()
+    
+    public void SpawnTween(GameObject newProps)
     {
         RotateSpawnHolderAndAssignPointsPosition();
-
-        GameObject newProps = Instantiate(propsPrefab, transform.position + new Vector3(0, 0.25f, 0), transform.rotation);
         LeanTween.delayedCall(1f, () =>
         {
-            LeanTween.moveSpline(newProps, ltSpline, UnityEngine.Random.Range(0.65f, 1.30f)).setEaseOutBounce().setOnComplete(() =>
-            {
-                LeanTween.delayedCall(0.5f, () => newProps.GetComponent<Props>().ActivateMovement());
-            });;
+            LeanTween.moveSpline(newProps, ltSpline, UnityEngine.Random.Range(0.65f, 1.30f)).setEaseOutBounce()
+                .setOnComplete(() =>
+                {
+                    LeanTween.delayedCall(0.5f, () => newProps.GetComponent<Props>().ActivateMovement());
+                });
+            ;
         });
     }
 
     private void RotateSpawnHolderAndAssignPointsPosition()
     {
         float angle = UnityEngine.Random.Range(minYAngle, maxYAngle);
-        Debug.Log(angle);
         spawnTrajectoryHolder.Rotate(Vector3.up, angle);
         for (int i = 0; i < points.Length; i++)
         {

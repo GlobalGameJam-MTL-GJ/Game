@@ -11,4 +11,9 @@ public class PropsIdleMovement : PropsMovement
     public override void DeactivateMovement()
     {
     }
+
+    public override PropsMovementType GetMovementType()
+    {
+        return PropsMovementType.Idle;
+    }
 }

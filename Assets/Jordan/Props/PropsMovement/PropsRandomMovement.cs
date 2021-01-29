@@ -5,15 +5,13 @@ using UnityEngine.AI;
 
 public class PropsRandomMovement : PropsMovement
 {
-    [SerializeField] private float distanceThreshold = 1f;
+    private float distanceThreshold = 1f;
     private float distanceRemaining;
     private bool isWandering;
-
-    private NavMeshAgent navMeshAgent;
     
     private void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        base.Awake();
         if (distanceThreshold < navMeshAgent.stoppingDistance)
             distanceThreshold = navMeshAgent.stoppingDistance + 0.3f;
     }
@@ -51,5 +49,10 @@ public class PropsRandomMovement : PropsMovement
     {
         isWandering = false;
         navMeshAgent.enabled = false;
+    }
+
+    public override PropsMovementType GetMovementType()
+    {
+        return PropsMovementType.RandomMovement;
     }
 }

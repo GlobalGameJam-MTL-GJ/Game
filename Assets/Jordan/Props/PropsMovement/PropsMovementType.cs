@@ -5,5 +5,7 @@ using UnityEngine;
 public enum PropsMovementType
 {
     Idle,
-    RandomMovement
+    RandomMovement,
+    FollowPlayer,
+    RunFromPlayer
 }

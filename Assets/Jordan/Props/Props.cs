@@ -27,8 +27,6 @@ public class Props : MonoBehaviour
 
     public void ActivateMovement()
     {
-        //roll and add the propsmovement
-        gameObject.AddComponent(LevelManager.instance.GetPropsMovementAccordingToLevelConfig());
         propsMovementComponent = GetComponent<PropsMovement>();
         if (propsMovementComponent != null) propsMovementComponent.ActivateMovement();
     }
