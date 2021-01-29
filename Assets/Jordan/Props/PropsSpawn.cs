@@ -25,7 +25,7 @@ public class PropsSpawn : MonoBehaviour
             LeanTween.moveSpline(newProps, ltSpline, UnityEngine.Random.Range(0.65f, 1.30f)).setEaseOutBounce()
                 .setOnComplete(() =>
                 {
-                    LeanTween.delayedCall(0.5f, () => newProps.GetComponent<Props>().ActivateMovement());
+                    LeanTween.delayedCall(0.5f, () => newProps.GetComponent<Props>().ActivateMovementAndAssignType());
                 });
             ;
         });

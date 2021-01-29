@@ -8,6 +8,7 @@ public class Props : MonoBehaviour
 {
     private NavMeshAgent navMeshAgent;
     private PropsMovement propsMovementComponent;
+    private PropsType propsType;
     private void Awake()
     {
         
@@ -25,9 +26,14 @@ public class Props : MonoBehaviour
         
     }
 
-    public void ActivateMovement()
+    public void ActivateMovementAndAssignType()
     {
         propsMovementComponent = GetComponent<PropsMovement>();
         if (propsMovementComponent != null) propsMovementComponent.ActivateMovement();
+    }
+
+    public void SetPropsType(PropsType propsType)
+    {
+        this.propsType = propsType;
     }
 }

@@ -15,4 +15,4 @@ MonoBehaviour:
   _customerModel: {fileID: 6113836019613721107, guid: f32b2250f131268478a76ac87cdd06d2, type: 3}
   _customerType: 2
   _customerOrderDefinitions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6ea99c634d1918145be10ab353c286e0, type: 2}
