@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private float m_WalkingSpeed = 5f;
+    public float WalkingSpeed { get { return this.m_WalkingSpeed; } set { this.m_WalkingSpeed = value; } }
 
     [SerializeField]
     private float m_RotationSpeed = 2f;
