@@ -21,6 +21,7 @@ public class CustomerOrderController : MonoBehaviour
     private void Awake()
     {
         _customerMover.OnCustomerWaiting += OnCustomerWaiting;
+
     }
 
     private void OnDisable()
@@ -49,7 +50,7 @@ public class CustomerOrderController : MonoBehaviour
         {
             _customerOrderUI.enabled = true;
 
-            OnCustomerOrderNotComplete?.Invoke();
+            //OnCustomerOrderNotComplete?.Invoke();
         }
     }
 

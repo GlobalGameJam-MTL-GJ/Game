@@ -12,25 +12,32 @@ public class WayPoints
 public class CustomerSpawner : MonoBehaviour
 {
     [SerializeField] private List<CustomerDefinition> _customersDefinitions;
-    [SerializeField] private List<WayPoints> _waypointsParent;
+    [SerializeField] private Transform _spawnpoint;
 
     [SerializeField] private float _spawnRate;
     private float _runningTimer;
 
+    [SerializeField] private QueueController _queueController;
+
     void Update()
     {
+        SpawnCustomer();
+    }
+
+    private void SpawnCustomer()
+    {
+        if (!_queueController.IsSpotAvailable) { return; }
+
         _runningTimer += Time.deltaTime;
 
-        if(_runningTimer > _spawnRate)
+        if (_runningTimer > _spawnRate)
         {
             _runningTimer = 0;
 
             var customer = new Customer(_customersDefinitions[0]);
             var customerOrder = new CustomerOrder(customer.CustomerOrders[0]);
 
-            var rand = Random.Range(0, 3);
-            var customerGO = Instantiate(customer.Model, _waypointsParent[rand].waypoints[0].position, Quaternion.identity);
-            customerGO.GetComponent<CustomerMover>().Setup(_waypointsParent[rand].waypoints);
+            var customerGO = Instantiate(customer.Model, _spawnpoint.position, Quaternion.identity);
             customerGO.GetComponent<CustomerController>().Setup(customer, customerOrder);
         }
     }

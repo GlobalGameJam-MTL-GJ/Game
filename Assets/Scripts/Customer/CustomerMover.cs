@@ -7,37 +7,62 @@ public class CustomerMover : MonoBehaviour
 {
     public Action OnCustomerWaiting;
 
-    private LTSeq _seq;
+    [SerializeField] private QueueController _queueController;
 
-    [SerializeField] private List<Transform> _waypoints;
+    private QueueSpot _queueSpot;
 
+    private CustomerController _customerController;
 
-    public void Setup(List<Transform> waypoints)
+    public static Action<QueueSpot> OnCustomerRelinquishQueueSpot;
+
+    public void OnEnable()
     {
-        _waypoints = waypoints;
+        _customerController = GetComponent<CustomerController>();
+        _customerController.OnCustomerOver += RelinquishQueueSpot;
+        QueueController.OnQueueSpotOpenedUp += OnQueueSpotOpenedUp;
+
+    }
+
+    public void OnDisable()
+    {
+        _customerController.OnCustomerOver -= RelinquishQueueSpot;
+        QueueController.OnQueueSpotOpenedUp -= OnQueueSpotOpenedUp;
+
     }
 
     void Start()
     {
-        _seq = LeanTween.sequence();
-        foreach (var waypoint in _waypoints)
-        {
-        }
-        for (int i = 0; i < _waypoints.Count; i++)
-        {
-            if(i == _waypoints.Count -1)
-            {
-                _seq.append(LeanTween.move(gameObject, _waypoints[i].position, 1.0f).setOnComplete(TriggerEvent));
-            }
-            else
-            {
-                _seq.append(LeanTween.move(gameObject, _waypoints[i].position, 1.0f));
-            }
-        }
+        _queueController = FindObjectOfType<QueueController>();
+
+        MoveCustomerToQueue();
     }
+
+    private void MoveCustomerToQueue()
+    {
+        _queueSpot = _queueController.GetAvailableSpot();
+
+        LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
+    }
+
     public void TriggerEvent()
     {
+        if (!_queueSpot.isQueueFront) { return; }
         OnCustomerWaiting?.Invoke();
+    }
+
+    private void RelinquishQueueSpot()
+    {
+        OnCustomerRelinquishQueueSpot?.Invoke(_queueSpot);
+    }
+
+    private void OnQueueSpotOpenedUp(QueueSpot oldQueueSpot, QueueSpot newQueueSpot)
+    {
+        if(_queueSpot == oldQueueSpot)
+        {
+            //OnCustomerRelinquishQueueSpot?.Invoke(_queueSpot);
+            _queueSpot = newQueueSpot;
+            LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
+        }
     }
 }
 
