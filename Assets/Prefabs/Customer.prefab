@@ -500,7 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b09767fc3c1c24fb1e8f72119e0672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypoints: []
   _queueController: {fileID: 0}
 --- !u!136 &4962438724164997018
 CapsuleCollider:
@@ -548,11 +547,11 @@ RectTransform:
   m_Father: {fileID: 8347449616995099417}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50.44, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.53, y: 0.41}
-  m_SizeDelta: {x: 1, y: 0.25}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 50.03, y: 0.41}
+  m_SizeDelta: {x: 0, y: 0.25}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1080002848833488398
 CanvasRenderer:
   m_ObjectHideFlags: 0

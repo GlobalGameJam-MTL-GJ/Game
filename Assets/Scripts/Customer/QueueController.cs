@@ -11,15 +11,22 @@ public class QueueController : MonoBehaviour
 
     public static Action<QueueSpot, QueueSpot> OnQueueSpotOpenedUp;
 
+    public Transform endPoint;
+
     void OnEnable()
     {
         CustomerMover.OnCustomerRelinquishQueueSpot += RelinquishQueueSpot;
+        CustomerOrderController.OnCustomerOrderNotComplete += OnCustomerOrderNotComplete;
+        CustomerController.OnCustomerOrderComplete += OnCustomerOrderNotComplete;
     }
 
     void OnDisable()
     {
         CustomerMover.OnCustomerRelinquishQueueSpot -= RelinquishQueueSpot;
+        CustomerOrderController.OnCustomerOrderNotComplete -= OnCustomerOrderNotComplete;
+        CustomerController.OnCustomerOrderComplete -= OnCustomerOrderNotComplete;
     }
+
 
     public QueueSpot GetAvailableSpot()
     {
@@ -112,5 +119,13 @@ public class QueueController : MonoBehaviour
             }
         }
         return null;
+    }
+
+    private void OnCustomerOrderNotComplete(GameObject customerGO)
+    {
+        var queueSpot = customerGO.GetComponent<CustomerMover>()._queueSpot;
+        customerGO.transform.GetChild(1).GetComponent<CustomerOrderController>().isWaiting = false;
+        RelinquishQueueSpot(queueSpot);
+        LeanTween.move(customerGO, endPoint.position, 3.0f).setOnComplete(() => { Destroy(customerGO); });
     }
 }

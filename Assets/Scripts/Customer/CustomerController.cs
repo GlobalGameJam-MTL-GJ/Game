@@ -9,7 +9,7 @@ public class CustomerController : MonoBehaviour
 
     [SerializeField] private CustomerOrderController _customerOrderController;
 
-    public Action OnCustomerOver;
+    public static Action<GameObject> OnCustomerOrderComplete;
 
     public void Setup(Customer customer, CustomerOrder customerOrder)
     {
@@ -19,7 +19,6 @@ public class CustomerController : MonoBehaviour
 
     void OnMouseDown()
     {
-        OnCustomerOver?.Invoke();
-        Destroy(gameObject);
+        OnCustomerOrderComplete?.Invoke(gameObject);
     }
 }

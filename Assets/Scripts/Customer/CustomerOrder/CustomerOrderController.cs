@@ -12,11 +12,12 @@ public class CustomerOrderController : MonoBehaviour
     [SerializeField] private CustomerMover _customerMover;
 
     private CustomerOrder _customerOrder;
-    private float _waitTime;
+    private float _waitTime = 0;
 
-    public static Action OnCustomerOrderNotComplete;
+    public static Action<GameObject> OnCustomerOrderNotComplete;
 
-    private bool isWaiting = false;
+    public bool isWaiting = false;
+
 
     private void Awake()
     {
@@ -44,13 +45,19 @@ public class CustomerOrderController : MonoBehaviour
     {
         if (!isWaiting) { return; }
 
+        _customerOrderUI.enabled = true;
+
         _waitTime += Time.deltaTime;
 
-        if (_waitTime > 2.0f)//_customerOrder.OrderTime)
-        {
-            _customerOrderUI.enabled = true;
+        var rect = _rageBar.rectTransform;
 
-            //OnCustomerOrderNotComplete?.Invoke();
+        rect.sizeDelta = new Vector2((float) _waitTime / _customerOrder.OrderTime, 0.25f);
+
+        if (_waitTime > _customerOrder.OrderTime)
+        {
+            isWaiting = false;
+            _customerOrderUI.enabled = false;
+            OnCustomerOrderNotComplete?.Invoke(gameObject.transform.parent.gameObject);
         }
     }
 
