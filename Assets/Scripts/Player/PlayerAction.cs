@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
@@ -8,110 +9,91 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private float m_PickupSphereRadius = 3f;
 
+    [SerializeField] private float m_CustomerDetectionRadius = 2f;
+    
     [SerializeField]
     private Vector3 m_Offset;
 
-    private GameObject pickObject;
-    private GameObject m_ObjectHeldInHand;
+    [SerializeField] private float m_throwForce = 8f;
 
     private bool m_IsEquipped;
-
+    private GameObject pickedUpObject;
     public Transform pickUpContainer;
-
-    private PickableItem m_PickableItem;
-
+    
     [SerializeField]
     private LayerMask m_PickupLayer;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        //pickUpContainer = GameObject.FindGameObjectWithTag("PickUp").transform;
-        m_PickableItem = GameObject.FindGameObjectWithTag("PickUp").GetComponent<PickableItem>();
-    }
+    private RaycastHit[] m_SphereCastHits;
 
-    // Update is called once per frame
+    private GameObject m_PickableItem;
+    
     private void Update()
     {
-        RaycastHit hit;
-        
-        if (Physics.SphereCast(transform.position, m_PickupSphereRadius, transform.TransformPoint(Vector3.forward), out hit, 1f, m_PickupLayer))
-        {
-            pickObject = hit.collider.gameObject;
-        }
-        else
-        {
-            pickObject = null;
-        }
-
-
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (pickObject != null)
+            if (!m_IsEquipped)
             {
-                Pickup(pickObject);
+                m_SphereCastHits = Physics.SphereCastAll(transform.TransformPoint(Vector3.forward) + m_Offset,
+                    m_PickupSphereRadius, transform.forward, 0, m_PickupLayer);
+                if (m_SphereCastHits.Length > 0)
+                {
+                    if (m_SphereCastHits.Length != 1) //si on a seulement 1 item proche, pas besoin de filter selon la distance
+                    {
+                        m_SphereCastHits = m_SphereCastHits.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).ToArray(); //if performance issues, we could optimize this
+                    }
+                    m_PickableItem = m_SphereCastHits[0].collider.gameObject;
+                    Pickup(m_PickableItem);
+                }
             }
             else
             {
-                //Drop(pickObject);                
+                var customerColliders = Physics.OverlapSphere(transform.position, m_CustomerDetectionRadius, 20, QueryTriggerInteraction.Collide);
+                if (customerColliders.Length > 0)
+                {
+                    var customerController = customerColliders[0].GetComponent<CustomerController>();
+                    Props props = pickedUpObject.GetComponent<Props>();
+                    // if (props != null && customerController.TryToCompleteOrder(props))
+                    // {
+                    //     //we gave the right item
+                    // }
+                    // else
+                    // {
+                    //     //we gave the wrong item
+                    // }
+                }
+                else
+                {
+                    Drop();
+                }
             }
         }
-        
     }
-
-
-/*
-public void PickUpItem(PickableItem item)
-{
-    m_IsEquipped = true;
-    Debug.Log("Pickable found");
-    m_PickableItem = item;
-
-    item.Rb.isKinematic = true;
-    item.Rb.velocity = Vector3.zero;
-    item.Rb.angularVelocity = Vector3.zero;
-
-    item.transform.SetParent(pickUpContainer);
-}*/
-
-public void Pickup(GameObject itemObject)
-{
     
-    if (itemObject.GetComponent<Rigidbody>())
+    public void Pickup(GameObject itemObject)
     {
+        Props props = itemObject.GetComponent<Props>();
+        if (props != null)
+        {
+            props.GetPickedUp();
+        }
+
+        itemObject.transform.parent = pickUpContainer;
+        itemObject.transform.localPosition = new Vector3(0, 1f, 0.4f);
         m_IsEquipped = true;
-        Rigidbody objRb = itemObject.GetComponent<Rigidbody>();
-        objRb.isKinematic = true;
-        objRb.velocity = Vector3.zero;
-        objRb.angularVelocity = Vector3.zero;
-
-        objRb.transform.parent = pickUpContainer;
-        //can be result of a funny bug need to correct it later
-        objRb.transform.localPosition = new Vector3(0f, 1f, 0.4f);
-
-            //m_ObjectHeldInHand = itemObject;
-            
-        //objRb.transform.localPosition = Vector3.up;
-        //objRb.transform.localEulerAngles = Vector3.zero;
+        pickedUpObject = itemObject;
     }
-}
 
-public void Drop(GameObject drop)
-{
-        
-        drop.transform.parent = null;
-        drop.GetComponent<Rigidbody>().isKinematic = false;
-        drop.GetComponent<Rigidbody>().AddForce(m_ObjectHeldInHand.transform.forward * 2, ForceMode.VelocityChange);
-        
-}
+    public void Drop()
+    {
+        pickedUpObject.transform.parent = null;
+        m_IsEquipped = false;
+        pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
+        pickedUpObject = null;
+    }
 
-public void Throw()
-{
-}
-
-private void OnDrawGizmos()
-{
-    Gizmos.color = Color.red;
-    Gizmos.DrawWireSphere(transform.TransformPoint(Vector3.forward) + m_Offset, m_PickupSphereRadius);
-}
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.TransformPoint(Vector3.forward) + m_Offset, m_PickupSphereRadius);
+    }
 }
