@@ -40,6 +40,8 @@ public class CustomerSpawner : MonoBehaviour
             //create the order according to the choosen props from propsbuilder
             ActivePropsEntry choosenPropsEntry = PropsBuilder.instance.GetAnActiveProps();
 
+            //var (customerDefinition, customerOrderDefinition)
+
             var customer = new Customer(FindCustomerForTheChoosenProps(choosenPropsEntry, out var customerOrderDefinition));
             var customerOrder = new CustomerOrder(customerOrderDefinition);
 

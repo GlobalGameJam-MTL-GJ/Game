@@ -23,5 +23,4 @@ public class CustomerController : MonoBehaviour
         objectToSnap.transform.SetParent(objectSnapTransform);
         objectToSnap.transform.position = objectSnapTransform.position;
     }
-
 }

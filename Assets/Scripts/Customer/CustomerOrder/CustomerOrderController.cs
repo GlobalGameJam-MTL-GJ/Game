@@ -22,6 +22,7 @@ public class CustomerOrderController : MonoBehaviour
     public static Action<GameObject> OnCustomerOrderComplete;
     public static Action<GameObject> OnCustomerOrderNotComplete;
     public static Action<GameObject> OnCustomerLeaving;
+    public static Action<GameObject> OnCustomerGivenWrongProp;
 
     public bool isWaiting = false;
 
@@ -84,7 +85,12 @@ public class CustomerOrderController : MonoBehaviour
             ScoreManager.instance.ModifyScore(_customerOrder.Score + Mathf.RoundToInt(_customerOrder.OrderTime - _waitTime));
             return true;
         }
-        StrikeManager.instance.AddStrike();
-        return false;
+        else
+        {
+            OnCustomerGivenWrongProp?.Invoke(wantedProps);
+            OnCustomerOrderNotComplete?.Invoke(transform.parent.gameObject);
+            StrikeManager.instance.AddStrike();
+            return false;
+        }
     }
 }
