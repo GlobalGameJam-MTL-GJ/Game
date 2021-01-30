@@ -32,7 +32,7 @@ public class PropsBuilder : MonoBehaviour
         {PropsMovementType.RunFromPlayer, new PropsAmountTracker()}
     };
 
-    private Dictionary<PropsType, Mesh> PropsTypeToMeshes;
+    private Dictionary<PropsType, GameObject> PropsTypeToMeshes;
     
     private Dictionary<PropsType, PropsAmountTracker> PropsTypesAmountTracker = new Dictionary<PropsType, PropsAmountTracker>()
     {
@@ -51,13 +51,13 @@ public class PropsBuilder : MonoBehaviour
             Destroy(this);
         
         propsPrefab = Resources.Load<GameObject>("Prefabs/Props");
-        PropsTypeToMeshes = new Dictionary<PropsType, Mesh>()
+        PropsTypeToMeshes = new Dictionary<PropsType, GameObject>()
         {
-            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Grimoire").GetComponent<MeshFilter>().sharedMesh},
-            {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire").GetComponent<MeshFilter>().sharedMesh},
-            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Grimoire").GetComponent<MeshFilter>().sharedMesh},
-            {PropsType.Staff, Resources.Load<GameObject>("Meshes/Grimoire").GetComponent<MeshFilter>().sharedMesh},
-            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire").GetComponent<MeshFilter>().sharedMesh}
+            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Staff, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
         };
 
     }
@@ -99,7 +99,8 @@ public class PropsBuilder : MonoBehaviour
         newProps.AddComponent(GetPropsMovementAccordingToLevelConfig());
         ActivePropsEntry activePropsEntry = new ActivePropsEntry();
         activePropsEntry.propsType = GetPropsTypesAccordingToLevelConfig();
-        newProps.GetComponentInChildren<MeshFilter>().mesh = PropsTypeToMeshes[activePropsEntry.propsType];
+        GameObject mesh = Instantiate(PropsTypeToMeshes[activePropsEntry.propsType], newProps.transform);
+        mesh.transform.localPosition = Vector3.zero;
         newProps.GetComponent<Props>().SetPropsType(activePropsEntry.propsType);
         activePropsEntry.activeProps = newProps;
         currentActiveProps.Add(activePropsEntry);

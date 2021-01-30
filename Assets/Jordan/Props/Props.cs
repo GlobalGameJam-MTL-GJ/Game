@@ -6,12 +6,19 @@ using UnityEngine.AI;
 
 public class Props : MonoBehaviour
 {
+    [SerializeField] private float delayAfterThrown = 2f;
+    private float currentDelayTimer;
+    private bool recoveringFromThrow;
     private NavMeshAgent navMeshAgent;
     private PropsMovement propsMovementComponent;
     private PropsType propsType;
     private bool pickedUp;
     private bool beingThrown;
     private Rigidbody rigidbody;
+
+    public event Action<PropsMovement> OnMovementEnabled;
+    public event Action<PropsMovement> OnMovementDisabled;
+    
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -27,13 +34,23 @@ public class Props : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!recoveringFromThrow) return;
+        currentDelayTimer -= Time.deltaTime;
+        if (currentDelayTimer <= 0)
+        {
+            recoveringFromThrow = false;
+            ActivateMovement();
+        }
     }
 
-    public void ActivateMovementAndAssignType()
+    public void ActivateMovement()
     {
         propsMovementComponent = GetComponent<PropsMovement>();
-        if (propsMovementComponent != null && !pickedUp) propsMovementComponent.ActivateMovement();
+        if (propsMovementComponent != null && !pickedUp)
+        {
+            propsMovementComponent.ActivateMovement();
+            OnMovementEnabled?.Invoke(propsMovementComponent);
+        }
     }
 
     public void SetPropsType(PropsType propsType)
@@ -45,10 +62,10 @@ public class Props : MonoBehaviour
     {
         return propsType;
     }
-
     public void GetPickedUp()
     {
         if (propsMovementComponent == null) propsMovementComponent = GetComponent<PropsMovement>();
+        OnMovementDisabled?.Invoke(propsMovementComponent);
         propsMovementComponent.DeactivateMovement();
         pickedUp = true;
     }
@@ -73,8 +90,12 @@ public class Props : MonoBehaviour
         if (other.gameObject.layer == 19)
         {
             beingThrown = false;
+            pickedUp = false;
+            currentDelayTimer = delayAfterThrown;
+            recoveringFromThrow = true;
             rigidbody.isKinematic = true;
             rigidbody.constraints = RigidbodyConstraints.None;
         }
     }
 }
+
