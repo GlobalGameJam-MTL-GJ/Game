@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -31,6 +32,12 @@ public class PlayerAction : MonoBehaviour
     private RaycastHit[] m_SphereCastHits;
 
     private GameObject m_PickableItem;
+    private PlayerInputs playerInputs;
+
+    private void Awake()
+    {
+        playerInputs = GetComponent<PlayerInputs>();
+    }
 
     private void Update()
     {
@@ -42,12 +49,12 @@ public class PlayerAction : MonoBehaviour
                 isOnSubmissionDelay = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (playerInputs.CheckIfThrowButtonPressed())
         {
             if(CanThrowOrDrop)
                 Throw();
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (playerInputs.CheckIfMainActionButtonPressed())
         {
             if (!m_IsEquipped)
             {
