@@ -548,6 +548,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="PropType" ID="{F64C3A60-7A6E-4146-9BA2-B716B22F38A5}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Sword_Pickup" ID="{B1F58D48-F415-4429-B62E-499633CA765B}" ShortID="44407761">
@@ -1359,6 +1362,38 @@
 										<ItemRef Name="Potion_Pickup" ID="{AD6E6578-D71A-4551-A01E-4D6177257262}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Potion" ID="{5589B221-6F26-40F6-B77C-A2506D1ABCAF}"/>
+										<ItemList>
+											<ItemRef Name="Potion_Pickup" ID="{AD6E6578-D71A-4551-A01E-4D6177257262}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sword" ID="{6B58189E-2BFE-41EE-AA73-8E3A7F310A6F}"/>
+										<ItemList>
+											<ItemRef Name="Sword_Pickup" ID="{B1F58D48-F415-4429-B62E-499633CA765B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grimoire" ID="{029B7FAB-542B-4CC8-B562-EF800CF918B4}"/>
+										<ItemList>
+											<ItemRef Name="Grimoire_Pickup" ID="{E7AB4F0A-9094-47E5-BA76-EA94C297C66E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
+										<ItemList>
+											<ItemRef Name="Bow_Pickup" ID="{66CFF261-9F65-47B6-90F4-05AF8251CD9E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Crown" ID="{425EC6DF-0071-4708-9B8C-A01B18D7E1E1}"/>
+										<ItemList>
+											<ItemRef Name="Crown_Pickup" ID="{F181591B-8276-4ABB-B16D-D8B44DDA07F3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Drop" ID="{ADA55816-A3C6-44D1-BC6E-8B913F16ED09}" ShortID="659553651">
@@ -1368,6 +1403,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="PropType" ID="{F64C3A60-7A6E-4146-9BA2-B716B22F38A5}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2070,6 +2108,38 @@
 										<ItemRef Name="Bow_Drop" ID="{7716E1E3-E4C8-44C2-BA9C-F701088923D9}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Potion" ID="{5589B221-6F26-40F6-B77C-A2506D1ABCAF}"/>
+										<ItemList>
+											<ItemRef Name="Potion_Drop" ID="{99277921-4CF2-4627-84D0-C7FFC4F39C07}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sword" ID="{6B58189E-2BFE-41EE-AA73-8E3A7F310A6F}"/>
+										<ItemList>
+											<ItemRef Name="Sword_Drop" ID="{4D8C62DA-D4E7-411E-8623-1B7513EBB7CA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grimoire" ID="{029B7FAB-542B-4CC8-B562-EF800CF918B4}"/>
+										<ItemList>
+											<ItemRef Name="Grimoire_Drop" ID="{8EB2992C-766F-4B18-B65F-70BD5B5A6EB9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
+										<ItemList>
+											<ItemRef Name="Bow_Drop" ID="{7716E1E3-E4C8-44C2-BA9C-F701088923D9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Crown" ID="{425EC6DF-0071-4708-9B8C-A01B18D7E1E1}"/>
+										<ItemList>
+											<ItemRef Name="Crown_Drop" ID="{618F4148-C535-4257-83DF-105106C2C74C}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Impact" ID="{ED8547FA-924B-4D35-8031-6597150EDF89}" ShortID="769945067">
@@ -2079,6 +2149,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="PropType" ID="{F64C3A60-7A6E-4146-9BA2-B716B22F38A5}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2869,6 +2942,38 @@
 										<ItemRef Name="Bow_Impact" ID="{8EF512DD-6AD5-4A67-9CED-4B642B11D371}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Potion" ID="{5589B221-6F26-40F6-B77C-A2506D1ABCAF}"/>
+										<ItemList>
+											<ItemRef Name="Potion_Impact" ID="{A1265D61-0726-48D7-8E92-6C3CAFB9B7E0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sword" ID="{6B58189E-2BFE-41EE-AA73-8E3A7F310A6F}"/>
+										<ItemList>
+											<ItemRef Name="Sword_Impact" ID="{BCF42FB7-95CB-4B89-96FA-95ADE1C755D4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grimoire" ID="{029B7FAB-542B-4CC8-B562-EF800CF918B4}"/>
+										<ItemList>
+											<ItemRef Name="Grimoire_Impact" ID="{02A6C91C-6AE1-4665-BFC2-DA930341C9E6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
+										<ItemList>
+											<ItemRef Name="Bow_Impact" ID="{8EF512DD-6AD5-4A67-9CED-4B642B11D371}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Crown" ID="{425EC6DF-0071-4708-9B8C-A01B18D7E1E1}"/>
+										<ItemList>
+											<ItemRef Name="Crown_Impact" ID="{E7CC1CCC-3C31-40AB-B7F3-5B067993A0DD}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
