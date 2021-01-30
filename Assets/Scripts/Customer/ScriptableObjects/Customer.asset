@@ -15,4 +15,8 @@ MonoBehaviour:
   _customerModel: {fileID: 6113836019613721107, guid: f32b2250f131268478a76ac87cdd06d2, type: 3}
   _customerType: 2
   _customerOrderDefinitions:
+  - {fileID: 11400000, guid: 899bc88eb3895434fb6589ad85d04a19, type: 2}
+  - {fileID: 11400000, guid: 5818f29c6ebc5d14c859b959b9534a1e, type: 2}
+  - {fileID: 11400000, guid: 616ff7f82de52ab44b27ad85d7d14bac, type: 2}
+  - {fileID: 11400000, guid: a64e845346266554da63d1493d866231, type: 2}
   - {fileID: 11400000, guid: 6ea99c634d1918145be10ab353c286e0, type: 2}

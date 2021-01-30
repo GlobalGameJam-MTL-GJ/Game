@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WalkingSpeed: 5
-  m_RotationSpeed: 4
+  m_RotationSpeed: 6
 --- !u!114 &817826864080790102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,14 +94,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PickupDistance: 5
-  m_PickupSphereRadius: 0.85
-  m_CustomerDetectionRadius: 2
+  m_PickupSphereRadius: 1.1
+  m_CustomerDetectionRadius: 2.5
+  delayBeforeSubmittingAgain: 1.25
   m_Offset: {x: 0, y: 0.6, z: -0.3}
   m_throwForce: 8
   pickUpContainer: {fileID: 817826865353124703}
   m_PickupLayer:
     serializedVersion: 2
     m_Bits: 256
+  m_CustomerLayer:
+    serializedVersion: 2
+    m_Bits: 1048576
 --- !u!136 &4095087462785923569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -196,6 +200,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0651e8a2a63f6544ca0e87f987b31c3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0651e8a2a63f6544ca0e87f987b31c3d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0651e8a2a63f6544ca0e87f987b31c3d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0651e8a2a63f6544ca0e87f987b31c3d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0651e8a2a63f6544ca0e87f987b31c3d, type: 3}
       propertyPath: m_Name

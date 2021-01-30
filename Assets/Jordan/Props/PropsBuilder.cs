@@ -13,6 +13,7 @@ public class PropsBuilder : MonoBehaviour
     List<PropsPossibleTypes> propsPossibleTypes = new List<PropsPossibleTypes>();
     private GameObject propsPrefab;
     [SerializeField] private GameObject[] propsSpawns;
+    [SerializeField] private float spawnRate = 0.7f;
     List<ActivePropsEntry> currentActiveProps = new List<ActivePropsEntry>();
     
     private static Dictionary<PropsMovementType, Type> MovementTypesToComponents =
@@ -53,9 +54,9 @@ public class PropsBuilder : MonoBehaviour
         propsPrefab = Resources.Load<GameObject>("Prefabs/Props");
         PropsTypeToMeshes = new Dictionary<PropsType, GameObject>()
         {
-            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Sword")},
             {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
-            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Bow")},
             {PropsType.Staff, Resources.Load<GameObject>("Meshes/Grimoire")},
             {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
         };
@@ -64,8 +65,9 @@ public class PropsBuilder : MonoBehaviour
 
     private void Start()
     {
+        CustomerOrderController.OnCustomerLeaving += UnreserveAnActiveProps;
         AssignCurrentLevelToTheBuilder(LevelManager.instance.LevelConfigSo);
-        InvokeRepeating(nameof(BuildAProps), 1, 2);
+        InvokeRepeating(nameof(BuildAProps), 1, spawnRate);
     }
 
     private void AssignCurrentLevelToTheBuilder(LevelConfigSO levelConfigSO)
@@ -183,7 +185,7 @@ public class PropsBuilder : MonoBehaviour
         return null;
     }
 
-    public GameObject GetAnActiveProps()
+    public ActivePropsEntry GetAnActiveProps()
     {
         List<ActivePropsEntry> filteredActivePropsEntries = new List<ActivePropsEntry>();
         foreach (var currentActiveProp in currentActiveProps.Where(x => x.reserved == false))
@@ -194,7 +196,7 @@ public class PropsBuilder : MonoBehaviour
         int rand = UnityEngine.Random.Range(0, filteredActivePropsEntries.Count);
         ActivePropsEntry choosenProps = filteredActivePropsEntries[rand];
         choosenProps.reserved = true;
-        return choosenProps.activeProps;
+        return choosenProps;
     }
 
     public void RemoveAnActiveProps(GameObject activePropsToRemove)
@@ -215,5 +217,10 @@ public class PropsBuilder : MonoBehaviour
             currentActiveProp.reserved = false;
             return;
         }
+    }
+
+    private void OnDestroy()
+    {
+        CustomerOrderController.OnCustomerLeaving -= UnreserveAnActiveProps;
     }
 }

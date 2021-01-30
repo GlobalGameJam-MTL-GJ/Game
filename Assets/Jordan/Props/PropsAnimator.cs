@@ -25,17 +25,6 @@ public class PropsAnimator : MonoBehaviour
         highHoverHeight = highHoverHeightTransform.position.y;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void StopHovering(PropsMovement propsMovement)
     {
         if (propsMovement.GetType() == typeof(PropsIdleMovement)) return;
@@ -49,7 +38,7 @@ public class PropsAnimator : MonoBehaviour
     {
         if (propsMovement.GetType() == typeof(PropsIdleMovement)) return;
         hasHovered = true;
-        LTDescr hoveringTween = LeanTween.moveLocalY(gameObject, goingUp ? highHoverHeight : lowHoverHeight, 0.5f)
+        LTDescr hoveringTween = LeanTween.moveY(gameObject, goingUp ? highHoverHeight : lowHoverHeight, 0.5f)
             .setOnComplete(() =>
             {
                 goingUp = !goingUp;
