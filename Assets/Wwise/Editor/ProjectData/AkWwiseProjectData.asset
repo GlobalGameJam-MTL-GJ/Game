@@ -1,0 +1,388 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c09375f302ebc43a75dbce775bb8cc, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5c803685bc14eb4dad253f1409cf19da
+    GuidInternal: 
+    m_lastTime: -8585899161390775168
+    List: []
+  - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
+    PathAndIcons:
+    - ElementName: Factory Reflect Acoustic Textures
+      ObjectType: 12
+    ParentPath: Factory Reflect Acoustic Textures
+    guid: 6b663d46a83ca54f8b4a5fef12b883f6
+    GuidInternal: 
+    m_lastTime: -8585912201812220548
+    List:
+    - name: Acoustic_Banner
+      guid: f2532d2fccda8e408b8898b1b52a26d6
+      id: 4168643977
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Acoustic_Banner
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Acoustic_Banner
+    - name: Anechoic
+      guid: 32c20a8be202de4ebeacfdd1a900e3ed
+      id: 1873957695
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Anechoic
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Anechoic
+    - name: Brick
+      guid: a9a586b004f2534ca838bdb18b18f6d6
+      id: 504532776
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Brick
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Brick
+    - name: Carpet
+      guid: 8975223456dc604296c4b9f4b669092b
+      id: 2412606308
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Carpet
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Carpet
+    - name: Concrete
+      guid: 001cf85c9628e04aaf7c3080bdaba682
+      id: 841620460
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Concrete
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Concrete
+    - name: Cork_Tiles
+      guid: 19c9d2305f92434189063dbb3c4ae5e2
+      id: 3195498748
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Cork_Tiles
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Cork_Tiles
+    - name: Curtains
+      guid: 339ee6f8975c6849b508a1535f2d66e8
+      id: 2928161104
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Curtains
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Curtains
+    - name: Drywall
+      guid: f4e3a4680b4c8746a8b8a84db93dbc8f
+      id: 3670307564
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Drywall
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Drywall
+    - name: Fabric
+      guid: 32d581836edbed4ea7a3bc7b0a0b8ba8
+      id: 1970351858
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Fabric
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Fabric
+    - name: Mountain
+      guid: 313793c51a00b44a98dd9b033a8c8eab
+      id: 513139656
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Mountain
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Mountain
+    - name: Textures
+      guid: a3121e7828e3df4a8bba5fb89c74031d
+      id: 1276632493
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      Path: Factory Reflect Acoustic Textures\Textures
+    - name: Tile
+      guid: c4da82a82a13b747ba9db9907ba29cc0
+      id: 2637588553
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Tile
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Tile
+    - name: Wood
+      guid: 96bcff1fe76f9e48ba6c7c14a71391ae
+      id: 2058049674
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood
+    - name: Wood_Bright
+      guid: e5d1857ba2c1634e9a13cec54b641adc
+      id: 4262522749
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood_Bright
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood_Bright
+    - name: Wood_Deep
+      guid: 8e474652dac50c4ea0dec98d1479529a
+      id: 1755085759
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood_Deep
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood_Deep
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 28bc4960b31bda4bb5636137584b30c2
+    GuidInternal: 
+    m_lastTime: -8585899161371833894
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: Motion Factory Bus
+      guid: c6b9f92af16ee946b5f2e30c9e602c74
+      id: 985987111
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Motion Factory Bus
+        ObjectType: 2
+      Path: Default Work Unit\Motion Factory Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 43786061f0fbaf43abaf0d66473eade6
+    GuidInternal: 
+    m_lastTime: -8585899161390965339
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 51f0c3c4f249cf4c9d5422ec8410c70d
+    GuidInternal: 
+    m_lastTime: -8585895716628436501
+    List:
+    - name: Music_Level
+      guid: 8d52f3df11e1cf4681976d3a05dfa712
+      id: 2177735725
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Level
+        ObjectType: 3
+      Path: Default Work Unit\Music_Level
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: NPC_Bell
+      guid: 4fcc9e7082a53f43a6c895b703d75e7e
+      id: 3226713398
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NPC_Bell
+        ObjectType: 3
+      Path: Default Work Unit\NPC_Bell
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: f7885b59aca114488c82f46b136a745d
+    GuidInternal: 
+    m_lastTime: -8585896148965064552
+    List:
+    - name: Clock
+      guid: ac22ca15769f8645ab5f068d84095d8c
+      id: 1182830809
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Clock
+        ObjectType: 13
+      Path: Default Work Unit\Clock
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8bc7f533de1cdc46829936fe8cb27a5e
+    GuidInternal: 
+    m_lastTime: -8585896148965114599
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 0929118e5ab32a458cf117bda58f2739
+    GuidInternal: 
+    m_lastTime: -8585895716628366442
+    List:
+    - name: GameState
+      guid: c409b472a0d02543a10cb682a3f30947
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 11
+      Path: Default Work Unit\GameState
+      values:
+      - name: GameEnd
+        guid: 90f6e65595c66242b5ea882240ca3013
+        id: 2197986718
+        PathAndIcons:
+        - ElementName: GameEnd
+          ObjectType: 10
+      - name: GamePlay
+        guid: a4b087c1af563241bba4be1b9e02a602
+        id: 89505537
+        PathAndIcons:
+        - ElementName: GamePlay
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: PropType
+      guid: 603a4cf66e7a46419ba2b716b22f38a5
+      id: 3381216982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PropType
+        ObjectType: 11
+      Path: Default Work Unit\PropType
+      values:
+      - name: Bow
+        guid: d3ed05e3d9f08d4999876923fdc047d9
+        id: 546945295
+        PathAndIcons:
+        - ElementName: Bow
+          ObjectType: 10
+      - name: Crown
+        guid: dfc65e42710008479b8ca01b18d7e1e1
+        id: 2848349022
+        PathAndIcons:
+        - ElementName: Crown
+          ObjectType: 10
+      - name: Grimoire
+        guid: ab7f9b022b54c84cb562ef800cf918b4
+        id: 943678455
+        PathAndIcons:
+        - ElementName: Grimoire
+          ObjectType: 10
+      - name: Potion
+        guid: 21b28955266ff640b77ca2506d1abcaf
+        id: 4272075576
+        PathAndIcons:
+        - ElementName: Potion
+          ObjectType: 10
+      - name: Sword
+        guid: 9e18586bfe2bee41aa738e3a7f310a6f
+        id: 2454616260
+        PathAndIcons:
+        - ElementName: Sword
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 833ef01121551e4f860f055beef11cde
+    GuidInternal: 
+    m_lastTime: -8585896148964944443
+    List: []
+  ExpandedItems: []
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

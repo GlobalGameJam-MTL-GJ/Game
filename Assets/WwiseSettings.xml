@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../../Game/MtlGlobalGameJam2021Wwise/MtlGlobalGameJam2021.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>D:\Programs\Wwise 2019.2.9.7459</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
