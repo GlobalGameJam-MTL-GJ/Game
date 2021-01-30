@@ -383,6 +383,12 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585895712419761402
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /MtlGlobalGameJam2021
+  - /MtlGlobalGameJam2021/Events
+  - /MtlGlobalGameJam2021/Events/Default Work Unit
+  - /MtlGlobalGameJam2021/SoundBanks
+  - /MtlGlobalGameJam2021/Switches
+  - /MtlGlobalGameJam2021/Switches/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
