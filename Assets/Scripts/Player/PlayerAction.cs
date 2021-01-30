@@ -41,6 +41,7 @@ public class PlayerAction : MonoBehaviour
             if (currentTimerBeforeEnablingSubmission <= 0)
                 isOnSubmissionDelay = false;
         }
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (!m_IsEquipped)

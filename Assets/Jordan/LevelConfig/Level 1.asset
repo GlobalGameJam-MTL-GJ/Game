@@ -44,22 +44,22 @@ MonoBehaviour:
     maximumOfThisTypeForTheLevel: 4
   propsPossibleTypes:
   - propsType: 0
-    spawnChance: 1
-    adjustedSpawnChance: 0.40960002
+    spawnChance: 0.1
+    adjustedSpawnChance: 0.12884082
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0
     maximumOfThisTypeForTheLevel: 10
   - propsType: 1
-    spawnChance: 0.01
-    adjustedSpawnChance: 0.00937024
+    spawnChance: 0.1
+    adjustedSpawnChance: 0.049561605
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0
     maximumOfThisTypeForTheLevel: 10
-  - propsType: 2
-    spawnChance: 0
-    adjustedSpawnChance: 0
+  - propsType: 3
+    spawnChance: 0.1
+    adjustedSpawnChance: 0.12884082
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0

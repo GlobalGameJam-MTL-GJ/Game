@@ -76,7 +76,7 @@ public class PropsBuilder : MonoBehaviour
             {PropsType.Sword, Resources.Load<GameObject>("Meshes/Sword")},
             {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
             {PropsType.Bow, Resources.Load<GameObject>("Meshes/Bow")},
-            {PropsType.Crown, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Crown, Resources.Load<GameObject>("Meshes/Crown")},
             {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
         };
 
