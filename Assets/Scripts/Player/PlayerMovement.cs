@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,18 +15,18 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 m_Direction;
     private Rigidbody m_rb;
+    private PlayerInputs playerInputs;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+        playerInputs = GetComponent<PlayerInputs>();
         m_rb = GetComponent<Rigidbody>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        m_Direction = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));  
+        m_Direction = new Vector3(playerInputs.MovementVector.x, 0.0f, playerInputs.MovementVector.y);  
         
         if(m_Direction != Vector3.zero)
         {
