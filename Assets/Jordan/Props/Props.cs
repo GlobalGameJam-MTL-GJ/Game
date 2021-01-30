@@ -59,7 +59,11 @@ public class Props : MonoBehaviour
     {
         return propsType;
     }
-    
+    public PropsColor GetPropsColor()
+    {
+        return propsColor;
+    }
+
     public void GetPickedUp()
     {
         if (propsMovementComponent == null) propsMovementComponent = GetComponent<PropsMovement>();

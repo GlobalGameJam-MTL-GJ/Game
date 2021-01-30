@@ -15,6 +15,7 @@ public class CustomerOrderController : MonoBehaviour
     public CustomerMover CustomerMover => _customerMover;
 
     public PropsType propsType;
+    public PropsColor propsColor;
 
     private CustomerOrder _customerOrder;
     private float _waitTime = 0;
@@ -42,7 +43,26 @@ public class CustomerOrderController : MonoBehaviour
         this.wantedProps = wantedProps;
         _customerOrder = customerOrder;
         propsType = _customerOrder.PropsType;
+        propsColor = _customerOrder.PropsColor;
         _propImage.sprite = _customerOrder.PropImage;
+        _propImage.color = SetPropImageColor(propsColor);
+    }
+
+    private Color SetPropImageColor(PropsColor propsColor)
+    {
+        switch (propsColor)
+        {
+            case PropsColor.Orange:
+                return new Color32(255, 165, 0, 255);
+            case PropsColor.Purple:
+                return Color.magenta;
+            case PropsColor.Blue:
+                return Color.blue;
+            case PropsColor.Green:
+                return Color.green;
+            default:
+                return Color.white;
+        }
     }
 
     private void Update()
@@ -78,7 +98,7 @@ public class CustomerOrderController : MonoBehaviour
 
     public bool TryToCompleteOrder(Props props)
     {
-        if (wantedProps == props.gameObject)
+        if (propsType == props.GetPropsType() && propsColor == props.GetPropsColor())
         {
             OnCustomerOrderComplete?.Invoke(transform.parent.gameObject);
             customerComponent.SnapObjectToHands(props.gameObject);

@@ -82,6 +82,7 @@ public class CustomerSpawner : MonoBehaviour
 
         rand = Random.Range(0, filteredCustomerOrderDefinitions.Count);
         customerOrderDefinition = filteredCustomerOrderDefinitions[rand];
+        customerOrderDefinition.PropsColor = choosenPropsEntry.propsColor;
         return choosenCustomer;
     }
 }
