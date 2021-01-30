@@ -17,7 +17,7 @@ public class PlayerAction : MonoBehaviour
     private Vector3 m_Offset;
 
     [SerializeField] private float m_throwForce = 8f;
-
+    public bool CanThrowOrDrop = true;
     private bool m_IsEquipped;
     private GameObject pickedUpObject;
     public Transform pickUpContainer;
@@ -88,7 +88,8 @@ public class PlayerAction : MonoBehaviour
                 }
                 else
                 {
-                    Throw();
+                    if(CanThrowOrDrop)
+                        Throw();
                 }
             }
         }
@@ -128,6 +129,5 @@ public class PlayerAction : MonoBehaviour
         
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.TransformPoint(Vector3.forward) + m_Offset, m_CustomerDetectionRadius);
-
     }
 }
