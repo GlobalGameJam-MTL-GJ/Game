@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 817826864080790103}
   - component: {fileID: 817826864080790102}
   - component: {fileID: 4095087462785923569}
+  - component: {fileID: 1011241333}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -99,6 +100,7 @@ MonoBehaviour:
   delayBeforeSubmittingAgain: 1.25
   m_Offset: {x: 0, y: 0.6, z: -0.3}
   m_throwForce: 8
+  CanThrowOrDrop: 1
   pickUpContainer: {fileID: 817826865353124703}
   m_PickupLayer:
     serializedVersion: 2
@@ -120,6 +122,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &1011241333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817826864080790091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d888a970545464f978a1245c0922ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817826865353124688
 GameObject:
   m_ObjectHideFlags: 0

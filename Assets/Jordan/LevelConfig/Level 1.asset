@@ -58,9 +58,9 @@ MonoBehaviour:
     minimumOfThisTypeForTheLevel: 0
     maximumOfThisTypeForTheLevel: 10
   - propsType: 3
-    spawnChance: 0.1
+    spawnChance: 0.08
     adjustedSpawnChance: 0.12884082
     minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 10
-    minimumOfThisTypeForTheLevel: 0
-    maximumOfThisTypeForTheLevel: 10
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 2
+    maximumOfThisTypeForTheLevel: 2

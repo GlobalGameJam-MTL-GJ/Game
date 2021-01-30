@@ -12,6 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3552322078a499748909b8086bff0676, type: 3}
   m_Name: Level_03
   m_EditorClassIdentifier: 
-  maximumPropsAtOnce: 6
-  propsPossibleMovements: []
-  propsPossibleTypes: []
+  maximumPropsAtOnce: 10
+  propsPossibleMovements:
+  - propsMovementType: 0
+    spawnChance: 0.28
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 3
+    minimumOfThisTypeForTheLevel: 7
+    maximumOfThisTypeForTheLevel: 7
+  - propsMovementType: 1
+    spawnChance: 0.2
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 5
+  - propsMovementType: 2
+    spawnChance: 0.32
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 8
+    maximumOfThisTypeForTheLevel: 8
+  - propsMovementType: 3
+    spawnChance: 0.2
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 5
+  propsPossibleTypes:
+  - propsType: 0
+    spawnChance: 0.11
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 3
+    maximumOfThisTypeForTheLevel: 3
+  - propsType: 1
+    spawnChance: 0.15
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 4
+  - propsType: 2
+    spawnChance: 0.15
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 4
+  - propsType: 3
+    spawnChance: 0.19
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 1
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 5
+  - propsType: 4
+    spawnChance: 0.19
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 1
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 5
