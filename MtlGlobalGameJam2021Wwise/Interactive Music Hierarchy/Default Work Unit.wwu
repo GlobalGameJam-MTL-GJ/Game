@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C826773-05C9-4ECA-A871-A6162B471CC8}" SchemaVersion="97">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{6C826773-05C9-4ECA-A871-A6162B471CC8}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Music_Level" ID="{A6901AAD-7B8C-47B9-BB2D-5D23DF8556D0}" ShortID="603946047">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="160"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Music_Gameplay_Backstore_C_160bpm" ID="{44C36A61-C91B-4F0C-969F-EBEC48B54010}" ShortID="328382791">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="184875"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Music_Gameplay_Backstore_C_160bpm" ID="{4B67C86C-C9E0-4225-9895-BCCCEE480DCB}" ShortID="323024014">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Music_Gameplay_Backstore_C_160bpm" ID="{562A5A5E-D196-44B4-B820-39FEEC197026}">
+											<Language>SFX</Language>
+											<AudioFile>Music_Gameplay_Backstore_C_160bpm.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="110112115"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1D5C1AF5-A63A-4928-9B81-F3ABDF0F2D56}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{244660B0-7946-47DD-9223-767C66C16BAC}">
+											<ClipList>
+												<MusicClip Name="Music_Gameplay_Backstore_C_160bpm" ID="{2D65FB69-E245-46B5-9807-13372AD23B92}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="184875"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Music_Gameplay_Backstore_C_160bpm" ID="{562A5A5E-D196-44B4-B820-39FEEC197026}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{EAD8CCE6-2F28-4040-B8BE-E964D0FF4655}"/>
+								<MusicCue Name="Exit Cue" ID="{CF8EB94D-08DD-4E51-AEA7-5D6765E4BDA1}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="184875"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{E4D4BD7F-F612-4446-952B-CC43C01D0346}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{D77A7D39-6492-4216-8E1C-E26DCCA3968A}">
+									<ReferenceList/>
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{910CF787-EE71-45AB-8E59-E2A7BCAB6404}" ShortID="325183929">
+							<PropertyList>
+								<Property Name="PlayMode" Type="int16" Value="3"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{13C20921-FD94-40E1-A00F-3B353DEE3D87}" ShortID="716988040">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Music_Gameplay_Backstore_C_160bpm" ID="{44C36A61-C91B-4F0C-969F-EBEC48B54010}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="ClockFast" ID="{D5956EDF-5D64-4748-9CA8-974E018000EA}" ShortID="985189922">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{0DFF0D62-5DED-4D8D-BAD7-543E1A95F5E2}" ShortID="706319863">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}" WorkUnitID="{595B88F7-A1AC-4814-8C82-F46B136A745D}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{18838F75-786E-4D08-9C90-284BA527F7B1}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>149</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>150</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>169</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>170</XPos>
+												<YPos>-100</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>180</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>181</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="XD_ClockFast" ID="{9C1406BD-7820-460B-B363-C594BA3F95E9}" ShortID="1039611408">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="XD_ClockFast" ID="{8E05FFFB-2FE7-45DE-8E7A-2CC3C25DD693}" ShortID="73590631">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="XD_ClockFast" ID="{15E6BC49-8EE8-454E-BF68-DBD8D4DA95E2}">
+											<Language>SFX</Language>
+											<AudioFile>XD_ClockFast.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328970567"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{766763E6-302C-43F4-9AD5-55CE70953E23}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{06B0FE2C-F2D8-4D3D-9F96-E11DF67C1B2B}">
+											<ClipList>
+												<MusicClip Name="XD_ClockFast" ID="{FD6B0491-987E-4DE8-BAE2-E41DD50E6303}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="1500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="XD_ClockFast" ID="{15E6BC49-8EE8-454E-BF68-DBD8D4DA95E2}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{FE74D779-FACB-46D6-B41A-704C89306E1C}"/>
+								<MusicCue Name="Exit Cue" ID="{D7FF62E8-5258-40FD-882A-1774C3511A52}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{51A20516-FAF8-4478-89D3-9EA300B5F45E}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{EE303932-C15E-472E-83AB-B1C9E00C1A3D}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{391E2226-740A-4EA3-A13D-48622656F3CC}" ShortID="271795726">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{59C8A989-595D-4E6D-B796-3E70C97D36C5}" ShortID="592025258">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="XD_ClockFast" ID="{9C1406BD-7820-460B-B363-C594BA3F95E9}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="ClockSlow" ID="{910FA7F3-864D-4145-AF8A-6D3E954972FA}" ShortID="99979272">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{7DD05FB0-298A-4CEB-A43D-746436D3FB19}" ShortID="1027848675">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}" WorkUnitID="{595B88F7-A1AC-4814-8C82-F46B136A745D}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{315639AD-C17C-4273-80F3-F32DD31DD8C4}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>89</XPos>
+												<YPos>-100</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>90</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>149</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>150</XPos>
+												<YPos>-100</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>180</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>181</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="XD_ClockSlow" ID="{36AF6D6C-5983-42A3-8DC2-A9C831D79DCA}" ShortID="392804902">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="XD_ClockSlow" ID="{A77C101B-27FB-4C53-85AF-2ED8C51256DA}" ShortID="608164167">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="XD_ClockSlow" ID="{F0CFC26B-0486-4B58-A829-F69B74A4B10E}">
+											<Language>SFX</Language>
+											<AudioFile>XD_ClockSlow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="152976239"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A149A9B4-C7F8-4516-9797-B56D776B69A0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{D675AE13-9967-4E96-8B60-746C3F021D05}">
+											<ClipList>
+												<MusicClip Name="XD_ClockSlow" ID="{A7E78A56-997C-42FB-BF26-B103F84728A3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="1500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="XD_ClockSlow" ID="{F0CFC26B-0486-4B58-A829-F69B74A4B10E}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{042E1770-F546-474E-BB06-F72AF1A1BE24}"/>
+								<MusicCue Name="Exit Cue" ID="{FF98ECB5-F423-4BEE-BDFE-3E49541F630D}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{5AE71E0D-F26C-4808-8F1C-F877D796EDBC}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{755BB3F2-4758-431C-A009-56FB35A71C84}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{16C574BA-A64C-4BC9-B2CE-06540A3B196C}" ShortID="184782342">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{21DE416E-0867-4350-8939-6F9C277EDEC1}" ShortID="122471635">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="XD_ClockSlow" ID="{36AF6D6C-5983-42A3-8DC2-A9C831D79DCA}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="ClockRush" ID="{AEA0A31C-9A11-402E-8DAA-CA3F097FA5E7}" ShortID="827569233">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{DC2DA5D5-335F-49D3-A799-DD9410FE4CFF}" ShortID="49691379">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}" WorkUnitID="{595B88F7-A1AC-4814-8C82-F46B136A745D}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F49CC6CC-B90D-42F0-A1D5-854B8F233A41}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>169</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>170</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>181</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="XD_ClockRush" ID="{A04B5A33-BF2C-4102-93BA-50FEDF180163}" ShortID="926288438">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="XD_ClockRush" ID="{1C1D0FD7-864F-427B-8AEE-9D1CD33ABE0C}" ShortID="527515665">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="XD_ClockRush" ID="{8908C5F6-752C-4463-9CB2-8EEE5334AB69}">
+											<Language>SFX</Language>
+											<AudioFile>XD_ClockRush.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1010015797"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4315B57D-EDAC-4E5A-AE28-66320BFACD2F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{29DA8075-2298-466D-AB5E-613D3B50C650}">
+											<ClipList>
+												<MusicClip Name="XD_ClockRush" ID="{8881C07F-1BBC-466C-B3C7-8BD5480C3791}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="1500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="XD_ClockRush" ID="{8908C5F6-752C-4463-9CB2-8EEE5334AB69}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{88CC688B-C638-4848-90AE-1D6AEE5DBF0B}"/>
+								<MusicCue Name="Exit Cue" ID="{FCC4944B-9B02-4CC7-A9C6-338CC267CB7A}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{3502232F-2DC2-45A5-A191-BAA06C1723CD}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{C6852948-3246-469E-B78D-7B4FB0C4E861}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{618F5F55-A86A-42B1-AA90-459BA03023A5}" ShortID="84515578">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{CB7D4D4A-ABC1-4C47-8CD7-FC98490F52AB}" ShortID="305799789">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="XD_ClockRush" ID="{A04B5A33-BF2C-4102-93BA-50FEDF180163}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

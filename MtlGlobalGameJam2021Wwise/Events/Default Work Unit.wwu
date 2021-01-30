@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music_Level" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}">
+					<ChildrenList>
+						<Action Name="" ID="{527400AB-E921-489E-BBB5-2488087C9327}" ShortID="613425510">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Level" ID="{A6901AAD-7B8C-47B9-BB2D-5D23DF8556D0}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{63B5A535-2FAC-41FB-BBED-C4C703FCA631}" ShortID="818963401">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClockFast" ID="{D5956EDF-5D64-4748-9CA8-974E018000EA}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7E101C78-0A8A-44E1-B97F-3694DE179FA7}" ShortID="615398570">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClockRush" ID="{AEA0A31C-9A11-402E-8DAA-CA3F097FA5E7}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AEF3E48F-6280-4A69-8B9C-91F8157E8B14}" ShortID="961770464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClockSlow" ID="{910FA7F3-864D-4145-AF8A-6D3E954972FA}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NPC_Bell" ID="{709ECC4F-A582-433F-A6C8-95B703D75E7E}">
+					<ChildrenList>
+						<Action Name="" ID="{7295B42E-9C67-4D94-84FE-2C43AA4C4EB2}" ShortID="508527577">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NPC_Bell" ID="{A3109F22-0094-4D0E-A122-32773D1A1D40}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
