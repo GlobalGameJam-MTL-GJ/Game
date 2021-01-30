@@ -9,7 +9,7 @@ public class CustomerController : MonoBehaviour
 
     [SerializeField] private CustomerOrderController _customerOrderController;
 
-    public static Action<GameObject> OnCustomerOrderComplete;
+    public CustomerOrderController CustomerOrderController => _customerOrderController;
 
     public void Setup(Customer customer, CustomerOrder customerOrder)
     {
@@ -17,8 +17,10 @@ public class CustomerController : MonoBehaviour
         _customerOrderController.Setup(customerOrder);
     }
 
+    /*
     void OnMouseDown()
     {
         OnCustomerOrderComplete?.Invoke(gameObject);
     }
+    */
 }

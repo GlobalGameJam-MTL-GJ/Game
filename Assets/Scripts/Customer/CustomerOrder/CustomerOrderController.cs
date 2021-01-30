@@ -11,18 +11,21 @@ public class CustomerOrderController : MonoBehaviour
     [SerializeField] private Image _rageBar;
     [SerializeField] private CustomerMover _customerMover;
 
+    public CustomerMover CustomerMover => _customerMover;
+
+    public PropsType propsType;
+
     private CustomerOrder _customerOrder;
     private float _waitTime = 0;
 
+    public static Action<GameObject> OnCustomerOrderComplete;
     public static Action<GameObject> OnCustomerOrderNotComplete;
 
     public bool isWaiting = false;
 
-
     private void Awake()
     {
         _customerMover.OnCustomerWaiting += OnCustomerWaiting;
-
     }
 
     private void OnDisable()
@@ -33,6 +36,7 @@ public class CustomerOrderController : MonoBehaviour
     public void Setup(CustomerOrder customerOrder)
     {
         _customerOrder = customerOrder;
+        propsType = _customerOrder.PropsType;
         _propImage.sprite = _customerOrder.PropImage;
     }
 
@@ -64,5 +68,18 @@ public class CustomerOrderController : MonoBehaviour
     private void OnCustomerWaiting()
     {
         isWaiting = true;
+    }
+
+    public bool TryToCompleteOrder(Props props)
+    {
+        Destroy(props.gameObject);
+        OnCustomerOrderComplete?.Invoke(transform.parent.gameObject);
+        return true;
+        /*
+        if (props.GetPropsType() == propsType)
+        {
+            OnCustomerOrderComplete?.Invoke(transform.parent.gameObject);
+        }
+        */
     }
 }

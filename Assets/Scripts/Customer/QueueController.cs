@@ -17,14 +17,14 @@ public class QueueController : MonoBehaviour
     {
         CustomerMover.OnCustomerRelinquishQueueSpot += RelinquishQueueSpot;
         CustomerOrderController.OnCustomerOrderNotComplete += OnCustomerOrderNotComplete;
-        CustomerController.OnCustomerOrderComplete += OnCustomerOrderNotComplete;
+        CustomerOrderController.OnCustomerOrderComplete += OnCustomerOrderNotComplete;
     }
 
     void OnDisable()
     {
         CustomerMover.OnCustomerRelinquishQueueSpot -= RelinquishQueueSpot;
         CustomerOrderController.OnCustomerOrderNotComplete -= OnCustomerOrderNotComplete;
-        CustomerController.OnCustomerOrderComplete -= OnCustomerOrderNotComplete;
+        CustomerOrderController.OnCustomerOrderComplete -= OnCustomerOrderNotComplete;
     }
 
 

@@ -9,7 +9,7 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private float m_PickupSphereRadius = 3f;
 
-    [SerializeField] private float m_CustomerDetectionRadius = 2f;
+    [SerializeField] private float m_CustomerDetectionRadius;
     
     [SerializeField]
     private Vector3 m_Offset;
@@ -23,10 +23,13 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private LayerMask m_PickupLayer;
 
+    [SerializeField]
+    private LayerMask m_CustomerLayer;
+
     private RaycastHit[] m_SphereCastHits;
 
     private GameObject m_PickableItem;
-    
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -47,11 +50,15 @@ public class PlayerAction : MonoBehaviour
             }
             else
             {
-                var customerColliders = Physics.OverlapSphere(transform.position, m_CustomerDetectionRadius, 20, QueryTriggerInteraction.Collide);
+                var customerColliders = Physics.OverlapSphere(transform.position, m_CustomerDetectionRadius, m_CustomerLayer, QueryTriggerInteraction.Collide);
                 if (customerColliders.Length > 0)
                 {
-                    var customerController = customerColliders[0].GetComponent<CustomerController>();
+                    var customerOrderController = customerColliders[0].GetComponent<CustomerController>().CustomerOrderController;
                     Props props = pickedUpObject.GetComponent<Props>();
+                    if(props != null && customerOrderController.TryToCompleteOrder(props))
+                    {
+                        //Update currentActivePropsList
+                    }
                     // if (props != null && customerController.TryToCompleteOrder(props))
                     // {
                     //     //we gave the right item

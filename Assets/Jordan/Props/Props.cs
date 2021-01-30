@@ -41,6 +41,11 @@ public class Props : MonoBehaviour
         this.propsType = propsType;
     }
 
+    public PropsType GetPropsType()
+    {
+        return propsType;
+    }
+
     public void GetPickedUp()
     {
         if (propsMovementComponent == null) propsMovementComponent = GetComponent<PropsMovement>();
