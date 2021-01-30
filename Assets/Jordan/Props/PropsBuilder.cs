@@ -16,6 +16,8 @@ public class PropsBuilder : MonoBehaviour
     [SerializeField] private float spawnRate = 0.7f;
     List<ActivePropsEntry> currentActiveProps = new List<ActivePropsEntry>();
     
+    public bool PropsAvailable => currentActiveProps.Exists(activePropsEntry => !activePropsEntry.reserved);
+
     private static Dictionary<PropsMovementType, Type> MovementTypesToComponents =
         new Dictionary<PropsMovementType, Type>()
         {

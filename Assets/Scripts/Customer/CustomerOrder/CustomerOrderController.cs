@@ -11,7 +11,6 @@ public class CustomerOrderController : MonoBehaviour
     [SerializeField] private Image _rageBar;
     [SerializeField] private CustomerMover _customerMover;
     [SerializeField] private int pointsPerSecondsRemaining = 1;
-    private GameObject wantedProps;
     public CustomerMover CustomerMover => _customerMover;
 
     public PropsType propsType;
@@ -36,9 +35,8 @@ public class CustomerOrderController : MonoBehaviour
         _customerMover.OnCustomerWaiting -= OnCustomerWaiting;
     }
 
-    public void Setup(CustomerOrder customerOrder, GameObject wantedProps)
+    public void Setup(CustomerOrder customerOrder)
     {
-        this.wantedProps = wantedProps;
         _customerOrder = customerOrder;
         propsType = _customerOrder.PropsType;
         _propImage.sprite = _customerOrder.PropImage;

@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 
@@ -14,11 +14,12 @@ public class CustomerSpawner : MonoBehaviour
 {
     [SerializeField] private List<CustomerDefinition> _customersDefinitions;
     [SerializeField] private Transform _spawnpoint;
-
     [SerializeField] private float _spawnRate;
-    private float _runningTimer;
 
     [SerializeField] private QueueController _queueController;
+    [SerializeField] private PropsBuilder _propsBuilder;
+
+    private float _runningTimer;
 
     void Update()
     {
@@ -27,7 +28,7 @@ public class CustomerSpawner : MonoBehaviour
 
     private void SpawnCustomer()
     {
-        if (!_queueController.IsSpotAvailable) { return; }
+        if (!_queueController.IsSpotAvailable && !_propsBuilder.PropsAvailable) { return; }
 
         _runningTimer += Time.deltaTime;
 
@@ -35,51 +36,48 @@ public class CustomerSpawner : MonoBehaviour
         {
             _runningTimer = 0;
 
-            //get a props from the props builder
-            //search for a model that wants this props
-            //create the order according to the choosen props from propsbuilder
-            ActivePropsEntry choosenPropsEntry = PropsBuilder.instance.GetAnActiveProps();
+            var propGO = _propsBuilder.GetAnActiveProps();
+            var propsType = propGO.GetComponent<Props>().GetPropsType();
 
-            var customer = new Customer(FindCustomerForTheChoosenProps(choosenPropsEntry, out var customerOrderDefinition));
-            var customerOrder = new CustomerOrder(customerOrderDefinition);
+            var (cutomerDefinition, customerOrderDefinition) = MapPropTypeToACustomer(propsType);
+
+            var customer = new Customer(cutomerDefinition);//Customer(_customersDefinitions[0]);
+            var customerOrder = new CustomerOrder(customerOrderDefinition);//CustomerOrder(customer.CustomerOrders[0]);
 
             var customerGO = Instantiate(customer.Model, _spawnpoint.position, Quaternion.identity);
-            customerGO.GetComponent<CustomerController>().Setup(customer, customerOrder, choosenPropsEntry.activeProps);
+            customerGO.GetComponent<CustomerController>().Setup(customer, customerOrder);
         }
     }
 
-    private CustomerDefinition FindCustomerForTheChoosenProps(ActivePropsEntry choosenPropsEntry, out CustomerOrderDefinition customerOrderDefinition)
+    private (CustomerDefinition,CustomerOrderDefinition) MapPropTypeToACustomer(PropsType propsType)
     {
-        PropsType propsType = choosenPropsEntry.propsType;
-        List<CustomerDefinition> filteredCustomerDefinitions = new List<CustomerDefinition>();
-        //chooses the customer
-        foreach (var customerDefinition in _customersDefinitions)
+        //Block runs for Potion proptypes only
+        if(propsType == PropsType.Potion)
         {
-            foreach (var customerOrder in customerDefinition.CustomerOrders)
+            var randCustomer = UnityEngine.Random.Range(0, _customersDefinitions.Count);
+
+            var customerDefinition = _customersDefinitions[randCustomer];
+
+            foreach(var customerOrderDefinition in customerDefinition.CustomerOrders)
             {
-                if (customerOrder.PropsType != propsType) continue;
-                filteredCustomerDefinitions.Add(customerDefinition);
-                break;
+                if(customerOrderDefinition.PropsType == PropsType.Potion)
+                {
+                    return (customerDefinition, customerOrderDefinition);
+                }
             }
         }
-        //randomly chooses the order definition amongst the correct props type
-        int rand = Random.Range(0, filteredCustomerDefinitions.Count);
-        
-        if (filteredCustomerDefinitions.Count == 0)
-        {
-            Debug.LogError("NO CUSTOMER WERE INTERESTED IN THE " + propsType);
-        }
-        
-        CustomerDefinition choosenCustomer = filteredCustomerDefinitions[rand];
-        List<CustomerOrderDefinition> filteredCustomerOrderDefinitions = new List<CustomerOrderDefinition>();
-        foreach (var customerOrderDef in choosenCustomer.CustomerOrders)
-        {
-            if (customerOrderDef.PropsType != propsType) continue;
-            filteredCustomerOrderDefinitions.Add(customerOrderDef);
-        }
 
-        rand = Random.Range(0, filteredCustomerOrderDefinitions.Count);
-        customerOrderDefinition = filteredCustomerOrderDefinitions[rand];
-        return choosenCustomer;
+        //For all other proptypes
+        foreach (var customerDefinition in _customersDefinitions)
+        {
+            foreach (var customerOrderDefinition in customerDefinition.CustomerOrders)
+            {
+                if(propsType == customerOrderDefinition.PropsType)
+                {
+                    return (customerDefinition, customerOrderDefinition);
+                }
+            }
+        }
+        return (null,null);
     }
 }

@@ -6,27 +6,14 @@ using UnityEngine;
 public class CustomerController : MonoBehaviour
 {
     private Customer _customer;
-    [SerializeField] private Transform objectSnapTransform;
+
     [SerializeField] private CustomerOrderController _customerOrderController;
 
     public CustomerOrderController CustomerOrderController => _customerOrderController;
 
-    public void Setup(Customer customer, CustomerOrder customerOrder, GameObject wantedPropsObject)
+    public void Setup(Customer customer, CustomerOrder customerOrder)
     {
         _customer = customer;
-        _customerOrderController.Setup(customerOrder, wantedPropsObject);
+        _customerOrderController.Setup(customerOrder);
     }
-
-    public void SnapObjectToHands(GameObject objectToSnap)
-    {
-        objectToSnap.transform.SetParent(null);
-        objectToSnap.transform.SetParent(objectSnapTransform);
-        objectToSnap.transform.position = objectSnapTransform.position;
-    }
-    /*
-    void OnMouseDown()
-    {
-        OnCustomerOrderComplete?.Invoke(gameObject);
-    }
-    */
 }
