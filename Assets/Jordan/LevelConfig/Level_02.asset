@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8204cfdb1af18dd4a93503da9495a480, type: 3}
-  m_Name: CustomerOrder_Staff
+  m_Script: {fileID: 11500000, guid: 3552322078a499748909b8086bff0676, type: 3}
+  m_Name: Level_02
   m_EditorClassIdentifier: 
-  _propsType: 3
-  _propImage: {fileID: 21300000, guid: 8d59e06d7f8525f43b11810ddfb6172a, type: 3}
-  _orderTime: 25
-  _score: 50
+  maximumPropsAtOnce: 6
+  propsPossibleMovements: []
+  propsPossibleTypes: []
