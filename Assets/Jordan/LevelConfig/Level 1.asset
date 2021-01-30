@@ -15,51 +15,51 @@ MonoBehaviour:
   maximumPropsAtOnce: 6
   propsPossibleMovements:
   - propsMovementType: 0
-    spawnChance: 0.1
-    adjustedSpawnChance: 0.07744001
+    spawnChance: 0
+    adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 2
+    maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 50
   - propsMovementType: 1
     spawnChance: 0
     adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 2
+    maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 50
   - propsMovementType: 2
+    spawnChance: 1
+    adjustedSpawnChance: 0.26214403
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 10
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 50
+  - propsMovementType: 3
     spawnChance: 0
     adjustedSpawnChance: 0
-    minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 2
-    minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 4
-  - propsMovementType: 3
-    spawnChance: 0.5
-    adjustedSpawnChance: 0.35200003
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 2
     minimumOfThisTypeForTheLevel: 1
     maximumOfThisTypeForTheLevel: 4
   propsPossibleTypes:
   - propsType: 0
-    spawnChance: 0.1
-    adjustedSpawnChance: 0.09370241
+    spawnChance: 1
+    adjustedSpawnChance: 0.40960002
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0
     maximumOfThisTypeForTheLevel: 10
   - propsType: 1
-    spawnChance: 0.2
-    adjustedSpawnChance: 0.13629441
+    spawnChance: 0.01
+    adjustedSpawnChance: 0.00937024
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0
     maximumOfThisTypeForTheLevel: 10
   - propsType: 2
-    spawnChance: 0.1
-    adjustedSpawnChance: 1.7600001
+    spawnChance: 0
+    adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 10
     minimumOfThisTypeForTheLevel: 0

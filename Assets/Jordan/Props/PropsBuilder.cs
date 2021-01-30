@@ -45,6 +45,23 @@ public class PropsBuilder : MonoBehaviour
         {PropsType.Staff, new PropsAmountTracker()},
         {PropsType.Potion, new PropsAmountTracker()}
     };
+    
+    private Dictionary<PropsType, PropsColorTracker> PropsTypesToColorTracker = new Dictionary<PropsType, PropsColorTracker>()
+    {
+        {PropsType.Sword, new PropsColorTracker()},
+        {PropsType.Grimoire, new PropsColorTracker()},
+        {PropsType.Bow, new PropsColorTracker()},
+        {PropsType.Staff, new PropsColorTracker()},
+        {PropsType.Potion, new PropsColorTracker()}
+    };
+    
+    public Dictionary<PropsColor, Color> PropsColorsToColors = new Dictionary<PropsColor, Color>()
+    {
+        {PropsColor.Blue, Color.blue},
+        {PropsColor.Green, Color.green},
+        {PropsColor.Orange, new Color32(255, 165, 0, 255)},
+        {PropsColor.Purple, Color.magenta},
+    };
 
     private void Awake()
     {
@@ -101,14 +118,22 @@ public class PropsBuilder : MonoBehaviour
         GameObject choosenSpawn = propsSpawns[randomSpawn];
         GameObject newProps = Instantiate(propsPrefab, choosenSpawn.transform.position + new Vector3(0, 0.25f, 0), choosenSpawn.transform.rotation);
         newProps.AddComponent(GetPropsMovementAccordingToLevelConfig());
+        
         ActivePropsEntry activePropsEntry = new ActivePropsEntry();
         activePropsEntry.propsType = GetPropsTypesAccordingToLevelConfig();
         GameObject mesh = Instantiate(PropsTypeToMeshes[activePropsEntry.propsType], newProps.transform);
         mesh.transform.localPosition = Vector3.zero;
-        newProps.GetComponent<Props>().SetPropsType(activePropsEntry.propsType);
+        
+        activePropsEntry.propsColor = GetRandomFreeColorForThisType(activePropsEntry.propsType);
+        newProps.GetComponent<Props>().SetPropsTypeAndColor(activePropsEntry.propsType, activePropsEntry.propsColor);
         activePropsEntry.activeProps = newProps;
         currentActiveProps.Add(activePropsEntry);
         choosenSpawn.GetComponent<PropsSpawn>().SpawnTween(newProps);
+    }
+
+    private PropsColor GetRandomFreeColorForThisType(PropsType propsType)
+    {
+        return PropsTypesToColorTracker[propsType].GetRandomFreeColor();
     }
 
     private PropsType GetPropsTypesAccordingToLevelConfig()
@@ -118,7 +143,8 @@ public class PropsBuilder : MonoBehaviour
         {
             if (PropsTypesAmountTracker[possibleType.propsType].totalAtThisMoment >=
                 possibleType.maximumOfThisTypeAtOnce
-                || PropsTypesAmountTracker[possibleType.propsType].totalSpawnedThisLevel >= possibleType.maximumOfThisTypeForTheLevel)
+                || PropsTypesAmountTracker[possibleType.propsType].totalSpawnedThisLevel >= possibleType.maximumOfThisTypeForTheLevel
+                || !PropsTypesToColorTracker[possibleType.propsType].IsThereAnyColorAvailable())
                 continue;
             
             filteredPossibleTypes.Add(possibleType);
@@ -206,6 +232,7 @@ public class PropsBuilder : MonoBehaviour
         foreach (var currentActiveProp in currentActiveProps)
         {
             if (currentActiveProp.activeProps != activePropsToRemove) continue;
+            PropsTypesToColorTracker[currentActiveProp.propsType].MakeColorAvailable(currentActiveProp.propsColor);
             currentActiveProps.Remove(currentActiveProp);
             return;
         }

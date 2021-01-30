@@ -12,6 +12,7 @@ public class Props : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private PropsMovement propsMovementComponent;
     private PropsType propsType;
+    private PropsColor propsColor;
     private bool pickedUp;
     private bool beingThrown;
     private Rigidbody rigidbody;
@@ -25,12 +26,6 @@ public class Props : MonoBehaviour
         rigidbody.isKinematic = true;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -42,7 +37,7 @@ public class Props : MonoBehaviour
             ActivateMovement();
         }
     }
-
+    
     public void ActivateMovement()
     {
         propsMovementComponent = GetComponent<PropsMovement>();
@@ -53,15 +48,18 @@ public class Props : MonoBehaviour
         }
     }
 
-    public void SetPropsType(PropsType propsType)
+    public void SetPropsTypeAndColor(PropsType propsType, PropsColor color)
     {
         this.propsType = propsType;
+        propsColor = color;
+        GetComponentInChildren<MeshRenderer>().material.color = PropsBuilder.instance.PropsColorsToColors[propsColor];
     }
 
     public PropsType GetPropsType()
     {
         return propsType;
     }
+    
     public void GetPickedUp()
     {
         if (propsMovementComponent == null) propsMovementComponent = GetComponent<PropsMovement>();

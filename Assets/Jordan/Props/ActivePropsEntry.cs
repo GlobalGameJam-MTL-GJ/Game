@@ -7,5 +7,6 @@ public class ActivePropsEntry
 {
     public GameObject activeProps;
     public PropsType propsType;
+    public PropsColor propsColor;
     public bool reserved;
 }
