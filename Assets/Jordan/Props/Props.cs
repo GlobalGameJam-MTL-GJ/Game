@@ -15,6 +15,7 @@ public class Props : MonoBehaviour
     private PropsColor propsColor;
     private bool pickedUp;
     private bool beingThrown;
+    private bool beingDropped;
     private Rigidbody rigidbody;
 
     public event Action<PropsMovement> OnMovementEnabled;
@@ -29,6 +30,7 @@ public class Props : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (!recoveringFromThrow) return;
         currentDelayTimer -= Time.deltaTime;
         if (currentDelayTimer <= 0)
@@ -74,8 +76,10 @@ public class Props : MonoBehaviour
 
     public void GetDropped()
     {
-        propsMovementComponent.ActivateMovement();
-        pickedUp = false;
+        beingDropped = true;
+        rigidbody.isKinematic = false;
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     public void GetThrown(Vector3 transformForward, float throwForce)
@@ -88,16 +92,30 @@ public class Props : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!beingThrown) return;
-        if (other.gameObject.layer == 19)
+        if (beingThrown)
         {
-            beingThrown = false;
-            pickedUp = false;
-            currentDelayTimer = delayAfterThrown;
-            recoveringFromThrow = true;
-            rigidbody.isKinematic = true;
-            rigidbody.constraints = RigidbodyConstraints.None;
+            if (other.gameObject.layer == 19)
+            {
+                beingThrown = false;
+                pickedUp = false;
+                currentDelayTimer = delayAfterThrown;
+                recoveringFromThrow = true;
+                rigidbody.isKinematic = true;
+                rigidbody.constraints = RigidbodyConstraints.None;
+            }
         }
+        else if (beingDropped)
+        {
+            if (other.gameObject.layer == 19)
+            {
+                beingDropped = false;
+                pickedUp = false;
+                rigidbody.isKinematic = true;
+                rigidbody.constraints = RigidbodyConstraints.None;
+                propsMovementComponent.ActivateMovement();
+            }
+        }
+        
     }
 }
 

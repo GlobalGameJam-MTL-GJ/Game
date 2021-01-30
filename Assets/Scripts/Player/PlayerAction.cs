@@ -41,7 +41,12 @@ public class PlayerAction : MonoBehaviour
             if (currentTimerBeforeEnablingSubmission <= 0)
                 isOnSubmissionDelay = false;
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if(CanThrowOrDrop)
+                Throw();
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (!m_IsEquipped)
@@ -90,12 +95,14 @@ public class PlayerAction : MonoBehaviour
                 else
                 {
                     if(CanThrowOrDrop)
-                        Throw();
+                        DropTheProps();
                 }
             }
         }
     }
-    
+
+
+
     public void Pickup(GameObject itemObject)
     {
         Props props = itemObject.GetComponent<Props>();
@@ -114,6 +121,13 @@ public class PlayerAction : MonoBehaviour
     {
         LetGoOfTheItem();
         pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
+        pickedUpObject = null;
+    }
+    
+    private void DropTheProps()
+    {
+        LetGoOfTheItem();
+        pickedUpObject.GetComponent<Props>().GetDropped();
         pickedUpObject = null;
     }
 
