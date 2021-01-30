@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CustomerOrder_Grimoire
   m_EditorClassIdentifier: 
   _propsType: 1
-  _propImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  _propImage: {fileID: 21300000, guid: 529490ae75ecb8542957abcbccaa10f0, type: 3}
   _orderTime: 10
-  _score: 0
+  _score: 10

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8204cfdb1af18dd4a93503da9495a480, type: 3}
   m_Name: CustomerOrder_Sword
   m_EditorClassIdentifier: 
-  _propsType: 4
-  _propImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  _propsType: 0
+  _propImage: {fileID: 21300000, guid: dc0f20207caaf63449fdc32ba7280310, type: 3}
   _orderTime: 25
   _score: 20

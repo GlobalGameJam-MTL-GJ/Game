@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CustomerOrder_Staff
   m_EditorClassIdentifier: 
   _propsType: 3
-  _propImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  _propImage: {fileID: 21300000, guid: 8d59e06d7f8525f43b11810ddfb6172a, type: 3}
   _orderTime: 10
-  _score: 0
+  _score: 10
