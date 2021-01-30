@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class CustomerOrderDefinition : ScriptableObject
 {
     [SerializeField] private PropsType _propsType;
-    [SerializeField] private PropsColor _propsColor;
     [SerializeField] private Sprite _propImage;
     [SerializeField] private float _orderTime;
     [SerializeField] private int _score;
+    private PropsColor _propsColor;
 
     public PropsType PropsType => _propsType;
     public PropsColor PropsColor { get => _propsColor; set => _propsColor = value; }
