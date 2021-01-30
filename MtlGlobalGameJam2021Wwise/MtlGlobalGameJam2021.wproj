@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.8" WwiseBuild="7432">
+<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.9" WwiseBuild="7459">
 	<ProjectInfo>
 		<Project Name="MtlGlobalGameJam2021" ID="{5E6D2FDF-2287-47B5-93C3-76E353FFDB94}">
 			<Platforms>
@@ -11401,9 +11401,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Tencent GME Source" PluginType="2" CompanyID="289" PluginID="9001" />
-				<SharedPropertyList ClassName="Tencent GME Receive" PluginType="2" CompanyID="289" PluginID="9003" />
-				<SharedPropertyList ClassName="Tencent GME Send" PluginType="3" CompanyID="289" PluginID="9004">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="289" PluginID="9004">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -11422,7 +11420,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Tencent GME Session" PluginType="3" CompanyID="289" PluginID="9005">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="289" PluginID="9005">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>

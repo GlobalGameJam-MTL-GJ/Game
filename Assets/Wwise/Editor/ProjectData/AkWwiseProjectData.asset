@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 28bc4960b31bda4bb5636137584b30c2
     GuidInternal: 
-    m_lastTime: -8585895712429799239
+    m_lastTime: -8585895591502206732
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -213,25 +213,61 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
-    - name: Motion Factory Bus
-      guid: c6b9f92af16ee946b5f2e30c9e602c74
-      id: 985987111
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Motion Factory Bus
-        ObjectType: 2
-      Path: Default Work Unit\Motion Factory Bus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-    guid: 43786061f0fbaf43abaf0d66473eade6
+    guid: b4a7b46db6bd6a45b3a53114421e0423
     GuidInternal: 
-    m_lastTime: -8585895712419801300
-    List: []
+    m_lastTime: -8585895572863848208
+    List:
+    - name: Level
+      guid: 4d692e2153ce544db14e59b0bfa3edeb
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level
+        ObjectType: 7
+      Path: Default Work Unit\Level
+    - name: Music
+      guid: b4e2d2951de58d47b80af184e6dc3728
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
+    - name: NPC
+      guid: 1939d4c1a1f16a42a04669d56e6dbd55
+      id: 662417162
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NPC
+        ObjectType: 7
+      Path: Default Work Unit\NPC
+    - name: Player
+      guid: 021b33e27235374e876519025477e82f
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 7
+      Path: Default Work Unit\Player
+    - name: Props
+      guid: 8c7a785405db9449b09c0d96d3a2ef44
+      id: 968010305
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 7
+      Path: Default Work Unit\Props
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -240,8 +276,32 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 51f0c3c4f249cf4c9d5422ec8410c70d
     GuidInternal: 
-    m_lastTime: -8585895712430088459
+    m_lastTime: -8585895572863888242
     List:
+    - name: Level_Door
+      guid: 4ea917ea645c724e82a3d256992986f8
+      id: 4002963088
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Door
+        ObjectType: 3
+      Path: Default Work Unit\Level_Door
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level_Spawn
+      guid: e8e4f57437b054418b971f9ce9f86cc7
+      id: 1976190133
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Spawn
+        ObjectType: 3
+      Path: Default Work Unit\Level_Spawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_Level
       guid: 8d52f3df11e1cf4681976d3a05dfa712
       id: 2177735725
@@ -263,6 +323,66 @@ MonoBehaviour:
       - ElementName: NPC_Bell
         ObjectType: 3
       Path: Default Work Unit\NPC_Bell
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Drop
+      guid: df8d6d53fac6fb4aa92179ac342053a3
+      id: 1922690190
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Drop
+        ObjectType: 3
+      Path: Default Work Unit\Player_Drop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Footsteps
+      guid: d7e6510d0defa34c8060baae6f6079e4
+      id: 1730208058
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Pickup
+      guid: 4268353e7e855d489aa7e030e20b640e
+      id: 1627434233
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Pickup
+        ObjectType: 3
+      Path: Default Work Unit\Player_Pickup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Throw
+      guid: 5f79191399c7034096e3ea90efb1857d
+      id: 65181031
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Throw
+        ObjectType: 3
+      Path: Default Work Unit\Player_Throw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Prop_Impact
+      guid: 5afd0a11ac6da74ba455eb8730dc1740
+      id: 986777071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Prop_Impact
+        ObjectType: 3
+      Path: Default Work Unit\Prop_Impact
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -293,8 +413,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8bc7f533de1cdc46829936fe8cb27a5e
     GuidInternal: 
-    m_lastTime: -8585895712419781354
-    List: []
+    m_lastTime: -8585895572863698071
+    List:
+    - name: RoomType
+      guid: 832d2fde3c8c1a49b6982733772deaeb
+      id: 1992536912
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RoomType
+        ObjectType: 9
+      Path: Default Work Unit\RoomType
+      values:
+      - name: Backstore
+        guid: 8216fec4baf6ac4bb233894823a66a3e
+        id: 2915384035
+        PathAndIcons:
+        - ElementName: Backstore
+          ObjectType: 8
+      - name: Frontstore
+        guid: bacdd5a27acb2f4fa49cdb017b970b4b
+        id: 3572512317
+        PathAndIcons:
+        - ElementName: Frontstore
+          ObjectType: 8
+      - name: None
+        guid: 713d8ed495ef624f9a6dabd24111ea04
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -386,8 +537,8 @@ MonoBehaviour:
   ExpandedItems:
   - /MtlGlobalGameJam2021
   - /MtlGlobalGameJam2021/Events
-  - /MtlGlobalGameJam2021/Events/Default Work Unit
   - /MtlGlobalGameJam2021/SoundBanks
+  - /MtlGlobalGameJam2021/SoundBanks/Default Work Unit
   - /MtlGlobalGameJam2021/Switches
   - /MtlGlobalGameJam2021/Switches/Default Work Unit
   autoPopulateEnabled: 1

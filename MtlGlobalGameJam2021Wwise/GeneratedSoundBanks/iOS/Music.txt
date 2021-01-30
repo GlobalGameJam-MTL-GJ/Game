@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2177735725	Music_Level			\Default Work Unit\Music_Level	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1182830809	Clock			\Default Work Unit\Clock	
+
