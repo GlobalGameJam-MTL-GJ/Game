@@ -7,6 +7,6 @@ public enum PropsType
     Sword,
     Grimoire,
     Bow,
-    Staff,
+    Crown,
     Potion
 }

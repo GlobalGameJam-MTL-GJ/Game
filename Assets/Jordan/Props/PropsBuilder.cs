@@ -42,7 +42,7 @@ public class PropsBuilder : MonoBehaviour
         {PropsType.Sword, new PropsAmountTracker()},
         {PropsType.Grimoire, new PropsAmountTracker()},
         {PropsType.Bow, new PropsAmountTracker()},
-        {PropsType.Staff, new PropsAmountTracker()},
+        {PropsType.Crown, new PropsAmountTracker()},
         {PropsType.Potion, new PropsAmountTracker()}
     };
     
@@ -51,7 +51,7 @@ public class PropsBuilder : MonoBehaviour
         {PropsType.Sword, new PropsColorTracker()},
         {PropsType.Grimoire, new PropsColorTracker()},
         {PropsType.Bow, new PropsColorTracker()},
-        {PropsType.Staff, new PropsColorTracker()},
+        {PropsType.Crown, new PropsColorTracker()},
         {PropsType.Potion, new PropsColorTracker()}
     };
     
@@ -76,7 +76,7 @@ public class PropsBuilder : MonoBehaviour
             {PropsType.Sword, Resources.Load<GameObject>("Meshes/Sword")},
             {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
             {PropsType.Bow, Resources.Load<GameObject>("Meshes/Bow")},
-            {PropsType.Staff, Resources.Load<GameObject>("Meshes/Grimoire")},
+            {PropsType.Crown, Resources.Load<GameObject>("Meshes/Grimoire")},
             {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
         };
 
