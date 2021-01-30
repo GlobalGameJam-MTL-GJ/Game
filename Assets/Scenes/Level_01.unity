@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propsBoundsRenderer: {fileID: 447303578}
-  levelConfigSO: {fileID: 11400000, guid: 9c6ad1aaad193aa4c872bddd798ce2cb, type: 2}
+  levelConfigSO: {fileID: 11400000, guid: 694a33151bad80c4ab5951271ae2418a, type: 2}
   tempPlayer: {fileID: 1011241332}
 --- !u!4 &591739224
 Transform:

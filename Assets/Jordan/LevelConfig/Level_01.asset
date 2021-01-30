@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3552322078a499748909b8086bff0676, type: 3}
+  m_Name: Dominic_Level_01
+  m_EditorClassIdentifier: 
+  maximumPropsAtOnce: 6
+  propsPossibleMovements:
+  - propsMovementType: 0
+    spawnChance: 0.81
+    adjustedSpawnChance: 0.512
+    minimumOfThisTypeAtOnce: 2
+    maximumOfThisTypeAtOnce: 3
+    minimumOfThisTypeForTheLevel: 13
+    maximumOfThisTypeForTheLevel: 13
+  - propsMovementType: 2
+    spawnChance: 0.1
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 1
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 7
+    maximumOfThisTypeForTheLevel: 7
+  - propsMovementType: 2
+    spawnChance: 0.09
+    adjustedSpawnChance: 0
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 2
+    maximumOfThisTypeForTheLevel: 2
+  propsPossibleTypes:
+  - propsType: 4
+    spawnChance: 0.36
+    adjustedSpawnChance: 0.24532996
+    minimumOfThisTypeAtOnce: 2
+    maximumOfThisTypeAtOnce: 4
+    minimumOfThisTypeForTheLevel: 8
+    maximumOfThisTypeForTheLevel: 8
+  - propsType: 4
+    spawnChance: 0.09
+    adjustedSpawnChance: 0.11979002
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 2
+    maximumOfThisTypeForTheLevel: 2
+  - propsType: 0
+    spawnChance: 0.09
+    adjustedSpawnChance: 0.10890001
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 2
+    maximumOfThisTypeForTheLevel: 2
+  - propsType: 0
+    spawnChance: 0.04
+    adjustedSpawnChance: 0.0352
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 1
+  - propsType: 3
+    spawnChance: 0.18
+    adjustedSpawnChance: 0.23191348
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 4
+  - propsType: 3
+    spawnChance: 0.04
+    adjustedSpawnChance: 0.044
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 1
+  - propsType: 1
+    spawnChance: 0.04
+    adjustedSpawnChance: 0.07086244
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 1
+  - propsType: 1
+    spawnChance: 0.04
+    adjustedSpawnChance: 0.07086244
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 1
+  - propsType: 2
+    spawnChance: 0.04
+    adjustedSpawnChance: 0.05153632
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 1
