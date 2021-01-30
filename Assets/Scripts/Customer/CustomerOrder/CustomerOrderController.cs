@@ -87,6 +87,7 @@ public class CustomerOrderController : MonoBehaviour
             isWaiting = false;
             _customerOrderUI.enabled = false;
             OnCustomerOrderNotComplete?.Invoke(gameObject.transform.parent.gameObject);
+            StrikeManager.instance.AddStrike();
             OnCustomerLeaving?.Invoke(wantedProps);
         }
     }

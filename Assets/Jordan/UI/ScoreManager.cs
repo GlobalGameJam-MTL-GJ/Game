@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
+    [SerializeField] private GameObject scoreHolder;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private string scoreTextBegin = "Score : ";
     
@@ -21,6 +22,15 @@ public class ScoreManager : MonoBehaviour
         RefreshText();
     }
 
+    private void Start()
+    {
+        GameOverHandler.instance.OnGameOver += OnGameOverHandler;
+    }
+
+    private void OnGameOverHandler(GameOverType obj)
+    {
+        LeanTween.delayedCall(gameObject, 1f, () => scoreHolder.SetActive(false));
+    }
 
     public void ModifyScore(int scoreChange)
     {
@@ -32,4 +42,6 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = scoreTextBegin + score;
     }
+
+    public int GetScore() => score;
 }

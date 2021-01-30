@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class StrikeManager : MonoBehaviour
 {
     public static StrikeManager instance;
+    [SerializeField] private GameObject strikesHolder;
     [SerializeField] private Image[] strikeImages;
     [SerializeField] private Color strikeColor;
     private int strikesCount = 0;
@@ -24,11 +25,22 @@ public class StrikeManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        GameOverHandler.instance.OnGameOver += HandleGameOver;
+    }
+
+    private void HandleGameOver(GameOverType obj)
+    {
+        LeanTween.delayedCall(gameObject, 1f, () => strikesHolder.SetActive(false));
+
+    }
+
     public void AddStrike()
     {
         if (strikesCount == 3)
         {
-            Debug.Log("GAMEOVER ?");
+            GameOverHandler.instance.TriggerGameOver(GameOverType.StrikeOut);
         }
         else
         {

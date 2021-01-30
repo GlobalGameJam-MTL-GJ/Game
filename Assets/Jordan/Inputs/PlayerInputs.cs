@@ -16,6 +16,16 @@ public class PlayerInputs : MonoBehaviour
         playerInputActions = new PlayerInputActions();
     }
 
+    private void Start()
+    {
+        GameOverHandler.instance.OnGameOver += OnGameOverHandler;
+    }
+
+    private void OnGameOverHandler(GameOverType obj)
+    {
+        playerInputActions.Player.Disable();
+    }
+
     private void OnEnable()
     {
         MovementVector = Vector3.zero;
