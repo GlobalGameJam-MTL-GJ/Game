@@ -55,22 +55,28 @@ public class PlayerAction : MonoBehaviour
                 {
                     var customerOrderController = customerColliders[0].GetComponent<CustomerController>().CustomerOrderController;
                     Props props = pickedUpObject.GetComponent<Props>();
-                    if(props != null && customerOrderController.TryToCompleteOrder(props))
+                    if(props != null)
                     {
-                        //Update currentActivePropsList
+                        if (customerOrderController.TryToCompleteOrder(props))
+                        {
+                            PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
+                            LetGoOfTheItem();
+                            pickedUpObject = null;
+                            //give the item to the customers ?
+                        }
+                        else
+                        {
+                            //you gave THE WRONG ITEM to the customer TODO : ADD CONSEQUENCES
+                            //the customer must leave
+                            //the customer that left must talk to the propsbuilder and tell it what item will not be taken
+                            //the player keep the item in his hands
+                            //have a little delay so you cant spam the submit item action
+                        }
                     }
-                    // if (props != null && customerController.TryToCompleteOrder(props))
-                    // {
-                    //     //we gave the right item
-                    // }
-                    // else
-                    // {
-                    //     //we gave the wrong item
-                    // }
                 }
                 else
                 {
-                    Drop();
+                    Throw();
                 }
             }
         }
@@ -90,12 +96,17 @@ public class PlayerAction : MonoBehaviour
         pickedUpObject = itemObject;
     }
 
-    public void Drop()
+    public void Throw()
+    {
+        LetGoOfTheItem();
+        pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
+        pickedUpObject = null;
+    }
+
+    private void LetGoOfTheItem()
     {
         pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
-        pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
-        pickedUpObject = null;
     }
 
     private void OnDrawGizmos()

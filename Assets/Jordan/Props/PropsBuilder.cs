@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PropsBuilder : MonoBehaviour
 {
-    private static PropsBuilder instance;
+    public static PropsBuilder instance;
     
     private LevelConfigSO currentLevel;
     List<PropsPossibleMovement> propsPossibleMovements = new List<PropsPossibleMovement>();
