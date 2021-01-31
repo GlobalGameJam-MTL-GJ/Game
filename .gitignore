@@ -84,8 +84,6 @@ Assets/Fonts.meta
 Assets/Prefabs/Programmer.meta
 Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
 Assets/WwiseSettings.xml
-MtlGlobalGameJam2021Wwise/MtlGlobalGameJam2021.wproj
-*.wproj
 Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
 Assets/WwiseSettings.xml.meta
 Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h.meta
