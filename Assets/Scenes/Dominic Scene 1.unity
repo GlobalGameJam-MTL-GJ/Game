@@ -4606,6 +4606,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a53dc86e897c00419b29a60be50add1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1390036606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390036608}
+  - component: {fileID: 1390036607}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1390036607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390036606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c95477593435214d9126cdffeeb8f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: dee8304e11a1baf4b91ccb7649b84e2a, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  diffractionFlags: 11
+  engineLogging: 0
+--- !u!4 &1390036608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390036606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420088265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,10 +7114,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8528380301543973562, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ec0021eabb1e10f4f8d2baa3df666316, type: 2}
     - target: {fileID: 8528380301543973569, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
       propertyPath: m_Name
       value: WwiseGlobal
       objectReference: {fileID: 0}
+    - target: {fileID: 8528380301543973572, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b57d4be2da9a1f45a24c82becce54f9, type: 2}
+    - target: {fileID: 8528380301543973573, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ce1ac38fc5ed6da439fc1dffc9a8913f, type: 2}
+    - target: {fileID: 8528380301543973574, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: bdf2de5022fba6b43a3642055da9e10b, type: 2}
     - target: {fileID: 8528380301543973575, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
