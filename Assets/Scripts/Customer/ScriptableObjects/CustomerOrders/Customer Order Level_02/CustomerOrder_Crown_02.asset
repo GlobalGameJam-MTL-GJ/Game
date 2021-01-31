@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8204cfdb1af18dd4a93503da9495a480, type: 3}
-  m_Name: CustomerOrder_Sword_03
+  m_Name: CustomerOrder_Crown_02
   m_EditorClassIdentifier: 
-  _propsType: 0
-  _propImage: {fileID: 21300000, guid: 10111e97f5793c346a8c22e1fdd5e60b, type: 3}
-  _orderTime: 28
-  _score: 200
+  _propsType: 3
+  _propImage: {fileID: 21300000, guid: 70141d51621e24facbca9196bbde84b4, type: 3}
+  _orderTime: 30
+  _score: 1250

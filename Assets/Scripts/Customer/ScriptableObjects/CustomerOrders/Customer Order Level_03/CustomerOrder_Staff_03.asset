@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _propsType: 3
   _propImage: {fileID: 21300000, guid: 89f2051401e93b24091371195ef90a78, type: 3}
-  _orderTime: 30
+  _orderTime: 28
   _score: 500
