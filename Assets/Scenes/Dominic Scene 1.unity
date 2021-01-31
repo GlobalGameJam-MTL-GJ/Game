@@ -706,24 +706,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149440030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &159902688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8528380301543973569, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
-  m_PrefabInstance: {fileID: 8528380301144783099}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &159902690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159902688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4059aebecaa3ae49a91336e2ee6c5e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeManager: {fileID: 1350908518}
 --- !u!1 &187922582
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,6 +7145,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1245574416443814096, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: _timeManager
+      value: 
+      objectReference: {fileID: 1350908518}
     - target: {fileID: 8528380301543973560, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
       propertyPath: m_listeners.initialListenerList.Array.size
       value: 0

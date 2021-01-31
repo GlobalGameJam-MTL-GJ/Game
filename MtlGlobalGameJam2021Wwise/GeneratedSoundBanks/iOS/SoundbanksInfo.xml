@@ -1054,7 +1054,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="4293277137">
+		<SoundBank Id="3991942870" Language="SFX" Hash="850759353">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
