@@ -35,7 +35,6 @@ public class PlayerInputs : MonoBehaviour
 
     private void HandleMovement(InputAction.CallbackContext obj)
     {
-        AkSoundEngine.PostEvent("Player_Footsteps", gameObject);
         MovementVector = obj.ReadValue<Vector2>();
     }
 

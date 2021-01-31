@@ -11,6 +11,8 @@ public class MusicController : MonoBehaviour
     {
         if(col.gameObject.layer == 22)
         {
+            AkSoundEngine.PostEvent("Music_Play", gameObject);
+            AkSoundEngine.SetSwitch("Music_Type", "Play", gameObject);
             AkSoundEngine.SetState("RoomType", RoomType);
         }
     }
