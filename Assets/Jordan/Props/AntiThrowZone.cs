@@ -16,9 +16,12 @@ public class AntiThrowZone : MonoBehaviour
     {
         if (other.gameObject.layer != 22) return;
         camera.cullingMask |= 1 << 24;
-        Rooftop.SetActive(true);
-        LeanTween.cancelAll();
-        LeanTween.value(gameObject, 15, 1.26f, 0.8f).setEaseOutBounce().setOnUpdate(UpdateYPosition);
+        if (Rooftop != null)
+        {
+            Rooftop.SetActive(true);
+            LeanTween.cancel(Rooftop);
+            LeanTween.value(gameObject, 15, 1.26f, 0.8f).setEaseOutBounce().setOnUpdate(UpdateYPosition);
+        }
         PlayerAction playerAction = other.GetComponent<PlayerAction>();
         if (playerAction != null)
             playerAction.CanThrowOrDrop = false;
@@ -35,9 +38,12 @@ public class AntiThrowZone : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.layer != 22) return;
-        camera.cullingMask &= ~(1 << 24);
-        LeanTween.cancelAll();
-        LeanTween.value(gameObject, 1.26f, 15, 0.6f).setOnUpdate(UpdateYPosition).setOnComplete(() => Rooftop.SetActive(false));
+        if (Rooftop != null)
+        {
+            camera.cullingMask &= ~(1 << 24);
+            LeanTween.cancel(Rooftop);
+            LeanTween.value(gameObject, 1.26f, 15, 0.6f).setOnUpdate(UpdateYPosition).setOnComplete(() => Rooftop.SetActive(false));
+        }
         PlayerAction playerAction = other.GetComponent<PlayerAction>();
         if (playerAction != null)
             playerAction.CanThrowOrDrop = true;

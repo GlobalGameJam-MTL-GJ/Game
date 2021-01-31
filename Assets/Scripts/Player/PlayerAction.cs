@@ -88,6 +88,7 @@ public class PlayerAction : MonoBehaviour
                         {
                             PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
                             m_IsEquipped = false;
+                            playerMovement.SetSpeedModifier(0);
                             pickedUpObject = null;
                         }
                     }
