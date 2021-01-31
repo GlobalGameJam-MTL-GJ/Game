@@ -7,11 +7,15 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1992536912	RoomType			\Default Work Unit\RoomType	
+	4158285989	GameOver			\Default Work Unit\GameOver	
 
 State	ID	Name	State Group			Notes
 	748895195	None	RoomType			
 	2915384035	Backstore	RoomType			
 	3572512317	Frontstore	RoomType			
+	748895195	None	GameOver			
+	2452206122	False	GameOver			
+	3053630529	True	GameOver			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

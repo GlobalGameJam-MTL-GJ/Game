@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\</ProjectRoot>
-		<SourceFilesRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>G:\AltStorage\GPrograms\GGJ\Game\MtlGlobalGameJam2021Wwise\</ProjectRoot>
+		<SourceFilesRoot>G:\AltStorage\GPrograms\GGJ\Game\MtlGlobalGameJam2021Wwise\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>G:\AltStorage\GPrograms\GGJ\Game\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Android\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>G:\AltStorage\GPrograms\GGJ\Game\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>NPC</ShortName>
 			<Path>NPC.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3226713398" Name="NPC_Bell" ObjectPath="\Events\Default Work Unit\NPC_Bell">
+				<Event Id="3226713398" Name="NPC_Bell" ObjectPath="\Events\Default Work Unit\NPC_Bell" DurationType="OneShot" DurationMin="1.821437" DurationMax="1.821437">
 					<IncludedMemoryFiles>
 						<File Id="804081672" Language="SFX">
 							<ShortName>Level_Bell.wav</ShortName>
@@ -31,7 +31,7 @@
 			<ShortName>Props</ShortName>
 			<Path>Props.bnk</Path>
 			<IncludedEvents>
-				<Event Id="986777071" Name="Prop_Impact" ObjectPath="\Events\Default Work Unit\Prop_Impact">
+				<Event Id="986777071" Name="Prop_Impact" ObjectPath="\Events\Default Work Unit\Prop_Impact" DurationType="OneShot" DurationMin="1.324865" DurationMax="2.675608">
 					<IncludedMemoryFiles>
 						<File Id="6388350" Language="SFX">
 							<ShortName>Sword_Impact-003.wav</ShortName>
@@ -195,7 +195,7 @@
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1922690190" Name="Player_Drop" ObjectPath="\Events\Default Work Unit\Player_Drop">
+				<Event Id="1922690190" Name="Player_Drop" ObjectPath="\Events\Default Work Unit\Player_Drop" DurationType="OneShot" DurationMin="1.474753" DurationMax="2.375197">
 					<IncludedMemoryFiles>
 						<File Id="33237598" Language="SFX">
 							<ShortName>Crown_Drop-004.wav</ShortName>
@@ -325,7 +325,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps">
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="1.110291" DurationMax="1.334350">
 					<IncludedMemoryFiles>
 						<File Id="151075647" Language="SFX">
 							<ShortName>Player_Footstep-007.wav</ShortName>
@@ -369,7 +369,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1627434233" Name="Player_Pickup" ObjectPath="\Events\Default Work Unit\Player_Pickup">
+				<Event Id="1627434233" Name="Player_Pickup" ObjectPath="\Events\Default Work Unit\Player_Pickup" DurationType="OneShot" DurationMin="1.601322" DurationMax="3.224498">
 					<IncludedMemoryFiles>
 						<File Id="4083603" Language="SFX">
 							<ShortName>Grimoire_Pickup-005.wav</ShortName>
@@ -524,7 +524,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="65181031" Name="Player_Throw" ObjectPath="\Events\Default Work Unit\Player_Throw">
+				<Event Id="65181031" Name="Player_Throw" ObjectPath="\Events\Default Work Unit\Player_Throw" DurationType="OneShot" DurationMin="1.044672" DurationMax="1.207126">
 					<IncludedMemoryFiles>
 						<File Id="340131091" Language="SFX">
 							<ShortName>Player_Throw-007.wav</ShortName>
@@ -569,17 +569,48 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4034738816">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3398419312">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX" Hash="1241248770">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI_Hover" DurationType="OneShot" DurationMin="0.204917" DurationMax="0.204917">
+					<IncludedMemoryFiles>
+						<File Id="906417135" Language="SFX">
+							<ShortName>UI_Hover.wav</ShortName>
+							<Path>SFX\UI_Hover_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI_Select" DurationType="OneShot" DurationMin="0.290229" DurationMax="0.290229">
+					<IncludedMemoryFiles>
+						<File Id="163861650" Language="SFX">
+							<ShortName>UI_Select.wav</ShortName>
+							<Path>SFX\UI_Select_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI_StartGame" DurationType="OneShot" DurationMin="1.849875" DurationMax="1.849875">
+					<IncludedMemoryFiles>
+						<File Id="674515717" Language="SFX">
+							<ShortName>UI_StartGame.wav</ShortName>
+							<Path>SFX\UI_StartGame_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="2782712965" Language="SFX" Hash="3322851841">
 			<ObjectPath>\SoundBanks\Default Work Unit\Level</ObjectPath>
 			<ShortName>Level</ShortName>
 			<Path>Level.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4002963088" Name="Level_Door" ObjectPath="\Events\Default Work Unit\Level_Door">
+				<Event Id="4002963088" Name="Level_Door" ObjectPath="\Events\Default Work Unit\Level_Door" DurationType="OneShot" DurationMin="0.938899" DurationMax="1.594227">
 					<IncludedMemoryFiles>
 						<File Id="190713847" Language="SFX">
 							<ShortName>Level_Door-001.wav</ShortName>
@@ -603,7 +634,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1976190133" Name="Level_Spawn" ObjectPath="\Events\Default Work Unit\Level_Spawn">
+				<Event Id="1976190133" Name="Level_Spawn" ObjectPath="\Events\Default Work Unit\Level_Spawn" DurationType="OneShot" DurationMin="1.314325" DurationMax="1.631684">
 					<IncludedMemoryFiles>
 						<File Id="212193479" Language="SFX">
 							<ShortName>Level_Spawn-004.wav</ShortName>
@@ -629,12 +660,59 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3303635992">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3325578207">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2177735725" Name="Music_Level" ObjectPath="\Events\Default Work Unit\Music_Level"/>
+				<Event Id="2897915005" Name="Music_GameOver" ObjectPath="\Events\Default Work Unit\Music_GameOver" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="618077781" Language="SFX">
+							<ShortName>Music_GameOver_Intro_9beats_F_230bpm.wav</ShortName>
+							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1072004486" Language="SFX">
+							<ShortName>Music_GameOver_Intro_loop6bars_F_230bpm.wav</ShortName>
+							<Path>SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2177735725" Name="Music_Level" ObjectPath="\Events\Default Work Unit\Music_Level" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="113764829" Language="SFX">
+							<ShortName>Music_Gameplay_Frontstore_02_C_180bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="173890151" Language="SFX">
+							<ShortName>Music_Gameplay_Frontstore_01_C_160bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Frontstore_01_C_160bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="188154731" Language="SFX">
+							<ShortName>Music_Gameplay_Backstore_01_C_160bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Backstore_01_C_160bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="255489815" Language="SFX">
+							<ShortName>Music_Gameplay_Backstore_02_C_180bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="536964545" Language="SFX">
+							<ShortName>XD_ClockFast180.wav</ShortName>
+							<Path>SFX\XD_ClockFast180_D79FB2B7.wem</Path>
+						</File>
+						<File Id="679901182" Language="SFX">
+							<ShortName>XD_ClockSlow160.wav</ShortName>
+							<Path>SFX\XD_ClockSlow160_D79FB2B7.wem</Path>
+						</File>
+						<File Id="808146414" Language="SFX">
+							<ShortName>XD_ClockRush180.wav</ShortName>
+							<Path>SFX\XD_ClockRush180_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1021251280" Language="SFX">
+							<ShortName>XD_WhistleRush.wav</ShortName>
+							<Path>SFX\XD_WhistleRush_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1182830809" Name="Clock" ObjectPath="\Game Parameters\Default Work Unit\Clock"/>
