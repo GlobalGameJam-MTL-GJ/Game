@@ -7,6 +7,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
@@ -55,6 +56,15 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+MtlGlobalGameJam2021Wwise/.cache
+MtlGlobalGameJam2021Wwise/iOS/SoundbanksInfo.xml
+MtlGlobalGameJam2021Wwise/iOS/PluginInfo.xml
+MtlGlobalGameJam2021Wwise/Andriod/SoundbanksInfo.xml
+MtlGlobalGameJam2021Wwise/Andriod/PluginInfo.xml
+MtlGlobalGameJam2021Wwise/Mac/SoundbanksInfo.xml
+MtlGlobalGameJam2021Wwise/Mac/PluginInfo.xml
+MtlGlobalGameJam2021Wwise/Windows/SoundbanksInfo.xml
+MtlGlobalGameJam2021Wwise/Windows/PluginInfo.xml
 QuickSearch.settings
 workspace.xml
 CodeCoverage/Report
