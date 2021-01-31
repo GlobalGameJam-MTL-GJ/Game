@@ -1,5 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	682644430	Prop_Success			\Default Work Unit\Prop_Success	
 	986777071	Prop_Impact			\Default Work Unit\Prop_Impact	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -13,29 +12,28 @@ Switch	ID	Name	Switch Group			Notes
 	4272075576	Potion	PropType			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	6388350	Sword_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Sword_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-003		365596
-	41460530	Bow_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Bow_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-001		355844
-	55368057	Potion_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Potion_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-003		412384
-	63812572	Potion_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Potion_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-004		424780
-	139417145	Bow_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Bow_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-003		329928
-	222017774	Sword_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Sword_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-005		340336
-	246988690	Grimoire_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Grimoire_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-004		288556
-	312724487	Crown_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Crown_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-004		347584
-	318893043	Sword_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Sword_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-001		337428
-	358367333	Sword_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Sword_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-004		366504
-	426823519	Potion_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Potion_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-002		403436
-	452162044	Bow_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Bow_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-004		296728
-	453099768	SFX_ItemSuccess_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\SFX_ItemSuccess_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\XD\Prop_Success\SFX_ItemSuccess_01		150424
-	455916758	Grimoire_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Grimoire_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-005		274424
-	622889676	Bow_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Bow_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-002		334524
-	629450431	Bow_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Bow_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-005		343700
-	630471237	Sword_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Sword_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-002		405268
-	733872165	Grimoire_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Grimoire_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-003		295844
-	737891590	Grimoire_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Grimoire_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-001		269564
-	757816052	Grimoire_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Grimoire_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-002		277832
-	840654838	Crown_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Crown_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-002		353904
-	900904865	Crown_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Crown_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-005		372544
-	962975166	Crown_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Crown_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-003		351236
-	976848952	Crown_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Crown_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-001		332052
-	1013367102	Potion_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\SFX\Potion_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-001		484948
+	6388350	Sword_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Sword_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-003		365596
+	41460530	Bow_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Bow_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-001		355844
+	55368057	Potion_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Potion_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-003		412384
+	63812572	Potion_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Potion_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-004		424780
+	139417145	Bow_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Bow_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-003		329928
+	222017774	Sword_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Sword_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-005		340336
+	246988690	Grimoire_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Grimoire_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-004		288556
+	312724487	Crown_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Crown_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-004		347584
+	318893043	Sword_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Sword_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-001		337428
+	358367333	Sword_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Sword_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-004		366504
+	426823519	Potion_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Potion_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-002		403436
+	452162044	Bow_Impact-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Bow_Impact-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-004		296728
+	455916758	Grimoire_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Grimoire_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-005		274424
+	622889676	Bow_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Bow_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-002		334524
+	629450431	Bow_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Bow_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Bow_Impact\Bow_Impact-005		343700
+	630471237	Sword_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Sword_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Sword_Impact\Sword_Impact-002		405268
+	733872165	Grimoire_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Grimoire_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-003		295844
+	737891590	Grimoire_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Grimoire_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-001		269564
+	757816052	Grimoire_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Grimoire_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Grimoire_Impact\Grimoire_Impact-002		277832
+	840654838	Crown_Impact-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Crown_Impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-002		353904
+	900904865	Crown_Impact-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Crown_Impact-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-005		372544
+	962975166	Crown_Impact-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Crown_Impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-003		351236
+	976848952	Crown_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Crown_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Crown_Impact\Crown_Impact-001		332052
+	1013367102	Potion_Impact-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\SFX\Potion_Impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Impact\Potion_Impact\Potion_Impact-001		484948
 

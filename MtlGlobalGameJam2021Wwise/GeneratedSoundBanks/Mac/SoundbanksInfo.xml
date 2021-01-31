@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\</ProjectRoot>
-		<SourceFilesRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\</ProjectRoot>
+		<SourceFilesRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="662417162" Language="SFX" Hash="361399088">
+		<SoundBank Id="662417162" Language="SFX" Hash="3459857840">
 			<ObjectPath>\SoundBanks\Default Work Unit\NPC</ObjectPath>
 			<ShortName>NPC</ShortName>
 			<Path>NPC.bnk</Path>
@@ -24,310 +24,9 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1034569512" Name="NPC_BossStrike" ObjectPath="\Events\Default Work Unit\NPC_BossStrike" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.230208">
-					<IncludedMemoryFiles>
-						<File Id="490251" Language="SFX">
-							<ShortName>Mumbles_BossStrike_06.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_06_10C4C929.wem</Path>
-						</File>
-						<File Id="127271707" Language="SFX">
-							<ShortName>Mumbles_BossStrike_05.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_05_10C4C929.wem</Path>
-						</File>
-						<File Id="512413283" Language="SFX">
-							<ShortName>SFX_Strike_02.wav</ShortName>
-							<Path>SFX\SFX_Strike_02_10C4C929.wem</Path>
-						</File>
-						<File Id="658540419" Language="SFX">
-							<ShortName>Mumbles_BossStrike_04.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_04_10C4C929.wem</Path>
-						</File>
-						<File Id="770769695" Language="SFX">
-							<ShortName>SFX_Strike_01.wav</ShortName>
-							<Path>SFX\SFX_Strike_01_10C4C929.wem</Path>
-						</File>
-						<File Id="1054492542" Language="SFX">
-							<ShortName>SFX_Strike_03.wav</ShortName>
-							<Path>SFX\SFX_Strike_03_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2571308781" Name="NPC_Voice" ObjectPath="\Events\Default Work Unit\NPC_Voice" DurationType="OneShot" DurationMin="1.029904" DurationMax="3.366819">
-					<IncludedMemoryFiles>
-						<File Id="127113419" Language="SFX">
-							<ShortName>Mumbles_PrincessMad_05.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_05_10C4C929.wem</Path>
-						</File>
-						<File Id="129017961" Language="SFX">
-							<ShortName>Mumbles_KnightAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_01_10C4C929.wem</Path>
-						</File>
-						<File Id="131501250" Language="SFX">
-							<ShortName>Mumbles_WizardHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_02_10C4C929.wem</Path>
-						</File>
-						<File Id="173906759" Language="SFX">
-							<ShortName>Mumbles_PrincessMad_04.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_04_10C4C929.wem</Path>
-						</File>
-						<File Id="189667805" Language="SFX">
-							<ShortName>Mumbles_PrincessHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_01_10C4C929.wem</Path>
-						</File>
-						<File Id="208789235" Language="SFX">
-							<ShortName>Mumbles_KnightAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_03_10C4C929.wem</Path>
-						</File>
-						<File Id="289942089" Language="SFX">
-							<ShortName>Mumbles_PrincessHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_05_10C4C929.wem</Path>
-						</File>
-						<File Id="297340003" Language="SFX">
-							<ShortName>Mumbles_KnightHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_01_10C4C929.wem</Path>
-						</File>
-						<File Id="351532228" Language="SFX">
-							<ShortName>Mumbles_KnightHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_02_10C4C929.wem</Path>
-						</File>
-						<File Id="362829846" Language="SFX">
-							<ShortName>Mumbles_WizardAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_04_10C4C929.wem</Path>
-						</File>
-						<File Id="374593558" Language="SFX">
-							<ShortName>Mumbles_KnightAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_04_10C4C929.wem</Path>
-						</File>
-						<File Id="438320385" Language="SFX">
-							<ShortName>Mumbles_WizardAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_01_10C4C929.wem</Path>
-						</File>
-						<File Id="467360734" Language="SFX">
-							<ShortName>Mumbles_PrincessHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_04_10C4C929.wem</Path>
-						</File>
-						<File Id="476742448" Language="SFX">
-							<ShortName>Mumbles_KnightAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_05_10C4C929.wem</Path>
-						</File>
-						<File Id="494117789" Language="SFX">
-							<ShortName>Mumbles_KnightHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_03_10C4C929.wem</Path>
-						</File>
-						<File Id="496050525" Language="SFX">
-							<ShortName>Mumbles_ElfAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_02_10C4C929.wem</Path>
-						</File>
-						<File Id="509623129" Language="SFX">
-							<ShortName>Mumbles_ElfHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_04_10C4C929.wem</Path>
-						</File>
-						<File Id="518067381" Language="SFX">
-							<ShortName>Mumbles_ElfHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_05_10C4C929.wem</Path>
-						</File>
-						<File Id="528386332" Language="SFX">
-							<ShortName>Mumbles_PrincessHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_02_10C4C929.wem</Path>
-						</File>
-						<File Id="577980927" Language="SFX">
-							<ShortName>Mumbles_ElfHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_01_10C4C929.wem</Path>
-						</File>
-						<File Id="586901859" Language="SFX">
-							<ShortName>Mumbles_ElfHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_02_10C4C929.wem</Path>
-						</File>
-						<File Id="604073838" Language="SFX">
-							<ShortName>Mumbles_ElfHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_03_10C4C929.wem</Path>
-						</File>
-						<File Id="626424636" Language="SFX">
-							<ShortName>Mumbles_ElfAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_01_10C4C929.wem</Path>
-						</File>
-						<File Id="663158529" Language="SFX">
-							<ShortName>Mumbles_WizardHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_05_10C4C929.wem</Path>
-						</File>
-						<File Id="670619239" Language="SFX">
-							<ShortName>Mumbles_PrincessHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_03_10C4C929.wem</Path>
-						</File>
-						<File Id="702839602" Language="SFX">
-							<ShortName>Mumbles_KnightAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_02_10C4C929.wem</Path>
-						</File>
-						<File Id="744097578" Language="SFX">
-							<ShortName>Mumbles_WizardHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_01_10C4C929.wem</Path>
-						</File>
-						<File Id="799725194" Language="SFX">
-							<ShortName>Mumbles_ElfAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_03_10C4C929.wem</Path>
-						</File>
-						<File Id="808605643" Language="SFX">
-							<ShortName>Mumbles_PrincessMad_01.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_01_10C4C929.wem</Path>
-						</File>
-						<File Id="809231405" Language="SFX">
-							<ShortName>Mumbles_PrincessMad_02.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_02_10C4C929.wem</Path>
-						</File>
-						<File Id="837956154" Language="SFX">
-							<ShortName>Mumbles_KnightHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_05_10C4C929.wem</Path>
-						</File>
-						<File Id="905755032" Language="SFX">
-							<ShortName>Mumbles_WizardAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_05_10C4C929.wem</Path>
-						</File>
-						<File Id="949644403" Language="SFX">
-							<ShortName>Mumbles_ElfAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_04_10C4C929.wem</Path>
-						</File>
-						<File Id="951697123" Language="SFX">
-							<ShortName>Mumbles_WizardAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_03_10C4C929.wem</Path>
-						</File>
-						<File Id="956485800" Language="SFX">
-							<ShortName>Mumbles_ElfAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_05_10C4C929.wem</Path>
-						</File>
-						<File Id="989983889" Language="SFX">
-							<ShortName>Mumbles_KnightHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_04_10C4C929.wem</Path>
-						</File>
-						<File Id="1024286458" Language="SFX">
-							<ShortName>Mumbles_WizardHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_04_10C4C929.wem</Path>
-						</File>
-						<File Id="1040773399" Language="SFX">
-							<ShortName>Mumbles_WizardAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_02_10C4C929.wem</Path>
-						</File>
-						<File Id="1048492323" Language="SFX">
-							<ShortName>Mumbles_WizardHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_03_10C4C929.wem</Path>
-						</File>
-						<File Id="1073478864" Language="SFX">
-							<ShortName>Mumbles_PrincessMad_03.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_03_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{B816CF23-1529-48E5-92B7-D7B52ECEB15A}">
-							<Children>
-								<SwitchContainer SwitchValue="{EF7F605B-5661-40A9-B4DE-533F35C9951E}">
-									<Media>
-										<File Id="509623129"/>
-										<File Id="518067381"/>
-										<File Id="577980927"/>
-										<File Id="586901859"/>
-										<File Id="604073838"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}">
-									<Media>
-										<File Id="496050525"/>
-										<File Id="626424636"/>
-										<File Id="799725194"/>
-										<File Id="949644403"/>
-										<File Id="956485800"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{2175A416-C4AF-43AA-89AC-F032AC2657C9}">
-							<Children>
-								<SwitchContainer SwitchValue="{EF7F605B-5661-40A9-B4DE-533F35C9951E}">
-									<Media>
-										<File Id="131501250"/>
-										<File Id="663158529"/>
-										<File Id="744097578"/>
-										<File Id="1024286458"/>
-										<File Id="1048492323"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}">
-									<Media>
-										<File Id="362829846"/>
-										<File Id="438320385"/>
-										<File Id="905755032"/>
-										<File Id="951697123"/>
-										<File Id="1040773399"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{7870E674-01BF-4684-9846-05BB0A5DA9DD}">
-							<Children>
-								<SwitchContainer SwitchValue="{EF7F605B-5661-40A9-B4DE-533F35C9951E}">
-									<Media>
-										<File Id="297340003"/>
-										<File Id="351532228"/>
-										<File Id="494117789"/>
-										<File Id="837956154"/>
-										<File Id="989983889"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}">
-									<Media>
-										<File Id="129017961"/>
-										<File Id="208789235"/>
-										<File Id="374593558"/>
-										<File Id="476742448"/>
-										<File Id="702839602"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{56531AED-F722-4006-A537-0B7121507920}">
-							<Children>
-								<SwitchContainer SwitchValue="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}">
-									<Media>
-										<File Id="127113419"/>
-										<File Id="173906759"/>
-										<File Id="808605643"/>
-										<File Id="809231405"/>
-										<File Id="1073478864"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{EF7F605B-5661-40A9-B4DE-533F35C9951E}">
-									<Media>
-										<File Id="189667805"/>
-										<File Id="289942089"/>
-										<File Id="467360734"/>
-										<File Id="528386332"/>
-										<File Id="670619239"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="3691762776" Name="NPC_Timer" ObjectPath="\Game Parameters\Default Work Unit\NPC_Timer"/>
-			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="3879136259" Name="NPCMood" ObjectPath="\Switches\Default Work Unit\NPCMood">
-					<Switches>
-						<Switch Id="1206605712" Name="Angry" ObjectPath="\Switches\Default Work Unit\NPCMood\Angry"/>
-						<Switch Id="1427264549" Name="Happy" ObjectPath="\Switches\Default Work Unit\NPCMood\Happy"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="4239148746" Name="NPCType" ObjectPath="\Switches\Default Work Unit\NPCType">
-					<Switches>
-						<Switch Id="2871106020" Name="Princess" ObjectPath="\Switches\Default Work Unit\NPCType\Princess"/>
-						<Switch Id="563281696" Name="Elf" ObjectPath="\Switches\Default Work Unit\NPCType\Elf"/>
-						<Switch Id="2837605046" Name="Knight" ObjectPath="\Switches\Default Work Unit\NPCType\Knight"/>
-						<Switch Id="3202541808" Name="Wizard" ObjectPath="\Switches\Default Work Unit\NPCType\Wizard"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="968010305" Language="SFX" Hash="4072048737">
+		<SoundBank Id="968010305" Language="SFX" Hash="203970348">
 			<ObjectPath>\SoundBanks\Default Work Unit\Props</ObjectPath>
 			<ShortName>Props</ShortName>
 			<Path>Props.bnk</Path>
@@ -477,14 +176,6 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-				</Event>
-				<Event Id="682644430" Name="Prop_Success" ObjectPath="\Events\Default Work Unit\Prop_Success" DurationType="OneShot" DurationMin="0.697314" DurationMax="0.930802">
-					<IncludedMemoryFiles>
-						<File Id="453099768" Language="SFX">
-							<ShortName>SFX_ItemSuccess_01.wav</ShortName>
-							<Path>SFX\SFX_ItemSuccess_01_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<SwitchGroups>
@@ -878,24 +569,16 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2282792444">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4054947371">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="3487024685">
+		<SoundBank Id="1551306167" Language="SFX" Hash="1241248770">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Default Work Unit\UI_Back" DurationType="OneShot" DurationMin="0.170208" DurationMax="0.170208">
-					<IncludedMemoryFiles>
-						<File Id="880386914" Language="SFX">
-							<ShortName>UI_Back.wav</ShortName>
-							<Path>SFX\UI_Back_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI_Hover" DurationType="OneShot" DurationMin="0.204917" DurationMax="0.204917">
 					<IncludedMemoryFiles>
 						<File Id="906417135" Language="SFX">
@@ -922,7 +605,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2782712965" Language="SFX" Hash="90837673">
+		<SoundBank Id="2782712965" Language="SFX" Hash="3322851841">
 			<ObjectPath>\SoundBanks\Default Work Unit\Level</ObjectPath>
 			<ShortName>Level</ShortName>
 			<Path>Level.bnk</Path>
@@ -951,71 +634,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3813899962" Name="Level_Roof" ObjectPath="\Events\Default Work Unit\Level_Roof" DurationType="OneShot" DurationMin="0.483460" DurationMax="1.469299">
-					<IncludedMemoryFiles>
-						<File Id="103990794" Language="SFX">
-							<ShortName>Level_RoofFall-002.wav</ShortName>
-							<Path>SFX\Level_RoofFall-002_10C4C929.wem</Path>
-						</File>
-						<File Id="182270053" Language="SFX">
-							<ShortName>Level_RoofFall-004.wav</ShortName>
-							<Path>SFX\Level_RoofFall-004_10C4C929.wem</Path>
-						</File>
-						<File Id="244667686" Language="SFX">
-							<ShortName>Level_RoofRise-002.wav</ShortName>
-							<Path>SFX\Level_RoofRise-002_10C4C929.wem</Path>
-						</File>
-						<File Id="579106117" Language="SFX">
-							<ShortName>Level_RoofFall-005.wav</ShortName>
-							<Path>SFX\Level_RoofFall-005_10C4C929.wem</Path>
-						</File>
-						<File Id="632822566" Language="SFX">
-							<ShortName>Level_RoofFall-003.wav</ShortName>
-							<Path>SFX\Level_RoofFall-003_10C4C929.wem</Path>
-						</File>
-						<File Id="648224893" Language="SFX">
-							<ShortName>Level_RoofRise-001.wav</ShortName>
-							<Path>SFX\Level_RoofRise-001_10C4C929.wem</Path>
-						</File>
-						<File Id="660519050" Language="SFX">
-							<ShortName>Level_RoofRise-004.wav</ShortName>
-							<Path>SFX\Level_RoofRise-004_10C4C929.wem</Path>
-						</File>
-						<File Id="836571899" Language="SFX">
-							<ShortName>Level_RoofRise-003.wav</ShortName>
-							<Path>SFX\Level_RoofRise-003_10C4C929.wem</Path>
-						</File>
-						<File Id="848232120" Language="SFX">
-							<ShortName>Level_RoofRise-005.wav</ShortName>
-							<Path>SFX\Level_RoofRise-005_10C4C929.wem</Path>
-						</File>
-						<File Id="948975430" Language="SFX">
-							<ShortName>Level_RoofFall-001.wav</ShortName>
-							<Path>SFX\Level_RoofFall-001_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{D48E3D71-EF95-4F62-9A6D-ABD24111EA04}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}">
-							<Media>
-								<File Id="103990794"/>
-								<File Id="182270053"/>
-								<File Id="579106117"/>
-								<File Id="632822566"/>
-								<File Id="948975430"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}">
-							<Media>
-								<File Id="244667686"/>
-								<File Id="648224893"/>
-								<File Id="660519050"/>
-								<File Id="836571899"/>
-								<File Id="848232120"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
 				<Event Id="1976190133" Name="Level_Spawn" ObjectPath="\Events\Default Work Unit\Level_Spawn" DurationType="OneShot" DurationMin="1.314325" DurationMax="1.631684">
 					<IncludedMemoryFiles>
 						<File Id="212193479" Language="SFX">
@@ -1041,62 +659,29 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
-			<StateGroups>
-				<StateGroup Id="1992536912" Name="RoomType" ObjectPath="\States\Default Work Unit\RoomType">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\RoomType\None"/>
-						<State Id="3572512317" Name="Frontstore" ObjectPath="\States\Default Work Unit\RoomType\Frontstore"/>
-						<State Id="2915384035" Name="Backstore" ObjectPath="\States\Default Work Unit\RoomType\Backstore"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2478661027">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3325578207">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="193027072" Name="Clock_Start" ObjectPath="\Events\Default Work Unit\Clock_Start" DurationType="Infinite">
+				<Event Id="2897915005" Name="Music_GameOver" ObjectPath="\Events\Default Work Unit\Music_GameOver" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="536964545" Language="SFX">
-							<ShortName>XD_ClockFast180.wav</ShortName>
-							<Path>SFX\XD_ClockFast180_D79FB2B7.wem</Path>
+						<File Id="618077781" Language="SFX">
+							<ShortName>Music_GameOver_Intro_9beats_F_230bpm.wav</ShortName>
+							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem</Path>
 						</File>
-						<File Id="679901182" Language="SFX">
-							<ShortName>XD_ClockSlow160.wav</ShortName>
-							<Path>SFX\XD_ClockSlow160_D79FB2B7.wem</Path>
-						</File>
-						<File Id="808146414" Language="SFX">
-							<ShortName>XD_ClockRush180.wav</ShortName>
-							<Path>SFX\XD_ClockRush180_D79FB2B7.wem</Path>
+						<File Id="1072004486" Language="SFX">
+							<ShortName>Music_GameOver_Intro_loop6bars_F_230bpm.wav</ShortName>
+							<Path>SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1598298728" Name="Music_Menu" ObjectPath="\Events\Default Work Unit\Music_Menu" DurationType="Infinite">
+				<Event Id="2177735725" Name="Music_Level" ObjectPath="\Events\Default Work Unit\Music_Level" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="267581053" Language="SFX">
-							<ShortName>Music_Menu_Intro_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Intro_G_150bpm_D79FB2B7.wem</Path>
-						</File>
-						<File Id="640894875" Language="SFX">
-							<ShortName>Music_Menu_Loop_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Loop_G_150bpm_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="202194903" Name="Music_Play" ObjectPath="\Events\Default Work Unit\Music_Play" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="66918242" Language="SFX">
-							<ShortName>Music_Stinger_Win_Eb_130bpm.wav</ShortName>
-							<Path>SFX\Music_Stinger_Win_Eb_130bpm_D79FB2B7.wem</Path>
-						</File>
 						<File Id="113764829" Language="SFX">
 							<ShortName>Music_Gameplay_Frontstore_02_C_180bpm.wav</ShortName>
 							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_D79FB2B7.wem</Path>
-						</File>
-						<File Id="144058494" Language="SFX">
-							<ShortName>Music_Win_Loop_Eb_130bpm.wav</ShortName>
-							<Path>SFX\Music_Win_Loop_Eb_130bpm_D79FB2B7.wem</Path>
 						</File>
 						<File Id="173890151" Language="SFX">
 							<ShortName>Music_Gameplay_Frontstore_01_C_160bpm.wav</ShortName>
@@ -1110,74 +695,28 @@
 							<ShortName>Music_Gameplay_Backstore_02_C_180bpm.wav</ShortName>
 							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_D79FB2B7.wem</Path>
 						</File>
-						<File Id="618077781" Language="SFX">
-							<ShortName>Music_GameOver_Intro_9beats_F_230bpm.wav</ShortName>
-							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem</Path>
+						<File Id="536964545" Language="SFX">
+							<ShortName>XD_ClockFast180.wav</ShortName>
+							<Path>SFX\XD_ClockFast180_D79FB2B7.wem</Path>
+						</File>
+						<File Id="679901182" Language="SFX">
+							<ShortName>XD_ClockSlow160.wav</ShortName>
+							<Path>SFX\XD_ClockSlow160_D79FB2B7.wem</Path>
+						</File>
+						<File Id="808146414" Language="SFX">
+							<ShortName>XD_ClockRush180.wav</ShortName>
+							<Path>SFX\XD_ClockRush180_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1021251280" Language="SFX">
 							<ShortName>XD_WhistleRush.wav</ShortName>
 							<Path>SFX\XD_WhistleRush_D79FB2B7.wem</Path>
 						</File>
-						<File Id="1072004486" Language="SFX">
-							<ShortName>Music_GameOver_Intro_loop6bars_F_230bpm.wav</ShortName>
-							<Path>SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{55E6F690-C695-4262-B5EA-882240CA3013}">
-							<Media>
-								<File Id="618077781"/>
-								<File Id="1072004486"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9E480738-C8A4-40E3-AB07-A8A77768BD36}">
-							<Children>
-								<SwitchContainer SwitchValue="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}">
-									<Media>
-										<File Id="188154731"/>
-										<File Id="255489815"/>
-										<File Id="1021251280"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}">
-									<Media>
-										<File Id="113764829"/>
-										<File Id="173890151"/>
-										<File Id="1021251280"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}">
-							<Media>
-								<File Id="66918242"/>
-								<File Id="144058494"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1182830809" Name="Clock" ObjectPath="\Game Parameters\Default Work Unit\Clock"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="1992536912" Name="RoomType" ObjectPath="\States\Default Work Unit\RoomType">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\RoomType\None"/>
-						<State Id="3572512317" Name="Frontstore" ObjectPath="\States\Default Work Unit\RoomType\Frontstore"/>
-						<State Id="2915384035" Name="Backstore" ObjectPath="\States\Default Work Unit\RoomType\Backstore"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
-			<SwitchGroups>
-				<SwitchGroup Id="4048174150" Name="MusicType" ObjectPath="\Switches\Default Work Unit\MusicType">
-					<Switches>
-						<Switch Id="979765101" Name="Win" ObjectPath="\Switches\Default Work Unit\MusicType\Win"/>
-						<Switch Id="221232726" Name="Lose" ObjectPath="\Switches\Default Work Unit\MusicType\Lose"/>
-						<Switch Id="1256202815" Name="Play" ObjectPath="\Switches\Default Work Unit\MusicType\Play"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3552322078a499748909b8086bff0676, type: 3}
+  m_Name: Level_03
+  m_EditorClassIdentifier: 
+  maximumPropsAtOnce: 10
+  propsPossibleMovements:
+  - propsMovementType: 0
+    spawnChance: 0.128
+    adjustedSpawnChance: 0.18388163
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 3
+    minimumOfThisTypeForTheLevel: 7
+    maximumOfThisTypeForTheLevel: 20
+  - propsMovementType: 1
+    spawnChance: 0.384
+    adjustedSpawnChance: 0.2576816
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 4
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 40
+  - propsMovementType: 2
+    spawnChance: 0.187
+    adjustedSpawnChance: 0.131648
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 8
+    maximumOfThisTypeForTheLevel: 30
+  - propsMovementType: 3
+    spawnChance: 0.587
+    adjustedSpawnChance: 0.34329155
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 4
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 100
+  propsPossibleTypes:
+  - propsType: 0
+    spawnChance: 0.11
+    adjustedSpawnChance: 0.124717906
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 3
+    maximumOfThisTypeForTheLevel: 50
+  - propsType: 1
+    spawnChance: 0.15
+    adjustedSpawnChance: 0.13200001
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 50
+  - propsType: 2
+    spawnChance: 0.15
+    adjustedSpawnChance: 0.15972002
+    minimumOfThisTypeAtOnce: 0
+    maximumOfThisTypeAtOnce: 1
+    minimumOfThisTypeForTheLevel: 4
+    maximumOfThisTypeForTheLevel: 50
+  - propsType: 3
+    spawnChance: 0.19
+    adjustedSpawnChance: 0.1618496
+    minimumOfThisTypeAtOnce: 1
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 50
+  - propsType: 4
+    spawnChance: 0.19
+    adjustedSpawnChance: 0.17803459
+    minimumOfThisTypeAtOnce: 1
+    maximumOfThisTypeAtOnce: 2
+    minimumOfThisTypeForTheLevel: 5
+    maximumOfThisTypeForTheLevel: 50

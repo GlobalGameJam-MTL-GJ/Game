@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{821C9932-E27A-480B-9BAD-8DC65F94D659}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{821C9932-E27A-480B-9BAD-8DC65F94D659}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundcasterSession Name="New Soundcaster Session" ID="{3365B691-6509-4F19-9452-7EC86F26F198}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Music_Play" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>
-							<Value>181</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="NPC_Timer" ID="{FDA3B0D1-9FA3-4C11-9A0F-D73CBBE34B8B}"/>
-							<Value>21.016</Value>
-						</RTPCValue>
-					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Frontstore" ID="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
-						<CurrentSwitchRef Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
-						<CurrentSwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
-						<CurrentSwitchRef Name="Princess" ID="{56531AED-F722-4006-A537-0B7121507920}"/>
-					</CurrentSwitchList>
-				</SoundcasterSession>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{821C9932-E27A-480B-9BAD-8DC65F94D659}" PersistMode="Standalone"/>
 	</SoundcasterSessions>
 </WwiseDocument>

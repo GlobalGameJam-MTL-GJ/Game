@@ -9,12 +9,6 @@
 						<Property Name="Max" Type="Real64" Value="181"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="NPC_Timer" ID="{FDA3B0D1-9FA3-4C11-9A0F-D73CBBE34B8B}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="30"/>
-					</PropertyList>
-				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

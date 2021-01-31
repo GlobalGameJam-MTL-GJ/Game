@@ -4,13 +4,17 @@
 		<WorkUnit Name="Default Work Unit" ID="{33F5C78B-1CDE-46DC-8299-36FE8CB27A5E}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="RoomType" ID="{DE2F2D83-8C3C-491A-B698-2733772DEAEB}">
-					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
-					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{D48E3D71-EF95-4F62-9A6D-ABD24111EA04}"/>
 						<State Name="Frontstore" ID="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}"/>
 						<State Name="Backstore" ID="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameOver" ID="{12E01E52-1928-40DF-815F-C626AA4D464B}">
+					<ChildrenList>
+						<State Name="None" ID="{FE37C102-4075-4531-83CB-E2946884D6A9}"/>
+						<State Name="True" ID="{412AD62D-C85E-4E00-B31B-B383624CE167}"/>
+						<State Name="False" ID="{B09B0BD2-1808-4866-A776-58D22402BA05}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
