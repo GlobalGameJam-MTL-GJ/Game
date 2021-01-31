@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3226713398	NPC_Bell			\Default Work Unit\NPC_Bell	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	804081672	NPC_Bell	D:\Tony\Desktop\GameDev\MtlGlobalGameJam2021\.cache\Windows\SFX\Level_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Bell		349780
+
