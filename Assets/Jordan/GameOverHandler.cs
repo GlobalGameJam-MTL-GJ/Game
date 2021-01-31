@@ -35,16 +35,17 @@ public class GameOverHandler : MonoBehaviour
         {
             case GameOverType.TimeOut:
                 gameOverHeaderText.text = timeOutGameOverText;
+                nextLevelButton.SetActive(SceneManager.GetActiveScene().buildIndex < totalLevelCount);
                 gameOverHeaderText.color = Color.white;
                 break;
             case GameOverType.StrikeOut:
                 gameOverHeaderText.text = strikeOutGameOverText;
+                nextLevelButton.SetActive(false);
                 gameOverHeaderText.color = Color.red;
                 break;
         }
 
         scoreText.text = scoreTextBegin + ScoreManager.instance.GetScore();
-        nextLevelButton.SetActive(SceneManager.GetActiveScene().buildIndex < totalLevelCount);
         gameOverPanel.SetActive(true);
         OnGameOver?.Invoke(gameOverType);
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6925129084635605812}
   - component: {fileID: 1216522609641503171}
   - component: {fileID: 21132995102963886}
-  m_Layer: 20
+  m_Layer: 24
   m_Name: PropIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8347449616995099417}
   - component: {fileID: 8568477821104089663}
-  m_Layer: 20
+  m_Layer: 24
   m_Name: RageMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 2947664411594756452}
   - component: {fileID: 1485668668551174425}
   - component: {fileID: 6718656086717322286}
-  m_Layer: 20
+  m_Layer: 24
   m_Name: CustomerOrderUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ MonoBehaviour:
   _propImage: {fileID: 21132995102963886}
   _rageBar: {fileID: 6976089878448613597}
   _customerMover: {fileID: 8162376585652855122}
-  pointsPerSecondsRemaining: 1
+  pointsPer5SecondsRemaining: 1
   propsType: 0
   propsColor: 0
   isWaiting: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 1842390024897638607}
   - component: {fileID: 3574521601798006194}
   - component: {fileID: 6916932140959959898}
-  m_Layer: 20
+  m_Layer: 24
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectSnapTransform: {fileID: 7300939576652734173}
   _customerOrderController: {fileID: 1485668668551174425}
-  rootTransformForModel: {fileID: 0}
 --- !u!114 &8162376585652855122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +435,7 @@ GameObject:
   - component: {fileID: 2433655492685837873}
   - component: {fileID: 1080002848833488398}
   - component: {fileID: 6976089878448613597}
-  m_Layer: 20
+  m_Layer: 24
   m_Name: RageBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
