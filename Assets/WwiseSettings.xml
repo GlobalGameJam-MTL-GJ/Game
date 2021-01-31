@@ -10,5 +10,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks/SoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>D:\Programs\Wwise 2019.2.9.7459</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../Game/MtlGlobalGameJam2021Wwise/MtlGlobalGameJam2021.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../MtlGlobalGameJam2021Wwise/MtlGlobalGameJam2021.wproj</WwiseProjectPath>
 </WwiseSettings>

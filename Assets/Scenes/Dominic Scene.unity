@@ -133,6 +133,12 @@ GameObject:
   m_Component:
   - component: {fileID: 38260864}
   - component: {fileID: 38260863}
+  - component: {fileID: 38260865}
+  - component: {fileID: 38260866}
+  - component: {fileID: 38260869}
+  - component: {fileID: 38260868}
+  - component: {fileID: 38260867}
+  - component: {fileID: 38260873}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -180,6 +186,138 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38260865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2a33130fe11924197c39cc3b7d77a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c4ee6e5847a8e094685fec031183b2a9, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &38260866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2a33130fe11924197c39cc3b7d77a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f5cfc884470799641a81531284b8890c, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &38260867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2a33130fe11924197c39cc3b7d77a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6ed4fdf1628e1a044819a2bc75a8f3f6, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &38260868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2a33130fe11924197c39cc3b7d77a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b0e4ea5d08b116b4596c8bc5b309faad, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &38260869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2a33130fe11924197c39cc3b7d77a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 75dc430a8a62e6940823032c24e49704, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &38260873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38260862}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cc53a31208ee44ca2ec5f1dff676ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49436776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +2039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 379a9f166be87344d8f57eed9faf29e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreHolder: {fileID: 0}
   scoreText: {fileID: 1353488044}
   scoreTextBegin: 'Score : '
 --- !u!114 &508629596
@@ -1996,6 +2135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c082a94a9fd1145ac0a692f7a817e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strikesHolder: {fileID: 0}
   strikeImages:
   - {fileID: 121866141}
   - {fileID: 1420696703}
@@ -4301,6 +4441,30 @@ PrefabInstance:
     - target: {fileID: 817826864080790091, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
       propertyPath: m_Layer
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 817826864080790102, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 817826864080790103, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692977760925261272, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341231353472380421, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122754294190067365, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272583703107311037, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
@@ -6821,9 +6985,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
       propertyPath: _queueController
       value: 
       objectReference: {fileID: 1386071556}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 44e588bd677335646a2badc7de4a7f7b, type: 2}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 67571ec58e0f8d54dab29c71602ddd10, type: 2}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a46d4397c5cc164fa224fd2ab5d6bf6, type: 2}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: fa56bb310d0bd6248a9699c5abf23ef5, type: 2}
+    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: _customersDefinitions.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8740b8d7a3908eb45a6e1c8b254dd62a, type: 2}
     - target: {fileID: 9095492058012059048, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
       propertyPath: m_Name
       value: CustomerSpawner
