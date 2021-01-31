@@ -14,7 +14,7 @@ public class CustomerSpawner : MonoBehaviour
 {
     [SerializeField] private List<CustomerDefinition> _customersDefinitions;
     [SerializeField] private Transform _spawnpoint;
-
+    [SerializeField] private GameObject customerBase;
     [SerializeField] private float _spawnRate;
     private float _runningTimer;
 
@@ -45,7 +45,7 @@ public class CustomerSpawner : MonoBehaviour
             var customer = new Customer(FindCustomerForTheChoosenProps(choosenPropsEntry, out var customerOrderDefinition));
             var customerOrder = new CustomerOrder(customerOrderDefinition);
 
-            var customerGO = Instantiate(customer.Model, _spawnpoint.position, Quaternion.identity);
+            var customerGO = Instantiate(customerBase, _spawnpoint.position, Quaternion.identity);
             customerGO.GetComponent<CustomerController>().Setup(customer, customerOrder, choosenPropsEntry.activeProps);
         }
     }

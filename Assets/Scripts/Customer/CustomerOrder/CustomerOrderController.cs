@@ -10,7 +10,7 @@ public class CustomerOrderController : MonoBehaviour
     [SerializeField] private Image _propImage;
     [SerializeField] private Image _rageBar;
     [SerializeField] private CustomerMover _customerMover;
-    [SerializeField] private int pointsPerSecondsRemaining = 1;
+    [SerializeField] private int pointsPer5SecondsRemaining = 1;
     private GameObject wantedProps;
     public CustomerMover CustomerMover => _customerMover;
 
@@ -103,7 +103,8 @@ public class CustomerOrderController : MonoBehaviour
         {
             OnCustomerOrderComplete?.Invoke(transform.parent.gameObject);
             customerComponent.SnapObjectToHands(props.gameObject);
-            ScoreManager.instance.ModifyScore(_customerOrder.Score + Mathf.RoundToInt(_customerOrder.OrderTime - _waitTime));
+            int bonus = (Mathf.FloorToInt((_customerOrder.OrderTime - _waitTime) * 0.2f) * pointsPer5SecondsRemaining);
+            ScoreManager.instance.ModifyScore(_customerOrder.Score + bonus);
             return true;
         }
         else

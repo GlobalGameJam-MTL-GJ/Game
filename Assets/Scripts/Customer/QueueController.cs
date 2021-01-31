@@ -124,7 +124,7 @@ public class QueueController : MonoBehaviour
     private void OnCustomerOrderNotComplete(GameObject customerGO)
     {
         var queueSpot = customerGO.GetComponent<CustomerMover>()._queueSpot;
-        customerGO.transform.GetChild(1).GetComponent<CustomerOrderController>().isWaiting = false;
+        customerGO.transform.GetChild(0).GetComponent<CustomerOrderController>().isWaiting = false;
         RelinquishQueueSpot(queueSpot);
         LeanTween.move(customerGO, endPoint.position, 3.0f).setOnComplete(() => { Destroy(customerGO); });
     }

@@ -15,6 +15,7 @@ public class CustomerController : MonoBehaviour
     {
         _customer = customer;
         _customerOrderController.Setup(customerOrder, wantedPropsObject);
+        Instantiate(_customer.Model, transform);
     }
 
     public void SnapObjectToHands(GameObject objectToSnap)

@@ -75,7 +75,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _customersDefinitions:
-  - {fileID: 11400000, guid: 1ec28a96f993da34b9f665510efd2166, type: 2}
+  - {fileID: 11400000, guid: 67571ec58e0f8d54dab29c71602ddd10, type: 2}
+  - {fileID: 11400000, guid: 2a46d4397c5cc164fa224fd2ab5d6bf6, type: 2}
+  - {fileID: 11400000, guid: fa56bb310d0bd6248a9699c5abf23ef5, type: 2}
+  - {fileID: 11400000, guid: 8740b8d7a3908eb45a6e1c8b254dd62a, type: 2}
   _spawnpoint: {fileID: 8516849467053570461}
+  customerBase: {fileID: 6113836019613721107, guid: f32b2250f131268478a76ac87cdd06d2, type: 3}
   _spawnRate: 6
   _queueController: {fileID: 0}
