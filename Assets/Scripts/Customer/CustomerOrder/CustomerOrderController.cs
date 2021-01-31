@@ -110,6 +110,7 @@ public class CustomerOrderController : MonoBehaviour
     {
         if (propsType == props.GetPropsType() && propsColor == props.GetPropsColor())
         {
+            AkSoundEngine.PostEvent("Prop_Success", gameObject);
             OnCustomerOrderComplete?.Invoke(transform.parent.gameObject);
             customerComponent.SnapObjectToHands(props.gameObject);
             int bonus = (Mathf.FloorToInt((_customerOrder.OrderTime - _waitTime) * 0.2f) * pointsPer5SecondsRemaining);

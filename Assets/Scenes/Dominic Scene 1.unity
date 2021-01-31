@@ -7114,26 +7114,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8528380301543973562, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
-      propertyPath: data.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: ec0021eabb1e10f4f8d2baa3df666316, type: 2}
+    - target: {fileID: 8528380301543973560, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
+      propertyPath: m_listeners.initialListenerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8528380301543973569, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
       propertyPath: m_Name
       value: WwiseGlobal
       objectReference: {fileID: 0}
-    - target: {fileID: 8528380301543973572, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
-      propertyPath: data.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 6b57d4be2da9a1f45a24c82becce54f9, type: 2}
-    - target: {fileID: 8528380301543973573, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
-      propertyPath: data.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: ce1ac38fc5ed6da439fc1dffc9a8913f, type: 2}
-    - target: {fileID: 8528380301543973574, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
-      propertyPath: data.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: bdf2de5022fba6b43a3642055da9e10b, type: 2}
     - target: {fileID: 8528380301543973575, guid: 29a0945375296544faff0454a2ea48f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
