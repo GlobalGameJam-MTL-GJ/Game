@@ -29,6 +29,6 @@ public class UIMenuNaviguation : MonoBehaviour
 
     public void GoBackButton()
     {
-        SceneManager.LoadScene("TOBEREPLACEDWITHMENUSCENE");
+        SceneManager.LoadScene("MainGameScene");
     }
 }
