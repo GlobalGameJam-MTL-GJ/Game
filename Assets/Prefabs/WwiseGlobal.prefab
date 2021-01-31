@@ -59,6 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomType: Frontstore
   layer: 22
+  _timeManager: {fileID: 0}
 --- !u!1 &8528380300715872087
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomType: Backstore
   layer: 22
+  _timeManager: {fileID: 0}
 --- !u!1 &8528380301543973569
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +166,6 @@ GameObject:
   - component: {fileID: 8528380301543973572}
   - component: {fileID: 8528380301543973573}
   - component: {fileID: 8528380301543973574}
-  - component: {fileID: 8528380301543973561}
   - component: {fileID: 8528380301543973560}
   m_Layer: 0
   m_Name: WwiseGlobal
@@ -308,30 +309,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &8528380301543973561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8528380301543973569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d701a140a3a9734798c60297ef5b351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bc11b91f2b507c5468861d825fcf5fe8, type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!114 &8528380301543973560
 MonoBehaviour:
   m_ObjectHideFlags: 0
