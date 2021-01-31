@@ -33,10 +33,12 @@ public class PlayerAction : MonoBehaviour
 
     private GameObject m_PickableItem;
     private PlayerInputs playerInputs;
+    private PlayerMovement playerMovement;
 
     private void Awake()
     {
         playerInputs = GetComponent<PlayerInputs>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -87,15 +89,6 @@ public class PlayerAction : MonoBehaviour
                             PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
                             m_IsEquipped = false;
                             pickedUpObject = null;
-                            //give the item to the customers ?
-                        }
-                        else
-                        {
-                            //you gave THE WRONG ITEM to the customer TODO : ADD CONSEQUENCES
-                            //the customer must leave
-                            //the customer that left must talk to the propsbuilder and tell it what item will not be taken
-                            //the player keep the item in his hands
-                            //have a little delay so you cant spam the submit item action
                         }
                     }
                 }
@@ -116,6 +109,7 @@ public class PlayerAction : MonoBehaviour
         if (props != null)
         {
             props.GetPickedUp();
+            playerMovement.SetSpeedModifier(props.SpeedModifier);
         }
 
         itemObject.transform.parent = pickUpContainer;
@@ -124,7 +118,7 @@ public class PlayerAction : MonoBehaviour
         pickedUpObject = itemObject;
     }
 
-    public void Throw()
+    private void Throw()
     {
         AkSoundEngine.PostEvent("Player_Throw", gameObject);
         LetGoOfTheItem();
@@ -137,11 +131,17 @@ public class PlayerAction : MonoBehaviour
         AkSoundEngine.PostEvent("Player_Drop", gameObject);
         LetGoOfTheItem();
         pickedUpObject.GetComponent<Props>().GetDropped();
+        
         pickedUpObject = null;
     }
 
     private void LetGoOfTheItem()
     {
+        if (pickedUpObject != null)
+        {
+            playerMovement.SetSpeedModifier(0);
+            pickedUpObject.transform.parent = null;
+        }
         pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
     }

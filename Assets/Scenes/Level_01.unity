@@ -1089,6 +1089,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8994f6daeaad2348bbcaeafa86c8257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedModifierPercentageSword: -0.5
+  speedModifierPercentageBow: -0.35
+  speedModifierPercentageGrimoire: -0.15
+  speedModifierPercentageCrown: -0.25
+  speedModifierPercentagePotion: 0
   propsSpawns:
   - {fileID: 1797220396}
   spawnRate: 2

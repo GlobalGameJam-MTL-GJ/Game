@@ -7,7 +7,16 @@ using UnityEngine;
 public class PropsBuilder : MonoBehaviour
 {
     public static PropsBuilder instance;
-    
+    [Range(-1,3)]
+    [SerializeField] private float speedModifierPercentageSword = -0.2f;
+    [Range(-1,3)]
+    [SerializeField] private float speedModifierPercentageBow = -0.2f;
+    [Range(-1,3)]
+    [SerializeField] private float speedModifierPercentageGrimoire = -0.2f;
+    [Range(-1,3)]
+    [SerializeField] private float speedModifierPercentageCrown = -0.2f;
+    [Range(-1,3)]
+    [SerializeField] private float speedModifierPercentagePotion = -0.2f;
     private LevelConfigSO currentLevel;
     List<PropsPossibleMovement> propsPossibleMovements = new List<PropsPossibleMovement>();
     List<PropsPossibleTypes> propsPossibleTypes = new List<PropsPossibleTypes>();
@@ -55,6 +64,8 @@ public class PropsBuilder : MonoBehaviour
         {PropsType.Potion, new PropsColorTracker()}
     };
     
+    private Dictionary<PropsType, float> PropsTypesToSpeedModifiers;
+    
     public Dictionary<PropsColor, Color> PropsColorsToColors = new Dictionary<PropsColor, Color>()
     {
         {PropsColor.Blue, Color.blue},
@@ -79,7 +90,15 @@ public class PropsBuilder : MonoBehaviour
             {PropsType.Crown, Resources.Load<GameObject>("Meshes/Crown")},
             {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
         };
-
+        
+        PropsTypesToSpeedModifiers = new Dictionary<PropsType, float>()
+        {
+            {PropsType.Sword, speedModifierPercentageSword},
+            {PropsType.Grimoire, speedModifierPercentageGrimoire},
+            {PropsType.Bow, speedModifierPercentageBow},
+            {PropsType.Crown, speedModifierPercentageCrown},
+            {PropsType.Potion, speedModifierPercentagePotion}
+        };
     }
 
     private void Start()
@@ -125,7 +144,7 @@ public class PropsBuilder : MonoBehaviour
         mesh.transform.localPosition = Vector3.zero;
         
         activePropsEntry.propsColor = GetRandomFreeColorForThisType(activePropsEntry.propsType);
-        newProps.GetComponent<Props>().SetPropsTypeAndColor(activePropsEntry.propsType, activePropsEntry.propsColor);
+        newProps.GetComponent<Props>().SetPropsTypeAndColorAndSpeedModifier(activePropsEntry.propsType, activePropsEntry.propsColor, PropsTypesToSpeedModifiers[activePropsEntry.propsType]);
         activePropsEntry.activeProps = newProps;
         currentActiveProps.Add(activePropsEntry);
         choosenSpawn.GetComponent<PropsSpawn>().SpawnTween(newProps);
