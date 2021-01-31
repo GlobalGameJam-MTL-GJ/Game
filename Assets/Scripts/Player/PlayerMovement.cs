@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float m_RotationSpeed = 2f;
 
+    private float speedMultiplier = 1;
     private Vector3 m_Direction;
     private Rigidbody m_rb;
     private PlayerInputs playerInputs;
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        m_rb.velocity = m_Direction * m_WalkingSpeed;
+        m_rb.velocity = m_Direction * (m_WalkingSpeed * speedMultiplier);
+    }
+
+    public void SetSpeedModifier(float speedModifier)
+    {
+        speedMultiplier = 1 + speedModifier;
     }
 }

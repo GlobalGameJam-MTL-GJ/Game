@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class Props : MonoBehaviour
 {
     [SerializeField] private float delayAfterThrown = 2f;
+    private float speedModifier;
     private float currentDelayTimer;
     private bool recoveringFromThrow;
     private NavMeshAgent navMeshAgent;
@@ -20,7 +21,9 @@ public class Props : MonoBehaviour
 
     public event Action<PropsMovement> OnMovementEnabled;
     public event Action<PropsMovement> OnMovementDisabled;
-    
+
+    public float SpeedModifier => speedModifier;
+
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -50,8 +53,9 @@ public class Props : MonoBehaviour
         }
     }
 
-    public void SetPropsTypeAndColor(PropsType propsType, PropsColor color)
+    public void SetPropsTypeAndColorAndSpeedModifier(PropsType propsType, PropsColor color, float speedModifier)
     {
+        this.speedModifier = speedModifier;
         this.propsType = propsType;
         propsColor = color;
         GetComponentInChildren<MeshRenderer>().material.color = PropsBuilder.instance.PropsColorsToColors[propsColor];
