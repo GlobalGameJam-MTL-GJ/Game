@@ -78,10 +78,6 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="NPC_Voice" ID="{46C4777C-AA93-4A91-994E-95A516B41988}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
 							<Position X="3" Y="2"/>
 						</Module>
@@ -94,15 +90,15 @@
 							<Position X="3" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="gamestart" ID="{0382B966-738C-4D36-8D4C-D76C85C2E417}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<ObjectRef Name="Kill_Music" ID="{B5003789-E70F-42C1-AE6E-2960F7F1890B}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
 							<Position X="4" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="Sidechain" ID="{C9B9E195-B508-40AB-932D-2CB2973C63C0}"/>
-							<Value>100</Value>
-						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>
 							<Value>181</Value>
@@ -110,6 +106,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="NPC_Timer" ID="{FDA3B0D1-9FA3-4C11-9A0F-D73CBBE34B8B}"/>
 							<Value>21.016</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Sidechain" ID="{93E5A44F-9535-4EF9-8D0A-F1262FBB5894}"/>
+							<Value>-48</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

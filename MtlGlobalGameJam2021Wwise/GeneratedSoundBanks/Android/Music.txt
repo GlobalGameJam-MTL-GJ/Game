@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	193027072	Clock_Start			\Default Work Unit\Clock_Start	
+	503853761	Kill_Music			\Default Work Unit\Kill_Music	
 	734427666	EndWhistle			\Default Work Unit\EndWhistle	
 	1091565391	Music_LevelStart			\Default Work Unit\Music_LevelStart	
 	1598298728	Music_Menu			\Default Work Unit\Music_Menu	

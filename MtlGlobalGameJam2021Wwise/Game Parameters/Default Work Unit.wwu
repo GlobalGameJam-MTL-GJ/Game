@@ -15,7 +15,13 @@
 						<Property Name="Max" Type="Real64" Value="30"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Sidechain" ID="{C9B9E195-B508-40AB-932D-2CB2973C63C0}"/>
+				<GameParameter Name="Sidechain" ID="{93E5A44F-9535-4EF9-8D0A-F1262FBB5894}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="6"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

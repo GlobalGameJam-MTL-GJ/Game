@@ -12,14 +12,43 @@
 					<ChildrenList>
 						<Bus Name="Music" ID="{4736DD66-2ACB-401F-8720-31A253D8B33D}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{927AFC83-01FE-4CFE-8AAE-2AA98328A351}" ShortID="542142010">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Sidechain" ID="{93E5A44F-9535-4EF9-8D0A-F1262FBB5894}" WorkUnitID="{595B88F7-A1AC-4814-8C82-F46B136A745D}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{53B8851A-F0A3-44CE-9766-D248809DBEFC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-19.88178</XPos>
+														<YPos>-6.15335</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>6</XPos>
+														<YPos>-7.79941</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-12"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-									<ObjectRef Name="Sidechain" ID="{1A8DFFE7-65D4-4050-8A61-4E95EACC9DA8}" WorkUnitID="{9D52B8B6-1B89-46A7-9C33-7D60F4B6CE13}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 						</Bus>
 						<Bus Name="NPC" ID="{2170B3E6-FEF1-4436-87EB-0C87DE4A6FFF}">
 							<PropertyList>
@@ -27,13 +56,34 @@
 								<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-									<ObjectRef Name="Sidechain" ID="{1A8DFFE7-65D4-4050-8A61-4E95EACC9DA8}" WorkUnitID="{9D52B8B6-1B89-46A7-9C33-7D60F4B6CE13}"/>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Meter_(Custom)" ID="{987CD59C-3355-4EB7-ABFE-FAA5AC06EABC}" ShortID="604569098" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="0.2"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="Sidechain" ID="{93E5A44F-9535-4EF9-8D0A-F1262FBB5894}"/>
+</PluginData>
+										</Effect>
+									</Custom>
 								</Reference>
 							</ReferenceList>
 						</Bus>
 						<Bus Name="Props" ID="{1DBD59A3-DBFE-47D1-B771-1DBA16C50350}"/>
-						<Bus Name="Player" ID="{69B1EA64-1B5E-4732-B1C2-1C567943946F}"/>
+						<Bus Name="Player" ID="{69B1EA64-1B5E-4732-B1C2-1C567943946F}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Meter_(Custom)" ID="{74872CBA-AA70-4AFB-B47E-DE0016CF778E}" ShortID="496330940" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">											<PluginData>
+	<GameParameter Name="Sidechain" ID="{93E5A44F-9535-4EF9-8D0A-F1262FBB5894}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

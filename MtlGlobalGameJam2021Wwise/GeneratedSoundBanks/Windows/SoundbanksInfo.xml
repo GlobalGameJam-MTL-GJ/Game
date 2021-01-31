@@ -878,10 +878,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3698031594">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3626188548">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1883033791" Name="Sidechain" ObjectPath="\Game Parameters\Default Work Unit\Sidechain"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1551306167" Language="SFX" Hash="3958919663">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
@@ -1051,7 +1054,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="863462848">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3563304577">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -1080,6 +1083,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="503853761" Name="Kill_Music" ObjectPath="\Events\Default Work Unit\Kill_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2227419164" Name="Music_End" ObjectPath="\Events\Default Work Unit\Music_End" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="66918242" Language="SFX">

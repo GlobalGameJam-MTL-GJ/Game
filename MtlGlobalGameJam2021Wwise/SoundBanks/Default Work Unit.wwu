@@ -32,6 +32,7 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{95D2E2B4-E51D-478D-B80A-F184E6DC3728}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Kill_Music" ID="{B5003789-E70F-42C1-AE6E-2960F7F1890B}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_End" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Menu" ID="{8B27FE44-3F6E-4B4A-8C81-8F38D59EB669}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>

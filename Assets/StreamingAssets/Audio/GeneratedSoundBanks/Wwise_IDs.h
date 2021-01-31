@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CLOCK_START = 193027072U;
         static const AkUniqueID ENDWHISTLE = 734427666U;
+        static const AkUniqueID KILL_MUSIC = 503853761U;
         static const AkUniqueID LEVEL_DOOR = 4002963088U;
         static const AkUniqueID LEVEL_ROOF = 3813899962U;
         static const AkUniqueID LEVEL_SPAWN = 1976190133U;
@@ -109,6 +110,7 @@ namespace AK
     {
         static const AkUniqueID CLOCK = 1182830809U;
         static const AkUniqueID NPC_TIMER = 3691762776U;
+        static const AkUniqueID SIDECHAIN = 1883033791U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
