@@ -17,11 +17,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 m_Direction;
     private Rigidbody m_rb;
     private PlayerInputs playerInputs;
+    private Animator animator;
 
     private void Awake()
     {
         playerInputs = GetComponent<PlayerInputs>();
         m_rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
     }
     
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         m_rb.velocity = m_Direction * (m_WalkingSpeed * speedMultiplier);
+        animator.SetFloat("Speed", m_rb.velocity.magnitude);
     }
 
     public void SetSpeedModifier(float speedModifier)

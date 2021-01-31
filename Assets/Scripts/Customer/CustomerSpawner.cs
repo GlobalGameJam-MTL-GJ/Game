@@ -35,9 +35,6 @@ public class CustomerSpawner : MonoBehaviour
         {
             _runningTimer = 0;
 
-            //get a props from the props builder
-            //search for a model that wants this props
-            //create the order according to the choosen props from propsbuilder
             ActivePropsEntry choosenPropsEntry = PropsBuilder.instance.GetAnActiveProps();
 
             //var (customerDefinition, customerOrderDefinition)

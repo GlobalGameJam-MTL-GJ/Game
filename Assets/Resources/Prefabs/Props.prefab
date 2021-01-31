@@ -82,6 +82,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayAfterThrown: 5
+  colorMultiplierForEmissionIntensity: 0.6
+  potionColorMultiplierForEmissionIntensity: 8
 --- !u!54 &4555874728862765752
 Rigidbody:
   m_ObjectHideFlags: 0

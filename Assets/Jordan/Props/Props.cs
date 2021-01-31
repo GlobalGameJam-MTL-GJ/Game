@@ -7,6 +7,8 @@ using UnityEngine.AI;
 public class Props : MonoBehaviour
 {
     [SerializeField] private float delayAfterThrown = 2f;
+    [SerializeField] private float colorMultiplierForEmissionIntensity = 0.6f;
+    [SerializeField] private float potionColorMultiplierForEmissionIntensity = 1f;
     private float speedModifier;
     private float currentDelayTimer;
     private bool recoveringFromThrow;
@@ -58,7 +60,10 @@ public class Props : MonoBehaviour
         this.speedModifier = speedModifier;
         this.propsType = propsType;
         propsColor = color;
-        GetComponentInChildren<MeshRenderer>().material.color = PropsBuilder.instance.PropsColorsToColors[propsColor];
+        Material material = GetComponentInChildren<MeshRenderer>().material; 
+        material.EnableKeyword("_EMISSION");
+        float colorMult = propsType == PropsType.Potion ? potionColorMultiplierForEmissionIntensity : colorMultiplierForEmissionIntensity;
+        material.SetColor("_EmissionColor", PropsBuilder.instance.PropsColorsToColors[propsColor] * colorMult);
     }
 
     public PropsType GetPropsType()

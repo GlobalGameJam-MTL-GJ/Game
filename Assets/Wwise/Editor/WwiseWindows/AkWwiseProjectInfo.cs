@@ -26,6 +26,8 @@ public static class AkWwiseProjectInfo
 		{
 			try
 			{
+				
+				
 				m_Data = UnityEditor.AssetDatabase.LoadAssetAtPath<AkWwiseProjectData>(DataAssetPath);
 
 				if (m_Data == null)

@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine.Utility;
 using UnityEngine;
 
 public class QueueController : MonoBehaviour
 {
     [SerializeField] private List<Queue> _queues;
-
+    [SerializeField] private Transform getOutByBottomPoint;
+    [SerializeField] private float yAngleForBottom;
+    [SerializeField] private Transform getOutByTopPoint;
+    [SerializeField] private float yAngleForTop;
     public bool IsSpotAvailable => _queues.Exists(queue => queue.IsEmpty);
 
     public static Action<QueueSpot, QueueSpot> OnQueueSpotOpenedUp;
@@ -47,7 +51,10 @@ public class QueueController : MonoBehaviour
         }
         if(smallestQueue != null)
         {
-            return _queues[(int)smallestQueue].GetAvailableQueueSpot();
+            QueueSpot queueSpot = _queues[(int) smallestQueue].GetAvailableQueueSpot();
+            queueSpot.YAngle = smallestQueue < 1 ? yAngleForBottom : yAngleForTop;
+            queueSpot.endPoint = smallestQueue < 1 ? getOutByBottomPoint.position : getOutByTopPoint.position;
+            return queueSpot;
         }
         return null;
     }
@@ -126,6 +133,10 @@ public class QueueController : MonoBehaviour
         var queueSpot = customerGO.GetComponent<CustomerMover>()._queueSpot;
         customerGO.transform.GetChild(0).GetComponent<CustomerOrderController>().isWaiting = false;
         RelinquishQueueSpot(queueSpot);
-        LeanTween.move(customerGO, endPoint.position, 3.0f).setOnComplete(() => { Destroy(customerGO); });
+        LeanTween.rotateAround(customerGO, customerGO.transform.up, queueSpot.YAngle, 0.6f).setOnComplete(() =>
+        {
+            LeanTween.move(customerGO, queueSpot.endPoint, 3.5f).setOnComplete(() => { Destroy(customerGO); });
+        });
+        
     }
 }

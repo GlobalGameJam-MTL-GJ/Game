@@ -34,11 +34,14 @@ public class PlayerAction : MonoBehaviour
     private GameObject m_PickableItem;
     private PlayerInputs playerInputs;
     private PlayerMovement playerMovement;
+    private Animator animator;
 
     private void Awake()
     {
         playerInputs = GetComponent<PlayerInputs>();
         playerMovement = GetComponent<PlayerMovement>();
+        animator = GetComponentInChildren<Animator>();
+
     }
 
     private void Update()
@@ -88,6 +91,7 @@ public class PlayerAction : MonoBehaviour
                         {
                             PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
                             m_IsEquipped = false;
+                            animator.SetBool("HasObj", m_IsEquipped);
                             playerMovement.SetSpeedModifier(0);
                             pickedUpObject = null;
                         }
@@ -114,8 +118,9 @@ public class PlayerAction : MonoBehaviour
         }
 
         itemObject.transform.parent = pickUpContainer;
-        itemObject.transform.localPosition = new Vector3(0, 1f, 0.4f);
+        itemObject.transform.localPosition = pickUpContainer.transform.localPosition;
         m_IsEquipped = true;
+        animator.SetBool("HasObj", m_IsEquipped);
         pickedUpObject = itemObject;
     }
 
@@ -145,6 +150,7 @@ public class PlayerAction : MonoBehaviour
         }
         pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
+        animator.SetBool("HasObj", m_IsEquipped);
     }
 
     private void OnDrawGizmos()

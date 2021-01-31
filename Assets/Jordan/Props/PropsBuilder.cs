@@ -70,7 +70,7 @@ public class PropsBuilder : MonoBehaviour
     {
         {PropsColor.Blue, Color.blue},
         {PropsColor.Green, Color.green},
-        {PropsColor.Orange, new Color32(255, 165, 0, 255)},
+        {PropsColor.Orange, new Color32(255, 130, 0, 255)},
         {PropsColor.Purple, Color.magenta},
     };
 
@@ -88,7 +88,7 @@ public class PropsBuilder : MonoBehaviour
             {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
             {PropsType.Bow, Resources.Load<GameObject>("Meshes/Bow")},
             {PropsType.Crown, Resources.Load<GameObject>("Meshes/Crown")},
-            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Grimoire")}
+            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Potion")}
         };
         
         PropsTypesToSpeedModifiers = new Dictionary<PropsType, float>()

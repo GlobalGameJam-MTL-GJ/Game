@@ -12,4 +12,7 @@ public class QueueSpot : MonoBehaviour
     public bool isQueueFront;
 
     public int QueueOrder;
+
+    public Vector3 endPoint;
+    public float YAngle;
 }

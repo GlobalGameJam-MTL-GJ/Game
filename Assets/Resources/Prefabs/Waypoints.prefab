@@ -45,6 +45,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 1
   QueueOrder: 1
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
+--- !u!1 &871530234291653752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6336453040345013772}
+  m_Layer: 0
+  m_Name: TopEndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6336453040345013772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871530234291653752}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.8, y: -2.85, z: 46.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3463082404815844662}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2996487004590753364
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +106,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3463082404815844662}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3261076336584872705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5534463301094006424}
+  m_Layer: 0
+  m_Name: BottomEndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5534463301094006424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261076336584872705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.8, y: -2.85, z: -26.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3463082404815844662}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3463082403473828529
 GameObject:
@@ -120,6 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 0
   QueueOrder: 2
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
 --- !u!1 &3463082403866200476
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 1
   QueueOrder: 1
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
 --- !u!1 &3463082404756723291
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +295,8 @@ Transform:
   - {fileID: 3463082404756723292}
   - {fileID: 3463082405348608706}
   - {fileID: 8520586779335784236}
+  - {fileID: 5534463301094006424}
+  - {fileID: 6336453040345013772}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -253,6 +321,10 @@ MonoBehaviour:
     - {fileID: 817374471881444616}
     - {fileID: 4506464872388252295}
     - {fileID: 7149416361682688558}
+  getOutByBottomPoint: {fileID: 5534463301094006424}
+  yAngleForBottom: 90
+  getOutByTopPoint: {fileID: 6336453040345013772}
+  yAngleForTop: 270
   endPoint: {fileID: 8520586779335784236}
 --- !u!1 &3463082405348608705
 GameObject:
@@ -332,6 +404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 0
   QueueOrder: 3
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
 --- !u!1 &8237014092583556537
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 0
   QueueOrder: 3
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
 --- !u!1 &9134429946759699435
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,3 +498,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQueueFront: 0
   QueueOrder: 2
+  endPoint: {x: 0, y: 0, z: 0}
+  YAngle: 0
