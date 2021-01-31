@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8E112909-B35A-452A-8CF1-17BDA58F2739}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{8E112909-B35A-452A-8CF1-17BDA58F2739}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="GameState" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="GamePlay" ID="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}"/>
+						<Switch Name="GameEnd" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>
+						<Curve Name="" ID="{A7DD38F2-C710-49BD-97D9-717ACE1EFFE4}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>180</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>181</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="PropType" ID="{F64C3A60-7A6E-4146-9BA2-B716B22F38A5}">
+					<ChildrenList>
+						<Switch Name="Sword" ID="{6B58189E-2BFE-41EE-AA73-8E3A7F310A6F}"/>
+						<Switch Name="Grimoire" ID="{029B7FAB-542B-4CC8-B562-EF800CF918B4}"/>
+						<Switch Name="Potion" ID="{5589B221-6F26-40F6-B77C-A2506D1ABCAF}"/>
+						<Switch Name="Crown" ID="{425EC6DF-0071-4708-9B8C-A01B18D7E1E1}"/>
+						<Switch Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
