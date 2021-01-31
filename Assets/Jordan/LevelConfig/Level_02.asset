@@ -15,24 +15,24 @@ MonoBehaviour:
   maximumPropsAtOnce: 8
   propsPossibleMovements:
   - propsMovementType: 0
-    spawnChance: 0.45
+    spawnChance: 0.272
     adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 3
-    maximumOfThisTypeAtOnce: 6
+    maximumOfThisTypeAtOnce: 4
     minimumOfThisTypeForTheLevel: 10
     maximumOfThisTypeForTheLevel: 30
   - propsMovementType: 2
-    spawnChance: 0.4
+    spawnChance: 0.406
     adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 1
-    maximumOfThisTypeAtOnce: 3
+    maximumOfThisTypeAtOnce: 2
     minimumOfThisTypeForTheLevel: 9
     maximumOfThisTypeForTheLevel: 30
   - propsMovementType: 1
-    spawnChance: 0.09
+    spawnChance: 0.249
     adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 2
+    maximumOfThisTypeAtOnce: 4
     minimumOfThisTypeForTheLevel: 2
     maximumOfThisTypeForTheLevel: 100
   - propsMovementType: 3

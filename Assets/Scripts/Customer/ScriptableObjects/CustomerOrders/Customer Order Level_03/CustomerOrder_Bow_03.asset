@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8204cfdb1af18dd4a93503da9495a480, type: 3}
-  m_Name: CustomerOrder_Grimoire
+  m_Name: CustomerOrder_Bow_03
   m_EditorClassIdentifier: 
-  _propsType: 1
-  _propImage: {fileID: 21300000, guid: d00feefc1bf61424791e5df0308ac9e5, type: 3}
-  _orderTime: 25
-  _score: 100
+  _propsType: 2
+  _propImage: {fileID: 21300000, guid: 5d8aed516fa5dd54587cd580953f87cd, type: 3}
+  _orderTime: 30
+  _score: 1000

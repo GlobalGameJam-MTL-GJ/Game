@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 49436777}
   - component: {fileID: 49436780}
   - component: {fileID: 49436779}
+  - component: {fileID: 49436781}
+  - component: {fileID: 49436778}
   m_Layer: 0
   m_Name: Door_1x2x2 (1)
   m_TagString: Untagged
@@ -155,6 +157,19 @@ Transform:
   m_Father: {fileID: 694995222}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &49436778
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49436776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &49436779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,6 +219,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49436776}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &49436781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49436776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3204f1a0fa10e4e4e9774807eb2cfc9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &97240050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1069,7 @@ GameObject:
   - component: {fileID: 591739224}
   - component: {fileID: 591739223}
   - component: {fileID: 591739222}
+  - component: {fileID: 591739225}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -1095,6 +1123,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591739225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591739221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b848b2c51c9ddb468cf68980656c17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1011241332}
+  doors:
+  - {fileID: 1005612742}
+  - {fileID: 49436781}
 --- !u!1 &622072214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2238,18 @@ PrefabInstance:
       propertyPath: _queueController
       value: 
       objectReference: {fileID: 2128841141}
+    - target: {fileID: 8516849467053570461, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516849467053570461, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.1573524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516849467053570461, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.41
+      objectReference: {fileID: 0}
     - target: {fileID: 9095492058012059048, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
       propertyPath: m_Name
       value: CustomerSpawner
@@ -2432,6 +2488,8 @@ GameObject:
   - component: {fileID: 1005612738}
   - component: {fileID: 1005612741}
   - component: {fileID: 1005612740}
+  - component: {fileID: 1005612742}
+  - component: {fileID: 1005612739}
   m_Layer: 0
   m_Name: Door_1x2x2
   m_TagString: Untagged
@@ -2453,6 +2511,19 @@ Transform:
   m_Father: {fileID: 694995222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1005612739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005612737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1005612740
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2502,6 +2573,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005612737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1005612742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005612737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3204f1a0fa10e4e4e9774807eb2cfc9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011241332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 817826864080790091, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
@@ -3977,6 +4060,10 @@ PrefabInstance:
     - target: {fileID: 817826864080790091, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 817826864080790091, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
+      propertyPath: m_Layer
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96be06203ad33154aa7dafec6ccba417, type: 3}
