@@ -30,6 +30,7 @@
 				<SoundBank Name="Music" ID="{95D2E2B4-E51D-478D-B80A-F184E6DC3728}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Music_Level" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_GameOver" ID="{3158DFF0-FD61-4CC2-AEEA-E43B61E0179D}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -38,6 +39,15 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Level_Spawn" ID="{74F5E4E8-B037-4154-8B97-1F9CE9F86CC7}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Door" ID="{EA17A94E-5C64-4E72-82A3-D256992986F8}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="UI" ID="{03BED832-5DCD-4B8B-8BBB-D7F46442FBF3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="UI_Select" ID="{20E8C382-3659-482A-97C2-7AB25B925630}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_StartGame" ID="{5682C9F5-0954-4C8A-8274-7923141E6887}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Hover" ID="{4948F1B3-D50E-4E56-84FC-66FE91383D5F}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
