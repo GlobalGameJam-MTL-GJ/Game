@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UIFxWwise : MonoBehaviour
 {
+
+    public LevelMusicController levelMusicController;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +14,7 @@ public class UIFxWwise : MonoBehaviour
 
     public void UIBackSoundFX()
     {
+        
         AkSoundEngine.PostEvent("UI_Back", gameObject);
     }
 
