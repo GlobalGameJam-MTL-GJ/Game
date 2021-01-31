@@ -11,7 +11,9 @@ public class StrikeManager : MonoBehaviour
     [SerializeField] private Image[] strikeImages;
     [SerializeField] private Color strikeColor;
     private int strikesCount = 0;
-    
+
+    public bool isMenu;
+
     private void Awake()
     {
         if (instance == null)
@@ -32,12 +34,15 @@ public class StrikeManager : MonoBehaviour
 
     private void HandleGameOver(GameOverType obj)
     {
-        LeanTween.delayedCall(gameObject, 1f, () => strikesHolder.SetActive(false));
+        if (isMenu) { return; }
 
+        LeanTween.delayedCall(gameObject, 1f, () => strikesHolder.SetActive(false));
     }
 
     public void AddStrike()
     {
+        if(isMenu) { return; }
+
         if (strikesCount == 3)
         {
             GameOverHandler.instance.TriggerGameOver(GameOverType.StrikeOut);

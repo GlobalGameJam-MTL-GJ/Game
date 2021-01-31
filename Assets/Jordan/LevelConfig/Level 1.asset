@@ -12,36 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3552322078a499748909b8086bff0676, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  maximumPropsAtOnce: 6
+  maximumPropsAtOnce: 30
   propsPossibleMovements:
-  - propsMovementType: 0
-    spawnChance: 0
-    adjustedSpawnChance: 0
-    minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 10
-    minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 50
   - propsMovementType: 1
-    spawnChance: 0.5
-    adjustedSpawnChance: 0.13107201
-    minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 10
-    minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 50
-  - propsMovementType: 2
-    spawnChance: 0
+    spawnChance: 1
     adjustedSpawnChance: 0
     minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 10
+    maximumOfThisTypeAtOnce: 50
     minimumOfThisTypeForTheLevel: 1
     maximumOfThisTypeForTheLevel: 50
-  - propsMovementType: 3
-    spawnChance: 0
-    adjustedSpawnChance: 0
-    minimumOfThisTypeAtOnce: 0
-    maximumOfThisTypeAtOnce: 2
-    minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 4
   propsPossibleTypes:
   - propsType: 0
     spawnChance: 0.1
