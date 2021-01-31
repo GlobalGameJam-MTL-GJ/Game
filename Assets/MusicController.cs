@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        //AkSoundEngine.PostEvent("Music_Level", gameObject);
-        AkSoundEngine.SetState("RoomType", "BackStore");
-    }
+    public string RoomType;
+    public int layer;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider col)
     {
-        
+        if(col.gameObject.layer == 22)
+        {
+            AkSoundEngine.SetState("RoomType", RoomType);
+        }
     }
 }
