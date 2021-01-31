@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<StateGroup Name="RoomType" ID="{DE2F2D83-8C3C-491A-B698-2733772DEAEB}">
 					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.25"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{D48E3D71-EF95-4F62-9A6D-ABD24111EA04}"/>

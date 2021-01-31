@@ -7,7 +7,6 @@
 					<ChildrenList>
 						<Switch Name="Win" ID="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}"/>
 						<Switch Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
-						<Switch Name="Play" ID="{9E480738-C8A4-40E3-AB07-A8A77768BD36}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>

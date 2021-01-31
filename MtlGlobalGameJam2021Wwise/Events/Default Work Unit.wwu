@@ -3,15 +3,25 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Music_Play" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}">
+				<Event Name="Music_End" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}">
 					<ChildrenList>
+						<Action Name="" ID="{2BCE487F-E3F7-4421-81FF-67265B91DDD9}" ShortID="61122844">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Frontstore" ID="{123C2B99-F580-4C7A-B77E-D6CEF3F07938}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{ACDFC10E-BC0A-4D74-9424-25EE661B6483}" ShortID="237156584">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Type" ID="{0C64BD8E-1A58-4A5E-8A68-4889A9C47C0F}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+									<ObjectRef Name="Music_Backstore" ID="{4F2386FC-3847-4560-9A10-F6F872F19AB0}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -225,6 +235,26 @@
 				</Event>
 				<Event Name="Music_Menu" ID="{8B27FE44-3F6E-4B4A-8C81-8F38D59EB669}">
 					<ChildrenList>
+						<Action Name="" ID="{45E2536B-21BA-4EB3-9DB6-C3E6F1BA95A5}" ShortID="966515780">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Backstore" ID="{4F2386FC-3847-4560-9A10-F6F872F19AB0}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AC3452D3-BAA4-4FC4-8D7A-28AC4F17C966}" ShortID="35754449">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Frontstore" ID="{123C2B99-F580-4C7A-B77E-D6CEF3F07938}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{04419CB6-EFF1-45E1-980D-114CE7D6FE1F}" ShortID="608413897">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -307,6 +337,24 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}">
+					<ChildrenList>
+						<Action Name="" ID="{51C1804A-8A9C-4FE2-A695-3C2AF42CD675}" ShortID="176886325">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Backstore" ID="{4F2386FC-3847-4560-9A10-F6F872F19AB0}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F4873D05-92CA-4813-A296-C03E85C2AFEB}" ShortID="93237003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Frontstore" ID="{123C2B99-F580-4C7A-B77E-D6CEF3F07938}" WorkUnitID="{6C826773-05C9-4ECA-A871-A6162B471CC8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

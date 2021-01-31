@@ -32,7 +32,8 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{95D2E2B4-E51D-478D-B80A-F184E6DC3728}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Music_Play" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_End" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Menu" ID="{8B27FE44-3F6E-4B4A-8C81-8F38D59EB669}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Clock_Start" ID="{4BF39750-96B1-4D33-ACA0-8B5A93CC4C98}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EndWhistle" ID="{0EAC914A-1B9D-4FC3-A51A-882E83873D32}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
