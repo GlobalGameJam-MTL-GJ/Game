@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
@@ -9,12 +10,12 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
     [SerializeField] private Renderer propsBoundsRenderer;
     [SerializeField] private LevelConfigSO levelConfigSO;
-    [SerializeField] private GameObject tempPlayer;
+    [FormerlySerializedAs("tempPlayer")][SerializeField] private GameObject player;
     private Bounds propsBounds;
     public Bounds PropsBounds => propsBounds;
 
     public LevelConfigSO LevelConfigSo => levelConfigSO;
-    public GameObject TempPlayer => tempPlayer;
+    public GameObject Player => player;
 
     private void Awake()
     {

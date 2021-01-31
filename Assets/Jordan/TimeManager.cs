@@ -30,6 +30,7 @@ public class TimeManager : MonoBehaviour
     private void OnGameOverHandler(GameOverType obj)
     {
         LeanTween.delayedCall(gameObject, 1f, () => timerHolder.SetActive(false));
+        gameStarted = false;
     }
 
     // Start is called before the first frame update

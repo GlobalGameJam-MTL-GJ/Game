@@ -11,6 +11,7 @@ public class CustomerOrderController : MonoBehaviour
     [SerializeField] private Image _rageBar;
     [SerializeField] private CustomerMover _customerMover;
     [SerializeField] private int pointsPer5SecondsRemaining = 1;
+    [SerializeField] private float distanceToPlayerToShowBubble = 4f;
     private GameObject wantedProps;
     public CustomerMover CustomerMover => _customerMover;
 
@@ -24,13 +25,19 @@ public class CustomerOrderController : MonoBehaviour
     public static Action<GameObject> OnCustomerOrderNotComplete;
     public static Action<GameObject> OnCustomerLeaving;
     public static Action<GameObject> OnCustomerGivenWrongProp;
-
+    private Transform player;
     public bool isWaiting = false;
+    private bool done;
 
     private void Awake()
     {
         _customerMover.OnCustomerWaiting += OnCustomerWaiting;
         customerComponent = GetComponentInParent<CustomerController>();
+    }
+
+    private void Start()
+    {
+        player = LevelManager.instance.Player.transform;
     }
 
     private void OnDisable()
@@ -72,9 +79,10 @@ public class CustomerOrderController : MonoBehaviour
 
     private void UpdateWaitTime()
     {
+        if(!done) _customerOrderUI.enabled = Vector3.Distance(transform.parent.position, player.position) < distanceToPlayerToShowBubble;
+
         if (!isWaiting) { return; }
 
-        _customerOrderUI.enabled = true;
 
         _waitTime += Time.deltaTime;
 
@@ -85,6 +93,7 @@ public class CustomerOrderController : MonoBehaviour
         if (_waitTime > _customerOrder.OrderTime)
         {
             isWaiting = false;
+            done = true;
             _customerOrderUI.enabled = false;
             OnCustomerOrderNotComplete?.Invoke(gameObject.transform.parent.gameObject);
             StrikeManager.instance.AddStrike();

@@ -24,7 +24,7 @@ public class PropsRunFromPlayerMovement : PropsMovement
     // Start is called before the first frame update
     void Start()
     {
-        playerTransform = LevelManager.instance.TempPlayer.transform;
+        playerTransform = LevelManager.instance.Player.transform;
     }
 
     // Update is called once per frame
