@@ -103,8 +103,13 @@ public class PropsBuilder : MonoBehaviour
 
     private void Start()
     {
+        TimeManager.instance.OnGameStart += HandleGameStart;
         CustomerOrderController.OnCustomerLeaving += UnreserveAnActiveProps;
         AssignCurrentLevelToTheBuilder(LevelManager.instance.LevelConfigSo);
+    }
+
+    private void HandleGameStart()
+    {
         InvokeRepeating(nameof(BuildAProps), 1, spawnRate);
     }
 
@@ -273,5 +278,7 @@ public class PropsBuilder : MonoBehaviour
     private void OnDestroy()
     {
         CustomerOrderController.OnCustomerLeaving -= UnreserveAnActiveProps;
+        if(TimeManager.instance != null)
+            TimeManager.instance.OnGameStart -= HandleGameStart;
     }
 }

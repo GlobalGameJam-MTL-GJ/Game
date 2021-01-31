@@ -10,8 +10,12 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private GameObject timerHolder;
     [SerializeField] private int timeLimitForTheGame = 180;
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI countdownText;
+    private float currentCountdown;
+    private bool onCountdown;
     private float currentTimer;
     private bool gameStarted;
+    public event Action OnGameStart;
     private string doubleComma = ":";    
     private void Awake()
     {
@@ -24,7 +28,9 @@ public class TimeManager : MonoBehaviour
     private void Start()
     {
         GameOverHandler.instance.OnGameOver += OnGameOverHandler;
-        StartTheGame();
+        LeanTween.delayedCall(3f, StartTheGame);
+        currentCountdown = 3f;
+        onCountdown = true;
     }
 
     private void OnGameOverHandler(GameOverType obj)
@@ -34,8 +40,10 @@ public class TimeManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void StartTheGame()
+    private void StartTheGame()
     {
+        Debug.Log("Starting");
+        OnGameStart?.Invoke();
         currentTimer = timeLimitForTheGame;
         gameStarted = true;
     }
@@ -43,6 +51,13 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (onCountdown)
+        {
+            currentCountdown -= Time.deltaTime;
+            int currentSecond = Mathf.CeilToInt(currentCountdown);
+            if(currentCountdown < -0.9f) countdownText.gameObject.SetActive(false);
+            countdownText.text = currentSecond > 0 ? currentSecond.ToString() : "GO";
+        }
         if (gameStarted)
         {
             currentTimer -= Time.deltaTime;
@@ -59,8 +74,18 @@ public class TimeManager : MonoBehaviour
 
     private void RefreshTimeText()
     {
-        int minutes = Mathf.FloorToInt(currentTimer / 60);
-        int seconds = Mathf.FloorToInt(currentTimer % 60);
+        int minutes;
+        int seconds;
+        if (currentTimer >= timeLimitForTheGame - 0.5f)
+        {
+            seconds = 0;
+            minutes = 3;
+        }
+        else
+        {
+            minutes = Mathf.FloorToInt(currentTimer / 60);
+            seconds = Mathf.RoundToInt(currentTimer % 60);
+        }
         timerText.text = minutes + doubleComma + seconds.ToString("00");
     }
 

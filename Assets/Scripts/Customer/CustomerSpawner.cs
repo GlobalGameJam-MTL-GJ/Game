@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 [System.Serializable]
@@ -17,11 +19,16 @@ public class CustomerSpawner : MonoBehaviour
     [SerializeField] private GameObject customerBase;
     [SerializeField] private float _spawnRate;
     private float _runningTimer;
-
+    private bool gameStarted = false;
     [SerializeField] private QueueController _queueController;
+
+    private void Start() => TimeManager.instance.OnGameStart += HandleGameStart;
+
+    private void HandleGameStart() => gameStarted = true;
 
     void Update()
     {
+        if (!gameStarted) return;
         SpawnCustomer();
     }
 
@@ -36,9 +43,7 @@ public class CustomerSpawner : MonoBehaviour
             _runningTimer = 0;
 
             ActivePropsEntry choosenPropsEntry = PropsBuilder.instance.GetAnActiveProps();
-
-            //var (customerDefinition, customerOrderDefinition)
-
+            
             var customer = new Customer(FindCustomerForTheChoosenProps(choosenPropsEntry, out var customerOrderDefinition));
             var customerOrder = new CustomerOrder(customerOrderDefinition);
 
@@ -81,5 +86,11 @@ public class CustomerSpawner : MonoBehaviour
         customerOrderDefinition = filteredCustomerOrderDefinitions[rand];
         customerOrderDefinition.PropsColor = choosenPropsEntry.propsColor;
         return choosenCustomer;
+    }
+    
+    private void OnDestroy()
+    {
+        if(TimeManager.instance != null)
+            TimeManager.instance.OnGameStart -= HandleGameStart;
     }
 }
