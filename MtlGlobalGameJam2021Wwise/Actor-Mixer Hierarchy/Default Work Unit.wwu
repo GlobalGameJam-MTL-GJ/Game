@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+							<ObjectRef Name="Player" ID="{69B1EA64-1B5E-4732-B1C2-1C567943946F}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -545,7 +545,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+							<ObjectRef Name="Player" ID="{69B1EA64-1B5E-4732-B1C2-1C567943946F}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3001,7 +3001,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+							<ObjectRef Name="NPC" ID="{2170B3E6-FEF1-4436-87EB-0C87DE4A6FFF}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3290,6 +3290,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="UI_Hover" ID="{FD168199-E342-4F1A-A213-0CA540072FB5}" ShortID="36591262">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
@@ -3388,7 +3395,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+							<ObjectRef Name="NPC" ID="{2170B3E6-FEF1-4436-87EB-0C87DE4A6FFF}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3403,6 +3410,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Level_Bell" ID="{8B570CC2-B4E2-4C0E-A8C2-821A72590D98}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Level_Bell.wav</AudioFile>
 									<MediaIDList>
@@ -4740,6 +4750,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<ActorMixer Name="NPC_BossStrikes" ID="{F48007D1-33FB-4C50-9260-665F5609B7DA}" ShortID="737131556">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>

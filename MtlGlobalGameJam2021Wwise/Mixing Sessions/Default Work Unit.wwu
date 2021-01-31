@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0F874489-534C-4EA5-AC67-56F7E43DBE10}" SchemaVersion="97">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0F874489-534C-4EA5-AC67-56F7E43DBE10}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0F874489-534C-4EA5-AC67-56F7E43DBE10}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="New Mixing Session" ID="{6EA03940-7A5A-4F1B-98A7-361CC6FFCE1E}">
+					<ObjectList>
+						<ObjectRef Name="Level" ID="{1B4CF809-11D2-4BFE-B82C-DE1B3FF7D9E8}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+						<ObjectRef Name="NPC" ID="{432004CB-2A45-408B-884F-470610B772D3}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+						<ObjectRef Name="Player" ID="{FD026FEE-8683-45C7-8948-6034915238E4}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+						<ObjectRef Name="Props" ID="{D0A50CB9-D8A9-46B4-9D7D-D178627E92FA}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+						<ObjectRef Name="UI" ID="{9E48BC08-1D0C-4B20-99F9-5F3ECDC412D7}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+						<ObjectRef Name="XD" ID="{F2A181ED-D2E1-4B9A-89CE-A298BFE6029F}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
