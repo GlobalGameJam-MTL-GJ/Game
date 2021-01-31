@@ -106,6 +106,8 @@ public class Props : MonoBehaviour
                 recoveringFromThrow = true;
                 rigidbody.isKinematic = true;
                 rigidbody.constraints = RigidbodyConstraints.None;
+                AkSoundEngine.SetSwitch("PropType", propsType.ToString(), gameObject);
+                AkSoundEngine.PostEvent("Prop_Impact", gameObject);
             }
         }
         else if (beingDropped)
@@ -116,6 +118,8 @@ public class Props : MonoBehaviour
                 pickedUp = false;
                 rigidbody.isKinematic = true;
                 rigidbody.constraints = RigidbodyConstraints.None;
+                AkSoundEngine.SetSwitch("PropType", propsType.ToString(), gameObject);
+                AkSoundEngine.PostEvent("Prop_Impact", gameObject);
                 propsMovementComponent.ActivateMovement();
             }
         }

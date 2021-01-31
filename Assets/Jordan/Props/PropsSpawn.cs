@@ -27,6 +27,7 @@ public class PropsSpawn : MonoBehaviour
 
     public void SpawnTween(GameObject newProps)
     {
+        AkSoundEngine.PostEvent("Level_Spawn", gameObject);
         RotateSpawnHolderAndAssignPointsPosition();
         LeanTween.delayedCall(0.25f, () =>
         {
