@@ -3000,7 +3000,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="GameState" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+									<ObjectRef Name="MusicType" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3039,7 +3039,7 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="GameEnd" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
+										<SwitchRef Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
 										<ItemList>
 											<ItemRef Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}"/>
 										</ItemList>
@@ -3047,6 +3047,253 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="Item_Success" ID="{EBEA8444-6B89-4B18-A925-DFBAFAA603CE}" ShortID="534761964">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_ItemSuccess_01" ID="{27D89279-624E-4CB3-A3FC-48D62BF06ED1}" ShortID="102927559">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{61486DA1-F2F8-49AE-A484-87BF542840A3}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{76B57406-146E-4887-B821-509BE3AD4DC0}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{76B57406-146E-4887-B821-509BE3AD4DC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_ItemSuccess_02" ID="{C37A4225-2168-41A9-B422-82687432C898}" ShortID="992795396">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D02CBEE5-6C7A-4C4E-BBA2-51B4A36F509B}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{7F092CED-6336-4C8E-B6D8-07AFC93BAB49}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{7F092CED-6336-4C8E-B6D8-07AFC93BAB49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_ItemSuccess_03" ID="{E0BD5DAD-60F3-44A1-B639-E5BB5557F161}" ShortID="1010018893">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0E1697F3-E67F-465E-90ED-E230784C8B4E}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{F324CFF5-77BD-4EF2-AFB7-46EE63FE2064}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{F324CFF5-77BD-4EF2-AFB7-46EE63FE2064}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_ItemSuccess_05" ID="{B1321D6F-1830-44ED-9E76-23F74924BA32}" ShortID="432811046">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{580B687E-D62E-425A-94CF-15EF244736D6}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{03FE4A6B-EA94-4965-8AC9-1095AD85A72A}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{03FE4A6B-EA94-4965-8AC9-1095AD85A72A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_ItemSuccess_06" ID="{67B7F585-1B2D-44A2-84AD-43B7C522C988}" ShortID="7503754">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{12DC2A6B-5FD2-497E-86D8-DEE7B0D59E75}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{525DE551-F118-469F-AE08-FBCA1DDFCC5F}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{525DE551-F118-469F-AE08-FBCA1DDFCC5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_ItemSuccess_07" ID="{7641EFFA-4C78-49ED-AC1C-3EE25B3F34E4}" ShortID="536099934">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BA86B0DF-2A4F-4682-8C47-5D98FD8182BD}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_ItemSuccess_01" ID="{7D7FD64B-608A-469C-A84F-911A0F4DFFFB}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_ItemSuccess_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453099768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_ItemSuccess_01" ID="{7D7FD64B-608A-469C-A84F-911A0F4DFFFB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{9E48BC08-1D0C-4B20-99F9-5F3ECDC412D7}" ShortID="12348666">
@@ -3181,6 +3428,1516 @@
 								<ActiveSource Name="Level_Bell" ID="{8B570CC2-B4E2-4C0E-A8C2-821A72590D98}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<SwitchContainer Name="NPC_Voice" ID="{064F03E5-CF0D-42C1-8242-3CEEB8F5DE80}" ShortID="670302785">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="NPCType" ID="{12943382-4FAB-4FBD-BC23-FB2DA8AD1D56}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Elf" ID="{90A0342A-B586-4E78-B647-DF80377E6A97}" ShortID="745191987">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NPCMood" ID="{C59DC32A-4540-472A-8946-1A56D159E17A}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="NPC_Elf_Happy" ID="{A6BACB4E-251C-4F58-8529-061BEF958DA1}" ShortID="331248516">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4EFC20B2-3D31-4BD0-B0D6-A48D5C57E9B4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_ElfHappy_01" ID="{827F0AA4-8244-42C3-BC40-E2947487A420}" ShortID="443647989">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfHappy_01" ID="{78D3DE03-D2CE-475E-9BC3-7CCA3F8B80FC}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfHappy_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="577980927"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfHappy_01" ID="{78D3DE03-D2CE-475E-9BC3-7CCA3F8B80FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfHappy_02" ID="{6952F1E1-071D-419B-B910-11D1F5818AE5}" ShortID="607638399">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfHappy_02" ID="{D8857CBF-DDC6-4FA6-9D09-5B90C14D81F8}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfHappy_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="586901859"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfHappy_02" ID="{D8857CBF-DDC6-4FA6-9D09-5B90C14D81F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfHappy_03" ID="{7F542716-309C-490D-8237-FB85A46B0A3A}" ShortID="611911041">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfHappy_03" ID="{1802E8B3-3B7F-4B3A-8D56-96DBA2693A02}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfHappy_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="604073838"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfHappy_03" ID="{1802E8B3-3B7F-4B3A-8D56-96DBA2693A02}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfHappy_04" ID="{D5E6BA63-99EC-4460-B3C7-3E7D1D930306}" ShortID="366133198">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfHappy_04" ID="{5FD47696-8147-4B8F-883D-5FA3686A7846}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfHappy_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="509623129"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfHappy_04" ID="{5FD47696-8147-4B8F-883D-5FA3686A7846}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfHappy_05" ID="{AE2C69DD-511E-49B5-8D06-C311AA6A6CBF}" ShortID="457548456">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfHappy_05" ID="{83608F88-71A1-4297-9097-98CDC9EC8809}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfHappy_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="518067381"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfHappy_05" ID="{83608F88-71A1-4297-9097-98CDC9EC8809}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="NPC_Elf_Angry" ID="{8170AC56-AFDC-49CC-A0D2-2A27A5D52E45}" ShortID="451075675">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B57392C1-A37D-4FAE-A06C-D7E261C002F0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_ElfAngry_01" ID="{64C720BA-058E-4EEB-84CF-9A3D993350F2}" ShortID="539444777">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfAngry_01" ID="{B5C25B6E-0561-4982-A608-ED470A58A874}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfAngry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="626424636"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfAngry_01" ID="{B5C25B6E-0561-4982-A608-ED470A58A874}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfAngry_02" ID="{5471A3EB-8B80-41BD-90AA-83A37F694909}" ShortID="92466291">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfAngry_02" ID="{2BF9C41C-73F8-4BC4-9F12-F0DBA16B40DB}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfAngry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="496050525"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfAngry_02" ID="{2BF9C41C-73F8-4BC4-9F12-F0DBA16B40DB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfAngry_03" ID="{B8DCCBB0-1A16-401C-B1F6-8566E1971A9C}" ShortID="543265382">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfAngry_03" ID="{A0D7D897-C55E-4AE0-97CD-74D76CE1D708}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfAngry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="799725194"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfAngry_03" ID="{A0D7D897-C55E-4AE0-97CD-74D76CE1D708}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfAngry_04" ID="{A64563DE-92D1-41E2-8D13-9F270E25F026}" ShortID="410756519">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfAngry_04" ID="{7974F20C-3B12-459F-B92A-0CEC2AA96501}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfAngry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="949644403"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfAngry_04" ID="{7974F20C-3B12-459F-B92A-0CEC2AA96501}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_ElfAngry_05" ID="{E34B9901-6364-4B27-9805-1BACFC14B229}" ShortID="9758430">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_ElfAngry_05" ID="{D3B3A862-EE53-4812-8BD2-6B4C23ACBEBE}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_ElfAngry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="956485800"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_ElfAngry_05" ID="{D3B3A862-EE53-4812-8BD2-6B4C23ACBEBE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Elf_Happy" ID="{A6BACB4E-251C-4F58-8529-061BEF958DA1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Elf_Angry" ID="{8170AC56-AFDC-49CC-A0D2-2A27A5D52E45}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Angry" ID="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Elf_Angry" ID="{8170AC56-AFDC-49CC-A0D2-2A27A5D52E45}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Elf_Happy" ID="{A6BACB4E-251C-4F58-8529-061BEF958DA1}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Wizard" ID="{6BCAF20E-09FB-42C6-ADFD-D8CE1BB393E0}" ShortID="487822690">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NPCMood" ID="{C59DC32A-4540-472A-8946-1A56D159E17A}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="NPC_Wizard_Happy" ID="{762F7FE6-3C75-4448-BB63-EA14FBBCCAB5}" ShortID="1031207945">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DDB8745F-B852-41DB-BF20-84AA497FF1F7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_WizardHappy_01" ID="{BBC0D314-D93C-4CD9-A281-AA37B769B09A}" ShortID="713965668">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardHappy_01" ID="{455668D3-B71D-44E8-8980-9CF045A62A03}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardHappy_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="744097578"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardHappy_01" ID="{455668D3-B71D-44E8-8980-9CF045A62A03}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardHappy_02" ID="{95995802-4ADD-42F0-B480-6936EF8E6FFA}" ShortID="12250461">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardHappy_02" ID="{57F6E2FD-2F8E-4667-993E-2A5FB1086867}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardHappy_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="131501250"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardHappy_02" ID="{57F6E2FD-2F8E-4667-993E-2A5FB1086867}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardHappy_03" ID="{DAF44153-538F-4976-AC95-723FBC5392A7}" ShortID="565513283">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardHappy_03" ID="{0DAA8991-BA59-4B69-B668-021C32B3EE6A}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardHappy_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1048492323"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardHappy_03" ID="{0DAA8991-BA59-4B69-B668-021C32B3EE6A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardHappy_04" ID="{6B1C86CA-7C02-41BB-8D1F-30F442B5B6FA}" ShortID="434270223">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardHappy_04" ID="{7CCCEAFE-73EA-4FC3-BDDB-386AC93538A8}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardHappy_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1024286458"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardHappy_04" ID="{7CCCEAFE-73EA-4FC3-BDDB-386AC93538A8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardHappy_05" ID="{FDC3E1CC-61B9-4347-B7CA-595B3D5DCBF8}" ShortID="421313001">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardHappy_05" ID="{E6E67BF0-A5B5-40FC-B787-68D24AC78A5B}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardHappy_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="663158529"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardHappy_05" ID="{E6E67BF0-A5B5-40FC-B787-68D24AC78A5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="NPC_Wizard_Angry" ID="{A1048012-3173-448E-89B4-11810AA3F85B}" ShortID="741138295">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8EDB3EB5-EACF-43FA-9FA9-8B8ABEFDB5FD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_WizardAngry_01" ID="{2DB09266-19C8-4F94-B615-7B362B53DE73}" ShortID="348928881">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardAngry_01" ID="{D2F06540-EEE8-4E46-ACB9-3B2BFBCCC350}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardAngry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="438320385"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardAngry_01" ID="{D2F06540-EEE8-4E46-ACB9-3B2BFBCCC350}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardAngry_02" ID="{B3A77AF0-37D4-4561-A5FE-C5546478AD3C}" ShortID="220840952">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardAngry_02" ID="{08ED0DE8-8172-4C80-AA58-8468FC372B07}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardAngry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1040773399"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardAngry_02" ID="{08ED0DE8-8172-4C80-AA58-8468FC372B07}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardAngry_03" ID="{80927170-D41B-409D-9ACD-6735C28B48CB}" ShortID="645165274">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardAngry_03" ID="{61B6780A-3CB8-4121-8909-3A868C53F057}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardAngry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="951697123"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardAngry_03" ID="{61B6780A-3CB8-4121-8909-3A868C53F057}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardAngry_04" ID="{43B45FBC-2158-478E-9278-766AEAD0D6FF}" ShortID="178610250">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardAngry_04" ID="{CF6C3192-6B72-4F74-B87F-5541387DBFCF}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardAngry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="362829846"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardAngry_04" ID="{CF6C3192-6B72-4F74-B87F-5541387DBFCF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_WizardAngry_05" ID="{CA0A9FEF-39E7-4B2B-90A2-71E9BAE13435}" ShortID="833858675">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_WizardAngry_05" ID="{A5636AE5-4B8F-49A2-AE50-552037823B00}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_WizardAngry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="905755032"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_WizardAngry_05" ID="{A5636AE5-4B8F-49A2-AE50-552037823B00}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Wizard_Angry" ID="{A1048012-3173-448E-89B4-11810AA3F85B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Wizard_Happy" ID="{762F7FE6-3C75-4448-BB63-EA14FBBCCAB5}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Angry" ID="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Wizard_Angry" ID="{A1048012-3173-448E-89B4-11810AA3F85B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Wizard_Happy" ID="{762F7FE6-3C75-4448-BB63-EA14FBBCCAB5}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Knight" ID="{494E1D6B-644D-493E-9405-C588EC86AF48}" ShortID="298832576">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NPCMood" ID="{C59DC32A-4540-472A-8946-1A56D159E17A}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="NPC_Knight_Happy" ID="{4F8ABFD7-E256-4022-A9EE-E8213F375F8B}" ShortID="27733312">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9742C237-29AF-4224-82F7-A93B68B943B5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_KnightHappy_01" ID="{B783524F-0162-47D4-86C1-FC438D53DE17}" ShortID="39904377">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightHappy_01" ID="{62ACD5B3-30C3-4424-8371-B114F189AC57}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightHappy_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="297340003"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightHappy_01" ID="{62ACD5B3-30C3-4424-8371-B114F189AC57}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightHappy_02" ID="{85EE7227-C869-4C20-A73B-E2CB5D9FE77F}" ShortID="884232422">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightHappy_02" ID="{ECE29B80-19A7-4933-8EAC-E164178046B5}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightHappy_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="351532228"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightHappy_02" ID="{ECE29B80-19A7-4933-8EAC-E164178046B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightHappy_03" ID="{1C1D7117-0660-4FBD-BB21-94809E0E7274}" ShortID="98576547">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightHappy_03" ID="{CE88A269-3694-4D1D-A035-A53EDD50F753}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightHappy_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="494117789"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightHappy_03" ID="{CE88A269-3694-4D1D-A035-A53EDD50F753}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightHappy_04" ID="{6EF8FD6C-33C6-4D55-BD92-542111AE0612}" ShortID="527421013">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightHappy_04" ID="{B4AD341F-C3DE-4CDB-A706-3C04442E4C5B}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightHappy_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="989983889"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightHappy_04" ID="{B4AD341F-C3DE-4CDB-A706-3C04442E4C5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightHappy_05" ID="{DDE82E92-504B-4A7D-AC5A-A437371BF72B}" ShortID="483381022">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightHappy_05" ID="{6CD73AD0-049F-4338-A687-6036ACC17F5A}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightHappy_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="837956154"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightHappy_05" ID="{6CD73AD0-049F-4338-A687-6036ACC17F5A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="NPC_Knight_Angry" ID="{6D2888B3-0479-4FEB-8C79-3836D13FCFCA}" ShortID="945399686">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{37C2C385-B3F7-4C35-8CFC-8B1D040BCD9E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_KnightAngry_01" ID="{5ADD031A-DE92-44D8-9909-F3C9E18F6B3D}" ShortID="705858660">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightAngry_01" ID="{7B488CD4-4271-4B3B-803B-24F30236EF6B}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightAngry_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="129017961"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightAngry_01" ID="{7B488CD4-4271-4B3B-803B-24F30236EF6B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightAngry_02" ID="{D3C8D37E-95F1-48A9-8B7E-5131BBF9C955}" ShortID="883141334">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightAngry_02" ID="{B2F0688B-401E-45B9-81A5-0BE22C250010}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightAngry_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="702839602"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightAngry_02" ID="{B2F0688B-401E-45B9-81A5-0BE22C250010}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightAngry_03" ID="{21C598E4-D1C7-4DB3-89A4-2F813EFBCDF6}" ShortID="822226645">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightAngry_03" ID="{BFC4329A-D1FB-4ACC-BA54-29474D0600AB}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightAngry_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="208789235"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightAngry_03" ID="{BFC4329A-D1FB-4ACC-BA54-29474D0600AB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightAngry_04" ID="{19B654C4-E98E-4310-B9C3-1E76A14E2F5C}" ShortID="720358804">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightAngry_04" ID="{EF1936D1-5D43-4B8D-8948-93C9750E9601}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightAngry_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="374593558"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightAngry_04" ID="{EF1936D1-5D43-4B8D-8948-93C9750E9601}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_KnightAngry_05" ID="{BE6B223C-1AC6-4B5A-BAEC-2A52529AF5D3}" ShortID="299684671">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_KnightAngry_05" ID="{012BC590-ED2C-456C-8156-0CABD2404FE8}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_KnightAngry_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="476742448"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_KnightAngry_05" ID="{012BC590-ED2C-456C-8156-0CABD2404FE8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Knight_Angry" ID="{6D2888B3-0479-4FEB-8C79-3836D13FCFCA}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Knight_Happy" ID="{4F8ABFD7-E256-4022-A9EE-E8213F375F8B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Angry" ID="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Knight_Angry" ID="{6D2888B3-0479-4FEB-8C79-3836D13FCFCA}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Knight_Happy" ID="{4F8ABFD7-E256-4022-A9EE-E8213F375F8B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Princess" ID="{FA48C342-765C-4A4B-BCEE-DEC30329B341}" ShortID="893464683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NPCMood" ID="{C59DC32A-4540-472A-8946-1A56D159E17A}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="NPC_Princess_Angry" ID="{6CF235DE-4E3C-4C23-94FB-28ABD8879BC0}" ShortID="557130983">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{37ECB20D-1A9C-4DA0-AD06-2DC96F2469A7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_PrincessMad_01" ID="{A617B34B-07BD-4B60-9BD5-9681E40A0276}" ShortID="866633507">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessMad_01" ID="{96FF797B-34D6-4C9D-8F93-CF404DAC5E63}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessMad_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="808605643"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessMad_01" ID="{96FF797B-34D6-4C9D-8F93-CF404DAC5E63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessMad_02" ID="{1A99EF77-CACC-4C12-B7B9-18CD4C607DE4}" ShortID="122109850">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessMad_02" ID="{B7FC719C-3E95-4404-806A-501C9FD05846}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessMad_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="809231405"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessMad_02" ID="{B7FC719C-3E95-4404-806A-501C9FD05846}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessMad_03" ID="{580BDF70-68EB-4657-BD5D-15D29EC4AA80}" ShortID="249592366">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessMad_03" ID="{4ED7631C-7DB6-41EC-9E35-7922B53BEE8C}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessMad_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1073478864"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessMad_03" ID="{4ED7631C-7DB6-41EC-9E35-7922B53BEE8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessMad_04" ID="{9DF12DEC-A2E4-4B9E-90BB-74CB642FFB06}" ShortID="932945136">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessMad_04" ID="{C29CAF89-0832-4C1D-8720-287ABB27AAFF}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessMad_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="173906759"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessMad_04" ID="{C29CAF89-0832-4C1D-8720-287ABB27AAFF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessMad_05" ID="{8CA0BCB5-2974-4E84-9995-BB502F4551BE}" ShortID="135202298">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessMad_05" ID="{C566CB08-45AD-41BB-8793-A0B1E2032A55}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessMad_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="127113419"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessMad_05" ID="{C566CB08-45AD-41BB-8793-A0B1E2032A55}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="NPC_Princess_Happy" ID="{91331F28-B496-48B4-917D-C9699C144E81}" ShortID="1035119606">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1449D91E-8DFE-4E22-BA7D-2750E783839C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Mumbles_PrincessHappy_01" ID="{8FF12EF4-D2EE-416E-8E45-A0C7D0321930}" ShortID="787944068">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessHappy_01" ID="{16C1B900-737C-4B86-99DF-EF3958B6D863}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessHappy_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="189667805"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessHappy_01" ID="{16C1B900-737C-4B86-99DF-EF3958B6D863}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessHappy_02" ID="{0F578694-145E-47B9-8AEF-DC8187756C4E}" ShortID="95567969">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessHappy_02" ID="{5105EE56-1203-4C1B-AD00-FC0948C2AB85}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessHappy_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="528386332"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessHappy_02" ID="{5105EE56-1203-4C1B-AD00-FC0948C2AB85}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessHappy_03" ID="{97DA3936-1105-41ED-85D7-AC9D0E1B82F4}" ShortID="904205979">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessHappy_03" ID="{DE51CDDF-5279-4DF4-87C4-D68825CA5E70}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessHappy_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="670619239"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessHappy_03" ID="{DE51CDDF-5279-4DF4-87C4-D68825CA5E70}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessHappy_04" ID="{AC877EEB-176F-4E12-AB1B-0D2945A40661}" ShortID="141190196">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessHappy_04" ID="{3B84F214-04C4-47EB-8160-776B4B7BFAAB}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessHappy_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="467360734"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessHappy_04" ID="{3B84F214-04C4-47EB-8160-776B4B7BFAAB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Mumbles_PrincessHappy_05" ID="{2D557F10-CD37-4A67-B738-CECE220D5FA6}" ShortID="387278013">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Mumbles_PrincessHappy_05" ID="{F4DC7E25-E00F-4EE0-99F6-80DA3D5A55D3}">
+															<Language>SFX</Language>
+															<AudioFile>Mumbles_PrincessHappy_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="289942089"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Mumbles_PrincessHappy_05" ID="{F4DC7E25-E00F-4EE0-99F6-80DA3D5A55D3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Princess_Happy" ID="{91331F28-B496-48B4-917D-C9699C144E81}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="NPC_Princess_Angry" ID="{6CF235DE-4E3C-4C23-94FB-28ABD8879BC0}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Angry" ID="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Princess_Angry" ID="{6CF235DE-4E3C-4C23-94FB-28ABD8879BC0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
+												<ItemList>
+													<ItemRef Name="NPC_Princess_Happy" ID="{91331F28-B496-48B4-917D-C9699C144E81}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wizard" ID="{6BCAF20E-09FB-42C6-ADFD-D8CE1BB393E0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Elf" ID="{90A0342A-B586-4E78-B647-DF80377E6A97}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Princess" ID="{FA48C342-765C-4A4B-BCEE-DEC30329B341}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Knight" ID="{494E1D6B-644D-493E-9405-C588EC86AF48}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wizard" ID="{2175A416-C4AF-43AA-89AC-F032AC2657C9}"/>
+										<ItemList>
+											<ItemRef Name="Wizard" ID="{6BCAF20E-09FB-42C6-ADFD-D8CE1BB393E0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Elf" ID="{B816CF23-1529-48E5-92B7-D7B52ECEB15A}"/>
+										<ItemList>
+											<ItemRef Name="Elf" ID="{90A0342A-B586-4E78-B647-DF80377E6A97}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Knight" ID="{7870E674-01BF-4684-9846-05BB0A5DA9DD}"/>
+										<ItemList>
+											<ItemRef Name="Knight" ID="{494E1D6B-644D-493E-9405-C588EC86AF48}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Princess" ID="{56531AED-F722-4006-A537-0B7121507920}"/>
+										<ItemList>
+											<ItemRef Name="Princess" ID="{FA48C342-765C-4A4B-BCEE-DEC30329B341}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<ActorMixer Name="NPC_BossStrikes" ID="{F48007D1-33FB-4C50-9260-665F5609B7DA}" ShortID="737131556">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="NPC_Boss" ID="{5655414B-C827-4829-9ECF-243DE2F929E0}" ShortID="406424700">
+									<PropertyList>
+										<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Mumbles_BossStrike_05" ID="{803B8E6C-D52F-4BAA-80B8-E8609AF24E46}" ShortID="458092232">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Mumbles_BossStrike_05" ID="{D51D7D41-D84B-43A6-99C5-5868F6C06FF2}">
+													<Language>SFX</Language>
+													<AudioFile>Mumbles_BossStrike_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="127271707"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Mumbles_BossStrike_05" ID="{D51D7D41-D84B-43A6-99C5-5868F6C06FF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Mumbles_BossStrike_04" ID="{22380A05-3A76-4085-A585-A719B46DDE1D}" ShortID="1065924959">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Mumbles_BossStrike_04" ID="{740597A6-1B8D-4090-BA3B-03BC94BC8943}">
+													<Language>SFX</Language>
+													<AudioFile>Mumbles_BossStrike_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658540419"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Mumbles_BossStrike_04" ID="{740597A6-1B8D-4090-BA3B-03BC94BC8943}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Mumbles_BossStrike_06" ID="{6D313AF5-20F4-474E-A397-71C8E2E3EFD2}" ShortID="852334218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Mumbles_BossStrike_06" ID="{580B12B8-BDED-4AED-A9F1-169164668D26}">
+													<Language>SFX</Language>
+													<AudioFile>Mumbles_BossStrike_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="490251"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Mumbles_BossStrike_06" ID="{580B12B8-BDED-4AED-A9F1-169164668D26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Mumbles_BossStrike_04" ID="{22380A05-3A76-4085-A585-A719B46DDE1D}"/>
+										<ItemRef Name="Mumbles_BossStrike_05" ID="{803B8E6C-D52F-4BAA-80B8-E8609AF24E46}"/>
+										<ItemRef Name="Mumbles_BossStrike_06" ID="{6D313AF5-20F4-474E-A397-71C8E2E3EFD2}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Stinger_Strike" ID="{80595F91-B31F-4E0E-971C-519F83F87306}" ShortID="211866163">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Strike_02" ID="{3486D0C7-118A-4F1C-B3D9-DAA44F01438F}" ShortID="334144053">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Strike_02" ID="{56647043-DECC-46CC-9668-CB6FA51A1992}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Strike_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512413283"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Strike_02" ID="{56647043-DECC-46CC-9668-CB6FA51A1992}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Strike_03" ID="{18036D27-2740-477B-BE5B-7CD11BADA83A}" ShortID="333495071">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Strike_03" ID="{A9A84E04-2709-4C57-BEE3-47D62B3F8F7B}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Strike_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1054492542"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Strike_03" ID="{A9A84E04-2709-4C57-BEE3-47D62B3F8F7B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Strike_01" ID="{096DE891-AFAD-431B-A1BC-1937E20BBE6D}" ShortID="210723388">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Strike_01" ID="{A1A40920-9CA4-4F2E-A924-D968BB99F276}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Strike_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="770769695"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Strike_01" ID="{A1A40920-9CA4-4F2E-A924-D968BB99F276}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="SFX_Strike_01" ID="{096DE891-AFAD-431B-A1BC-1937E20BBE6D}"/>
+										<ItemRef Name="SFX_Strike_02" ID="{3486D0C7-118A-4F1C-B3D9-DAA44F01438F}"/>
+										<ItemRef Name="SFX_Strike_03" ID="{18036D27-2740-477B-BE5B-7CD11BADA83A}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Level" ID="{1B4CF809-11D2-4BFE-B82C-DE1B3FF7D9E8}" ShortID="214276657">
@@ -3508,6 +5265,322 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Roof_Fall" ID="{C449DE3E-0FDA-428E-B56B-43A64445D4A4}" ShortID="1011536126">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{059972AE-B985-4506-B0D2-F2B5508AE329}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Level_RoofFall-001" ID="{4831756E-3618-4AD4-A2C9-1059B50E62C3}" ShortID="587329278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofFall-001" ID="{022FCC18-9F99-48CB-9979-57ACC0E3AE69}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofFall-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="948975430"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofFall-001" ID="{022FCC18-9F99-48CB-9979-57ACC0E3AE69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofFall-002" ID="{F4A64ED0-92E5-4967-8128-B34AD55B0856}" ShortID="381500425">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofFall-002" ID="{2690A623-FB23-43D3-BC6A-E6F2EDCEFAD2}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofFall-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103990794"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofFall-002" ID="{2690A623-FB23-43D3-BC6A-E6F2EDCEFAD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofFall-003" ID="{89CFAF49-BFCC-47D9-B74D-D1F124FC47CA}" ShortID="600837463">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofFall-003" ID="{99ED95D8-212A-4BA6-A94B-22E0045D1E33}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofFall-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="632822566"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofFall-003" ID="{99ED95D8-212A-4BA6-A94B-22E0045D1E33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofFall-004" ID="{E67693FE-5500-4C76-8EC1-A5841CDE423F}" ShortID="20768833">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofFall-004" ID="{1E5D276F-0A3E-4736-99A6-94979E33EC33}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofFall-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="182270053"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofFall-004" ID="{1E5D276F-0A3E-4736-99A6-94979E33EC33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofFall-005" ID="{E93F80C3-BEDC-4FF3-8FF9-EA9D58D8B41E}" ShortID="534595478">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofFall-005" ID="{682BA983-0636-4C9B-AAA3-D9796A3F2A69}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofFall-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="579106117"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofFall-005" ID="{682BA983-0636-4C9B-AAA3-D9796A3F2A69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomType" ID="{DE2F2D83-8C3C-491A-B698-2733772DEAEB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Backstore" ID="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}"/>
+										<CustomState Name="" ID="{EA4E1B2A-71A0-4378-B8AD-1B8720CFBAA1}" ShortID="85542002">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Frontstore" ID="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}"/>
+										<CustomState Name="" ID="{010D308A-7B9A-4CDD-B274-C6981427948B}" ShortID="1048949663"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Roof_Rise" ID="{1EA6DF77-B378-46B6-9961-EA840C70CA3F}" ShortID="593216158">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{825C8093-DE94-4E32-9282-4DAB87A0A0A4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Level_RoofRise-001" ID="{CDE6C341-601B-495F-BDC2-A0516F3FD8AB}" ShortID="121593588">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofRise-001" ID="{B0DF9FC9-8C77-4AA4-A3E1-99870FAA542F}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofRise-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="648224893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofRise-001" ID="{B0DF9FC9-8C77-4AA4-A3E1-99870FAA542F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofRise-002" ID="{6B7E64FF-9CDA-491B-93D6-0287551FC64F}" ShortID="330910522">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofRise-002" ID="{D2D3865A-FFE2-4966-8292-3616280670EF}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofRise-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="244667686"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofRise-002" ID="{D2D3865A-FFE2-4966-8292-3616280670EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofRise-003" ID="{67AAECB0-1A59-4D97-9A7A-589DA2F7645C}" ShortID="801737609">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofRise-003" ID="{D3D82ABC-49DA-44D8-AF33-8EF5606A0D15}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofRise-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="836571899"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofRise-003" ID="{D3D82ABC-49DA-44D8-AF33-8EF5606A0D15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofRise-004" ID="{CE34153E-D509-481D-9A3A-4D42496DF6AF}" ShortID="941211664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofRise-004" ID="{068B7091-277E-4E8C-951D-182A340AF98B}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofRise-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="660519050"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofRise-004" ID="{068B7091-277E-4E8C-951D-182A340AF98B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level_RoofRise-005" ID="{CAA357F5-C2A4-40A1-9464-10CA1C4CFB43}" ShortID="759112604">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level_RoofRise-005" ID="{5C978A2D-DAA6-4F1E-B4D3-F60F78087BE2}">
+											<Language>SFX</Language>
+											<AudioFile>Level_RoofRise-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="848232120"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Level_RoofRise-005" ID="{5C978A2D-DAA6-4F1E-B4D3-F60F78087BE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomType" ID="{DE2F2D83-8C3C-491A-B698-2733772DEAEB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Backstore" ID="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}"/>
+										<CustomState Name="" ID="{A31A15CC-BA29-4A08-8660-E22AE22E7F46}" ShortID="982985970"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Frontstore" ID="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}"/>
+										<CustomState Name="" ID="{131278E4-994E-4F02-929E-89B429FB1BB4}" ShortID="828593406">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>

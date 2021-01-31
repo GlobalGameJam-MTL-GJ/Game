@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2024222415	UI_Back			\Default Work Unit\UI_Back	
 	2118900976	UI_Hover			\Default Work Unit\UI_Hover	
 	2467171692	UI_StartGame			\Default Work Unit\UI_StartGame	
 	2774129122	UI_Select			\Default Work Unit\UI_Select	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	163861650	UI_Select	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Select		55788
-	674515717	UI_StartGame	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\UI_StartGame_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_StartGame		355240
-	906417135	UI_Hover	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\UI_Hover_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Hover		39408
+	163861650	UI_Select	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Select		55788
+	674515717	UI_StartGame	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\UI_StartGame_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_StartGame		355240
+	880386914	UI_Back	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\UI_Back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Back		32744
+	906417135	UI_Hover	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\UI_Hover_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Hover		39408
 

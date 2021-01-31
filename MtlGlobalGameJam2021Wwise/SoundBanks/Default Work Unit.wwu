@@ -29,7 +29,7 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{95D2E2B4-E51D-478D-B80A-F184E6DC3728}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Music_Level" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Play" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_GameOver" ID="{3158DFF0-FD61-4CC2-AEEA-E43B61E0179D}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
