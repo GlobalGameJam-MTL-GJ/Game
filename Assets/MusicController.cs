@@ -7,13 +7,18 @@ public class MusicController : MonoBehaviour
     public string RoomType;
     public int layer;
 
+    private static string currentRoomType;
+    public static bool isGameOver = false;
+
     private void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.layer == 22)
+        if(col.gameObject.layer == 22 && !isGameOver)
         {
-            AkSoundEngine.SetState("RoomType", RoomType);
-            AkSoundEngine.PostEvent("Music_Play", gameObject);
-            AkSoundEngine.SetSwitch("Music_Type", "Play", gameObject);
+            if(currentRoomType != RoomType)
+            {
+                currentRoomType = RoomType;
+                AkSoundEngine.SetState("RoomType", RoomType);
+            }
         }
     }
 }

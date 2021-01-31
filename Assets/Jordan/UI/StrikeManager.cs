@@ -44,6 +44,7 @@ public class StrikeManager : MonoBehaviour
         }
         else
         {
+            AkSoundEngine.PostEvent("NPC_BossStrike", gameObject);
             strikeImages[strikesCount].color = strikeColor;
             strikesCount++;
         }

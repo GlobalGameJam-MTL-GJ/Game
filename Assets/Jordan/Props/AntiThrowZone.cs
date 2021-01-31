@@ -24,6 +24,7 @@ public class AntiThrowZone : MonoBehaviour
             Rooftop.SetActive(true);
             LeanTween.cancel(Rooftop);
             LeanTween.value(gameObject, 15, 1.26f, 0.8f).setEaseOutBounce().setOnUpdate(UpdateYPosition);
+            AkSoundEngine.PostEvent("Level_Roof", gameObject);
         }
         PlayerAction playerAction = other.GetComponent<PlayerAction>();
         if (playerAction != null)
@@ -45,6 +46,7 @@ public class AntiThrowZone : MonoBehaviour
         {
             camera.cullingMask &= ~(1 << 24);
             LeanTween.cancel(Rooftop);
+            AkSoundEngine.PostEvent("Level_Roof", gameObject);
             LeanTween.value(gameObject, 1.26f, 15, 0.6f).setOnUpdate(UpdateYPosition).setOnComplete(() =>
             {
                 Rooftop.SetActive(false);

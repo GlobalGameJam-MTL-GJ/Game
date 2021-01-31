@@ -34,11 +34,18 @@ public class GameOverHandler : MonoBehaviour
         switch (gameOverType)
         {
             case GameOverType.TimeOut:
+                MusicController.isGameOver = true;
+                AkSoundEngine.PostEvent("EndWhistle", gameObject);
+                AkSoundEngine.SetSwitch("MusicType", "Win", gameObject);
+                AkSoundEngine.PostEvent("Music_End", gameObject);
                 gameOverHeaderText.text = timeOutGameOverText;
                 nextLevelButton.SetActive(SceneManager.GetActiveScene().buildIndex < totalLevelCount);
                 gameOverHeaderText.color = Color.white;
                 break;
             case GameOverType.StrikeOut:
+                MusicController.isGameOver = true;
+                AkSoundEngine.SetSwitch("MusicType", "Lose", gameObject);
+                AkSoundEngine.PostEvent("Music_End", gameObject);
                 gameOverHeaderText.text = strikeOutGameOverText;
                 nextLevelButton.SetActive(false);
                 gameOverHeaderText.color = Color.red;
