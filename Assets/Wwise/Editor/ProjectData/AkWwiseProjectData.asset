@@ -20,11 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5c803685bc14eb4dad253f1409cf19da
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895712419751431
-=======
-    m_lastTime: -8585895681253262884
->>>>>>> Stashed changes
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
     PathAndIcons:
@@ -33,11 +29,7 @@ MonoBehaviour:
     ParentPath: Factory Reflect Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895712419751431
-=======
-    m_lastTime: -8585895681253262884
->>>>>>> Stashed changes
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -210,15 +202,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 28bc4960b31bda4bb5636137584b30c2
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585895591502206732
-=======
-<<<<<<< Updated upstream
-    m_lastTime: -8585895712429799239
-=======
-    m_lastTime: -8585895681263491531
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+    m_lastTime: -8585895588844099598
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -237,8 +221,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: b4a7b46db6bd6a45b3a53114421e0423
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585895572863848208
+    m_lastTime: -8585895559429761701
     List:
     - name: Level
       guid: 4d692e2153ce544db14e59b0bfa3edeb
@@ -285,14 +268,6 @@ MonoBehaviour:
       - ElementName: Props
         ObjectType: 7
       Path: Default Work Unit\Props
-=======
-<<<<<<< Updated upstream
-    m_lastTime: -8585895712419801300
-=======
-    m_lastTime: -8585895681253352823
->>>>>>> Stashed changes
-    List: []
->>>>>>> Stashed changes
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -301,15 +276,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 51f0c3c4f249cf4c9d5422ec8410c70d
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895572863888242
-=======
-<<<<<<< Updated upstream
-    m_lastTime: -8585895712430088459
-=======
-    m_lastTime: -8585895681263861313
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     List:
     - name: Level_Door
       guid: 4ea917ea645c724e82a3d256992986f8
@@ -427,11 +394,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f7885b59aca114488c82f46b136a745d
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895712430078481
-=======
-    m_lastTime: -8585895681263851320
->>>>>>> Stashed changes
     List:
     - name: Clock
       guid: ac22ca15769f8645ab5f068d84095d8c
@@ -450,8 +413,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8bc7f533de1cdc46829936fe8cb27a5e
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585895572863698071
+    m_lastTime: -8585895559429731834
     List:
     - name: RoomType
       guid: 832d2fde3c8c1a49b6982733772deaeb
@@ -484,14 +446,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-=======
-<<<<<<< Updated upstream
-    m_lastTime: -8585895712419781354
-=======
-    m_lastTime: -8585895681253312849
->>>>>>> Stashed changes
-    List: []
->>>>>>> Stashed changes
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -500,11 +454,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0929118e5ab32a458cf117bda58f2739
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895712419771377
-=======
-    m_lastTime: -8585895681253292857
->>>>>>> Stashed changes
     List:
     - name: GameState
       guid: c409b472a0d02543a10cb682a3f30947
@@ -582,21 +532,16 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 833ef01121551e4f860f055beef11cde
     GuidInternal: 
-<<<<<<< Updated upstream
     m_lastTime: -8585895712419761402
-=======
-    m_lastTime: -8585895681253282864
->>>>>>> Stashed changes
     List: []
   ExpandedItems:
   - /MtlGlobalGameJam2021
   - /MtlGlobalGameJam2021/Events
-  - /MtlGlobalGameJam2021/SoundBanks
-<<<<<<< Updated upstream
-  - /MtlGlobalGameJam2021/SoundBanks/Default Work Unit
+  - /MtlGlobalGameJam2021/Events/Default Work Unit
+  - /MtlGlobalGameJam2021/States
+  - /MtlGlobalGameJam2021/States/Default Work Unit
+  - /MtlGlobalGameJam2021/States/Default Work Unit/RoomType
   - /MtlGlobalGameJam2021/Switches
   - /MtlGlobalGameJam2021/Switches/Default Work Unit
-=======
->>>>>>> Stashed changes
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
