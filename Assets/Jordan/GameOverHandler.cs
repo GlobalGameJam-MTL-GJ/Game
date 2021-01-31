@@ -35,6 +35,7 @@ public class GameOverHandler : MonoBehaviour
         {
             case GameOverType.TimeOut:
                 MusicController.isGameOver = true;
+                AkSoundEngine.PostEvent("Kill_Music", gameObject);
                 AkSoundEngine.PostEvent("EndWhistle", gameObject);
                 AkSoundEngine.SetSwitch("MusicType", "Win", gameObject);
                 AkSoundEngine.PostEvent("Music_End", gameObject);
@@ -44,6 +45,7 @@ public class GameOverHandler : MonoBehaviour
                 break;
             case GameOverType.StrikeOut:
                 MusicController.isGameOver = true;
+                AkSoundEngine.PostEvent("Kill_Music", gameObject);
                 AkSoundEngine.SetSwitch("MusicType", "Lose", gameObject);
                 AkSoundEngine.PostEvent("Music_End", gameObject);
                 gameOverHeaderText.text = strikeOutGameOverText;
