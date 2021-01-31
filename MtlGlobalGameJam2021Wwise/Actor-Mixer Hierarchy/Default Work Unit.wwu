@@ -3058,6 +3058,96 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="UI_Hover" ID="{FD168199-E342-4F1A-A213-0CA540072FB5}" ShortID="36591262">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Hover" ID="{B26FC6A1-4000-4861-ABAE-6100377FE126}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Hover.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="906417135"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Hover" ID="{B26FC6A1-4000-4861-ABAE-6100377FE126}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Select" ID="{3674640D-6699-447C-938E-7AC2F5B5CE8B}" ShortID="928046474">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Select" ID="{DABE811B-A35D-451A-ABA6-8AAA74A3260B}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Select.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="163861650"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Select" ID="{DABE811B-A35D-451A-ABA6-8AAA74A3260B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_StartGame" ID="{FB925FB2-7EB5-4E0D-A7CE-A9C9C4A5CF53}" ShortID="723769603">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_StartGame" ID="{E5485EE9-9EC2-40AF-BC97-B0936C99AD0B}">
+									<Language>SFX</Language>
+									<AudioFile>UI_StartGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="674515717"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_StartGame" ID="{E5485EE9-9EC2-40AF-BC97-B0936C99AD0B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Back" ID="{3E9299E3-F1E3-4A72-8A2C-6C0201FF7A36}" ShortID="229718133">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Back" ID="{A16EAB8C-4E0F-4DF0-BD85-132B85D5EC43}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Back.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="880386914"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Back" ID="{A16EAB8C-4E0F-4DF0-BD85-132B85D5EC43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="NPC" ID="{432004CB-2A45-408B-884F-470610B772D3}" ShortID="31824428">
 					<ReferenceList>

@@ -101,11 +101,11 @@ public class PlayerAction : MonoBehaviour
         }
     }
 
-
-
     public void Pickup(GameObject itemObject)
     {
         Props props = itemObject.GetComponent<Props>();
+        AkSoundEngine.SetSwitch("PropType", props.GetPropsType().ToString(), gameObject);
+        AkSoundEngine.PostEvent("Player_Pickup", gameObject);
         if (props != null)
         {
             props.GetPickedUp();
@@ -120,7 +120,7 @@ public class PlayerAction : MonoBehaviour
 
     private void Throw()
     {
-        if (pickedUpObject == null) return;
+        AkSoundEngine.PostEvent("Player_Throw", gameObject);
         LetGoOfTheItem();
         pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
         pickedUpObject = null;
@@ -128,6 +128,7 @@ public class PlayerAction : MonoBehaviour
     
     private void DropTheProps()
     {
+        AkSoundEngine.PostEvent("Player_Drop", gameObject);
         LetGoOfTheItem();
         pickedUpObject.GetComponent<Props>().GetDropped();
         
@@ -141,6 +142,7 @@ public class PlayerAction : MonoBehaviour
             playerMovement.SetSpeedModifier(0);
             pickedUpObject.transform.parent = null;
         }
+        pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
     }
 

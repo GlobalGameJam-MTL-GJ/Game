@@ -47,6 +47,7 @@ public class CustomerMover : MonoBehaviour
     public void TriggerEvent()
     {
         if (!_queueSpot.isQueueFront) { return; }
+        AkSoundEngine.PostEvent("NPC_Bell", gameObject);
         OnCustomerWaiting?.Invoke();
     }
     /*

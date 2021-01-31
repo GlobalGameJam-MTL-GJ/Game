@@ -10,6 +10,13 @@
 						<State Name="Backstore" ID="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="GameOver" ID="{12E01E52-1928-40DF-815F-C626AA4D464B}">
+					<ChildrenList>
+						<State Name="None" ID="{FE37C102-4075-4531-83CB-E2946884D6A9}"/>
+						<State Name="True" ID="{412AD62D-C85E-4E00-B31B-B383624CE167}"/>
+						<State Name="False" ID="{B09B0BD2-1808-4866-A776-58D22402BA05}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
