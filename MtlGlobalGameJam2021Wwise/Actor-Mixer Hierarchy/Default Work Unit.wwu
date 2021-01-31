@@ -2988,65 +2988,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SwitchContainer Name="GameState" ID="{8C7B82D1-A9A3-4AF6-8188-C340DA779D0F}" ShortID="439135865">
-							<PropertyList>
-								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="MusicType" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}" WorkUnitID="{8E112909-B35A-452A-8CF1-17BDA58F2739}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}" ShortID="858266711">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="XD_EndWhistle" ID="{4B3A0F7E-80B2-47F6-84F3-57B70E33C482}">
-											<Language>SFX</Language>
-											<AudioFile>XD_EndWhistle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1048866118"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="XD_EndWhistle" ID="{4B3A0F7E-80B2-47F6-84F3-57B70E33C482}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-											<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
-										</PropertyList>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
-										<ItemList>
-											<ItemRef Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<RandomSequenceContainer Name="Prop_Success" ID="{EBEA8444-6B89-4B18-A925-DFBAFAA603CE}" ShortID="534761964">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -3294,6 +3235,28 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}" ShortID="858266711">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9B3B767-0717-4AE4-8AE1-2901B4D2AD99}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6049BC28-1BB3-4BDA-B563-6137584B30C2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="XD_EndWhistle" ID="{4B3A0F7E-80B2-47F6-84F3-57B70E33C482}">
+									<Language>SFX</Language>
+									<AudioFile>XD_EndWhistle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1048866118"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="XD_EndWhistle" ID="{4B3A0F7E-80B2-47F6-84F3-57B70E33C482}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{9E48BC08-1D0C-4B20-99F9-5F3ECDC412D7}" ShortID="12348666">

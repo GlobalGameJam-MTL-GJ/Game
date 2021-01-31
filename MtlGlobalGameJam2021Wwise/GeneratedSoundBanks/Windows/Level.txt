@@ -12,24 +12,24 @@ State	ID	Name	State Group			Notes
 	3572512317	Frontstore	RoomType			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	103990794	Level_RoofFall-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-002		226968
-	182270053	Level_RoofFall-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-004		203196
-	190713847	Level_Door-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-001		191052
-	212193479	Level_Spawn-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-004		288916
-	221871509	Level_Door-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-002		288976
-	244667686	Level_RoofRise-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-002		129952
-	297787276	Level_Spawn-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-003		293808
-	528165812	Level_Spawn-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-002		267420
-	554526608	Level_Door-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-003		224636
-	579106117	Level_RoofFall-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-005		186644
-	580003169	Level_Spawn-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-001		295764
-	632822566	Level_RoofFall-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-003		208324
-	648224893	Level_RoofRise-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-001		113400
-	660519050	Level_RoofRise-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-004		136232
-	836571899	Level_RoofRise-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-003		99668
-	848232120	Level_RoofRise-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-005		98408
-	901904304	Level_Door-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-005		233604
-	948975430	Level_RoofFall-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-001		266336
-	1045602469	Level_Door-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-004		261408
-	1068110762	Level_Spawn-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-005		277664
+	103990794	Level_RoofFall-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-002		45896
+	182270053	Level_RoofFall-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-004		37526
+	190713847	Level_Door-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-001		33523
+	212193479	Level_Spawn-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-004		14132
+	221871509	Level_Door-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-002		40419
+	244667686	Level_RoofRise-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-002		17986
+	297787276	Level_Spawn-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-003		15150
+	528165812	Level_Spawn-002	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-002		14207
+	554526608	Level_Door-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-003		26862
+	579106117	Level_RoofFall-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-005		36640
+	580003169	Level_Spawn-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-001		16093
+	632822566	Level_RoofFall-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-003		40839
+	648224893	Level_RoofRise-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-001		16507
+	660519050	Level_RoofRise-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-004		17417
+	836571899	Level_RoofRise-003	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-003		13182
+	848232120	Level_RoofRise-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofRise-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Rise\Level_RoofRise-005		13692
+	901904304	Level_Door-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-005		43009
+	948975430	Level_RoofFall-001	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_RoofFall-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Roof\Roof_Fall\Level_RoofFall-001		45029
+	1045602469	Level_Door-004	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Door-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Door\Level_Door-004		32620
+	1068110762	Level_Spawn-005	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Spawn-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Spawn\Level_Spawn-005		13439
 

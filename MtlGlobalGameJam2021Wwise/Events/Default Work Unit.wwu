@@ -301,6 +301,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EndWhistle" ID="{0EAC914A-1B9D-4FC3-A51A-882E83873D32}">
+					<ChildrenList>
+						<Action Name="" ID="{728EEED6-0C57-4FEC-973B-A9E0707B02CD}" ShortID="920581249">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="XD_EndWhistle" ID="{F50A4926-574A-4BC4-A90D-81552C9A44D8}" WorkUnitID="{55F3E32A-70A6-4D52-8DD3-426CBED6FBB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

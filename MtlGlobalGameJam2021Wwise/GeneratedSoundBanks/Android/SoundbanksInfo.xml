@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="662417162" Language="SFX" Hash="361399088">
+		<SoundBank Id="662417162" Language="SFX" Hash="3274498656">
 			<ObjectPath>\SoundBanks\Default Work Unit\NPC</ObjectPath>
 			<ShortName>NPC</ShortName>
 			<Path>NPC.bnk</Path>
@@ -20,7 +20,7 @@
 					<IncludedMemoryFiles>
 						<File Id="804081672" Language="SFX">
 							<ShortName>Level_Bell.wav</ShortName>
-							<Path>SFX\Level_Bell_10C4C929.wem</Path>
+							<Path>SFX\Level_Bell_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -28,27 +28,27 @@
 					<IncludedMemoryFiles>
 						<File Id="490251" Language="SFX">
 							<ShortName>Mumbles_BossStrike_06.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_06_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_BossStrike_06_B09F49DF.wem</Path>
 						</File>
 						<File Id="127271707" Language="SFX">
 							<ShortName>Mumbles_BossStrike_05.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_BossStrike_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="512413283" Language="SFX">
 							<ShortName>SFX_Strike_02.wav</ShortName>
-							<Path>SFX\SFX_Strike_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Strike_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="658540419" Language="SFX">
 							<ShortName>Mumbles_BossStrike_04.wav</ShortName>
-							<Path>SFX\Mumbles_BossStrike_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_BossStrike_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="770769695" Language="SFX">
 							<ShortName>SFX_Strike_01.wav</ShortName>
-							<Path>SFX\SFX_Strike_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Strike_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="1054492542" Language="SFX">
 							<ShortName>SFX_Strike_03.wav</ShortName>
-							<Path>SFX\SFX_Strike_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Strike_03_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -56,163 +56,163 @@
 					<IncludedMemoryFiles>
 						<File Id="127113419" Language="SFX">
 							<ShortName>Mumbles_PrincessMad_05.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessMad_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="129017961" Language="SFX">
 							<ShortName>Mumbles_KnightAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightAngry_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="131501250" Language="SFX">
 							<ShortName>Mumbles_WizardHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardHappy_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="173906759" Language="SFX">
 							<ShortName>Mumbles_PrincessMad_04.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessMad_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="189667805" Language="SFX">
 							<ShortName>Mumbles_PrincessHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessHappy_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="208789235" Language="SFX">
 							<ShortName>Mumbles_KnightAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightAngry_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="289942089" Language="SFX">
 							<ShortName>Mumbles_PrincessHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessHappy_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="297340003" Language="SFX">
 							<ShortName>Mumbles_KnightHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightHappy_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="351532228" Language="SFX">
 							<ShortName>Mumbles_KnightHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightHappy_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="362829846" Language="SFX">
 							<ShortName>Mumbles_WizardAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardAngry_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="374593558" Language="SFX">
 							<ShortName>Mumbles_KnightAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightAngry_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="438320385" Language="SFX">
 							<ShortName>Mumbles_WizardAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardAngry_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="467360734" Language="SFX">
 							<ShortName>Mumbles_PrincessHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessHappy_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="476742448" Language="SFX">
 							<ShortName>Mumbles_KnightAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightAngry_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="494117789" Language="SFX">
 							<ShortName>Mumbles_KnightHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightHappy_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="496050525" Language="SFX">
 							<ShortName>Mumbles_ElfAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfAngry_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="509623129" Language="SFX">
 							<ShortName>Mumbles_ElfHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfHappy_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="518067381" Language="SFX">
 							<ShortName>Mumbles_ElfHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfHappy_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="528386332" Language="SFX">
 							<ShortName>Mumbles_PrincessHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessHappy_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="577980927" Language="SFX">
 							<ShortName>Mumbles_ElfHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfHappy_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="586901859" Language="SFX">
 							<ShortName>Mumbles_ElfHappy_02.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfHappy_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="604073838" Language="SFX">
 							<ShortName>Mumbles_ElfHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_ElfHappy_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfHappy_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="626424636" Language="SFX">
 							<ShortName>Mumbles_ElfAngry_01.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfAngry_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="663158529" Language="SFX">
 							<ShortName>Mumbles_WizardHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardHappy_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="670619239" Language="SFX">
 							<ShortName>Mumbles_PrincessHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessHappy_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessHappy_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="702839602" Language="SFX">
 							<ShortName>Mumbles_KnightAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_KnightAngry_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightAngry_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="744097578" Language="SFX">
 							<ShortName>Mumbles_WizardHappy_01.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardHappy_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="799725194" Language="SFX">
 							<ShortName>Mumbles_ElfAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfAngry_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="808605643" Language="SFX">
 							<ShortName>Mumbles_PrincessMad_01.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_01_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessMad_01_B09F49DF.wem</Path>
 						</File>
 						<File Id="809231405" Language="SFX">
 							<ShortName>Mumbles_PrincessMad_02.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessMad_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="837956154" Language="SFX">
 							<ShortName>Mumbles_KnightHappy_05.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightHappy_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="905755032" Language="SFX">
 							<ShortName>Mumbles_WizardAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardAngry_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="949644403" Language="SFX">
 							<ShortName>Mumbles_ElfAngry_04.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfAngry_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="951697123" Language="SFX">
 							<ShortName>Mumbles_WizardAngry_03.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardAngry_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="956485800" Language="SFX">
 							<ShortName>Mumbles_ElfAngry_05.wav</ShortName>
-							<Path>SFX\Mumbles_ElfAngry_05_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_ElfAngry_05_B09F49DF.wem</Path>
 						</File>
 						<File Id="989983889" Language="SFX">
 							<ShortName>Mumbles_KnightHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_KnightHappy_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_KnightHappy_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="1024286458" Language="SFX">
 							<ShortName>Mumbles_WizardHappy_04.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_04_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardHappy_04_B09F49DF.wem</Path>
 						</File>
 						<File Id="1040773399" Language="SFX">
 							<ShortName>Mumbles_WizardAngry_02.wav</ShortName>
-							<Path>SFX\Mumbles_WizardAngry_02_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardAngry_02_B09F49DF.wem</Path>
 						</File>
 						<File Id="1048492323" Language="SFX">
 							<ShortName>Mumbles_WizardHappy_03.wav</ShortName>
-							<Path>SFX\Mumbles_WizardHappy_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_WizardHappy_03_B09F49DF.wem</Path>
 						</File>
 						<File Id="1073478864" Language="SFX">
 							<ShortName>Mumbles_PrincessMad_03.wav</ShortName>
-							<Path>SFX\Mumbles_PrincessMad_03_10C4C929.wem</Path>
+							<Path>SFX\Mumbles_PrincessMad_03_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -327,7 +327,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="968010305" Language="SFX" Hash="4072048737">
+		<SoundBank Id="968010305" Language="SFX" Hash="3090598484">
 			<ObjectPath>\SoundBanks\Default Work Unit\Props</ObjectPath>
 			<ShortName>Props</ShortName>
 			<Path>Props.bnk</Path>
@@ -336,99 +336,99 @@
 					<IncludedMemoryFiles>
 						<File Id="6388350" Language="SFX">
 							<ShortName>Sword_Impact-003.wav</ShortName>
-							<Path>SFX\Sword_Impact-003_10C4C929.wem</Path>
+							<Path>SFX\Sword_Impact-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="41460530" Language="SFX">
 							<ShortName>Bow_Impact-001.wav</ShortName>
-							<Path>SFX\Bow_Impact-001_10C4C929.wem</Path>
+							<Path>SFX\Bow_Impact-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="55368057" Language="SFX">
 							<ShortName>Potion_Impact-003.wav</ShortName>
-							<Path>SFX\Potion_Impact-003_10C4C929.wem</Path>
+							<Path>SFX\Potion_Impact-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="63812572" Language="SFX">
 							<ShortName>Potion_Impact-004.wav</ShortName>
-							<Path>SFX\Potion_Impact-004_10C4C929.wem</Path>
+							<Path>SFX\Potion_Impact-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="139417145" Language="SFX">
 							<ShortName>Bow_Impact-003.wav</ShortName>
-							<Path>SFX\Bow_Impact-003_10C4C929.wem</Path>
+							<Path>SFX\Bow_Impact-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="222017774" Language="SFX">
 							<ShortName>Sword_Impact-005.wav</ShortName>
-							<Path>SFX\Sword_Impact-005_10C4C929.wem</Path>
+							<Path>SFX\Sword_Impact-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="246988690" Language="SFX">
 							<ShortName>Grimoire_Impact-004.wav</ShortName>
-							<Path>SFX\Grimoire_Impact-004_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Impact-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="312724487" Language="SFX">
 							<ShortName>Crown_Impact-004.wav</ShortName>
-							<Path>SFX\Crown_Impact-004_10C4C929.wem</Path>
+							<Path>SFX\Crown_Impact-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="318893043" Language="SFX">
 							<ShortName>Sword_Impact-001.wav</ShortName>
-							<Path>SFX\Sword_Impact-001_10C4C929.wem</Path>
+							<Path>SFX\Sword_Impact-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="358367333" Language="SFX">
 							<ShortName>Sword_Impact-004.wav</ShortName>
-							<Path>SFX\Sword_Impact-004_10C4C929.wem</Path>
+							<Path>SFX\Sword_Impact-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="426823519" Language="SFX">
 							<ShortName>Potion_Impact-002.wav</ShortName>
-							<Path>SFX\Potion_Impact-002_10C4C929.wem</Path>
+							<Path>SFX\Potion_Impact-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="452162044" Language="SFX">
 							<ShortName>Bow_Impact-004.wav</ShortName>
-							<Path>SFX\Bow_Impact-004_10C4C929.wem</Path>
+							<Path>SFX\Bow_Impact-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="455916758" Language="SFX">
 							<ShortName>Grimoire_Impact-005.wav</ShortName>
-							<Path>SFX\Grimoire_Impact-005_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Impact-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="622889676" Language="SFX">
 							<ShortName>Bow_Impact-002.wav</ShortName>
-							<Path>SFX\Bow_Impact-002_10C4C929.wem</Path>
+							<Path>SFX\Bow_Impact-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="629450431" Language="SFX">
 							<ShortName>Bow_Impact-005.wav</ShortName>
-							<Path>SFX\Bow_Impact-005_10C4C929.wem</Path>
+							<Path>SFX\Bow_Impact-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="630471237" Language="SFX">
 							<ShortName>Sword_Impact-002.wav</ShortName>
-							<Path>SFX\Sword_Impact-002_10C4C929.wem</Path>
+							<Path>SFX\Sword_Impact-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="733872165" Language="SFX">
 							<ShortName>Grimoire_Impact-003.wav</ShortName>
-							<Path>SFX\Grimoire_Impact-003_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Impact-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="737891590" Language="SFX">
 							<ShortName>Grimoire_Impact-001.wav</ShortName>
-							<Path>SFX\Grimoire_Impact-001_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Impact-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="757816052" Language="SFX">
 							<ShortName>Grimoire_Impact-002.wav</ShortName>
-							<Path>SFX\Grimoire_Impact-002_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Impact-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="840654838" Language="SFX">
 							<ShortName>Crown_Impact-002.wav</ShortName>
-							<Path>SFX\Crown_Impact-002_10C4C929.wem</Path>
+							<Path>SFX\Crown_Impact-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="900904865" Language="SFX">
 							<ShortName>Crown_Impact-005.wav</ShortName>
-							<Path>SFX\Crown_Impact-005_10C4C929.wem</Path>
+							<Path>SFX\Crown_Impact-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="962975166" Language="SFX">
 							<ShortName>Crown_Impact-003.wav</ShortName>
-							<Path>SFX\Crown_Impact-003_10C4C929.wem</Path>
+							<Path>SFX\Crown_Impact-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="976848952" Language="SFX">
 							<ShortName>Crown_Impact-001.wav</ShortName>
-							<Path>SFX\Crown_Impact-001_10C4C929.wem</Path>
+							<Path>SFX\Crown_Impact-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="1013367102" Language="SFX">
 							<ShortName>Potion_Impact-001.wav</ShortName>
-							<Path>SFX\Potion_Impact-001_10C4C929.wem</Path>
+							<Path>SFX\Potion_Impact-001_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -482,7 +482,7 @@
 					<IncludedMemoryFiles>
 						<File Id="453099768" Language="SFX">
 							<ShortName>SFX_ItemSuccess_01.wav</ShortName>
-							<Path>SFX\SFX_ItemSuccess_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_ItemSuccess_01_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -499,7 +499,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="999465313">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1947495912">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -508,87 +508,87 @@
 					<IncludedMemoryFiles>
 						<File Id="33237598" Language="SFX">
 							<ShortName>Crown_Drop-004.wav</ShortName>
-							<Path>SFX\Crown_Drop-004_10C4C929.wem</Path>
+							<Path>SFX\Crown_Drop-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="196293165" Language="SFX">
 							<ShortName>Potion_Drop-004.wav</ShortName>
-							<Path>SFX\Potion_Drop-004_10C4C929.wem</Path>
+							<Path>SFX\Potion_Drop-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="223801691" Language="SFX">
 							<ShortName>Crown_Drop-003.wav</ShortName>
-							<Path>SFX\Crown_Drop-003_10C4C929.wem</Path>
+							<Path>SFX\Crown_Drop-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="242863584" Language="SFX">
 							<ShortName>Sword_Drop-003.wav</ShortName>
-							<Path>SFX\Sword_Drop-003_10C4C929.wem</Path>
+							<Path>SFX\Sword_Drop-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="246401854" Language="SFX">
 							<ShortName>Grimoire_Drop-003.wav</ShortName>
-							<Path>SFX\Grimoire_Drop-003_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Drop-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="252495916" Language="SFX">
 							<ShortName>Crown_Drop-001.wav</ShortName>
-							<Path>SFX\Crown_Drop-001_10C4C929.wem</Path>
+							<Path>SFX\Crown_Drop-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="261986973" Language="SFX">
 							<ShortName>Crown_Drop-005.wav</ShortName>
-							<Path>SFX\Crown_Drop-005_10C4C929.wem</Path>
+							<Path>SFX\Crown_Drop-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="290674752" Language="SFX">
 							<ShortName>Potion_Drop-001.wav</ShortName>
-							<Path>SFX\Potion_Drop-001_10C4C929.wem</Path>
+							<Path>SFX\Potion_Drop-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="397933889" Language="SFX">
 							<ShortName>Player_DropGeneric.wav</ShortName>
-							<Path>SFX\Player_DropGeneric_10C4C929.wem</Path>
+							<Path>SFX\Player_DropGeneric_B09F49DF.wem</Path>
 						</File>
 						<File Id="459935001" Language="SFX">
 							<ShortName>Grimoire_Drop-002.wav</ShortName>
-							<Path>SFX\Grimoire_Drop-002_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Drop-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="514260065" Language="SFX">
 							<ShortName>Bow_Drop-001.wav</ShortName>
-							<Path>SFX\Bow_Drop-001_10C4C929.wem</Path>
+							<Path>SFX\Bow_Drop-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="609575063" Language="SFX">
 							<ShortName>Sword_Drop-002.wav</ShortName>
-							<Path>SFX\Sword_Drop-002_10C4C929.wem</Path>
+							<Path>SFX\Sword_Drop-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="695475235" Language="SFX">
 							<ShortName>Sword_Drop-001.wav</ShortName>
-							<Path>SFX\Sword_Drop-001_10C4C929.wem</Path>
+							<Path>SFX\Sword_Drop-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="821281367" Language="SFX">
 							<ShortName>Crown_Drop-002.wav</ShortName>
-							<Path>SFX\Crown_Drop-002_10C4C929.wem</Path>
+							<Path>SFX\Crown_Drop-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="852784920" Language="SFX">
 							<ShortName>Potion_Drop-003.wav</ShortName>
-							<Path>SFX\Potion_Drop-003_10C4C929.wem</Path>
+							<Path>SFX\Potion_Drop-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="932313437" Language="SFX">
 							<ShortName>Grimoire_Drop-001.wav</ShortName>
-							<Path>SFX\Grimoire_Drop-001_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Drop-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="941271487" Language="SFX">
 							<ShortName>Bow_Drop-003.wav</ShortName>
-							<Path>SFX\Bow_Drop-003_10C4C929.wem</Path>
+							<Path>SFX\Bow_Drop-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="991934181" Language="SFX">
 							<ShortName>Bow_Drop-002.wav</ShortName>
-							<Path>SFX\Bow_Drop-002_10C4C929.wem</Path>
+							<Path>SFX\Bow_Drop-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="995340494" Language="SFX">
 							<ShortName>Grimoire_Drop-004.wav</ShortName>
-							<Path>SFX\Grimoire_Drop-004_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Drop-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="1003253349" Language="SFX">
 							<ShortName>Potion_Drop-002.wav</ShortName>
-							<Path>SFX\Potion_Drop-002_10C4C929.wem</Path>
+							<Path>SFX\Potion_Drop-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="1019321892" Language="SFX">
 							<ShortName>Grimoire_Drop-005.wav</ShortName>
-							<Path>SFX\Grimoire_Drop-005_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Drop-005_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -638,43 +638,43 @@
 					<IncludedMemoryFiles>
 						<File Id="151075647" Language="SFX">
 							<ShortName>Player_Footstep-007.wav</ShortName>
-							<Path>SFX\Player_Footstep-007_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-007_B09F49DF.wem</Path>
 						</File>
 						<File Id="163666627" Language="SFX">
 							<ShortName>Player_Footstep-009.wav</ShortName>
-							<Path>SFX\Player_Footstep-009_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-009_B09F49DF.wem</Path>
 						</File>
 						<File Id="398231350" Language="SFX">
 							<ShortName>Player_Footstep-001.wav</ShortName>
-							<Path>SFX\Player_Footstep-001_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="577558612" Language="SFX">
 							<ShortName>Player_Footstep-010.wav</ShortName>
-							<Path>SFX\Player_Footstep-010_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-010_B09F49DF.wem</Path>
 						</File>
 						<File Id="631640501" Language="SFX">
 							<ShortName>Player_Footstep-006.wav</ShortName>
-							<Path>SFX\Player_Footstep-006_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-006_B09F49DF.wem</Path>
 						</File>
 						<File Id="649659974" Language="SFX">
 							<ShortName>Player_Footstep-002.wav</ShortName>
-							<Path>SFX\Player_Footstep-002_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="666269920" Language="SFX">
 							<ShortName>Player_Footstep-005.wav</ShortName>
-							<Path>SFX\Player_Footstep-005_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="792414387" Language="SFX">
 							<ShortName>Player_Footstep-004.wav</ShortName>
-							<Path>SFX\Player_Footstep-004_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="893965134" Language="SFX">
 							<ShortName>Player_Footstep-008.wav</ShortName>
-							<Path>SFX\Player_Footstep-008_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-008_B09F49DF.wem</Path>
 						</File>
 						<File Id="988038526" Language="SFX">
 							<ShortName>Player_Footstep-003.wav</ShortName>
-							<Path>SFX\Player_Footstep-003_10C4C929.wem</Path>
+							<Path>SFX\Player_Footstep-003_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -682,107 +682,107 @@
 					<IncludedMemoryFiles>
 						<File Id="4083603" Language="SFX">
 							<ShortName>Grimoire_Pickup-005.wav</ShortName>
-							<Path>SFX\Grimoire_Pickup-005_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Pickup-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="7139460" Language="SFX">
 							<ShortName>Potion_Pickup-004.wav</ShortName>
-							<Path>SFX\Potion_Pickup-004_10C4C929.wem</Path>
+							<Path>SFX\Potion_Pickup-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="33918962" Language="SFX">
 							<ShortName>Grimoire_Pickup-004.wav</ShortName>
-							<Path>SFX\Grimoire_Pickup-004_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Pickup-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="46038186" Language="SFX">
 							<ShortName>Bow_Pickup-001.wav</ShortName>
-							<Path>SFX\Bow_Pickup-001_10C4C929.wem</Path>
+							<Path>SFX\Bow_Pickup-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="73970287" Language="SFX">
 							<ShortName>Potion_Pickup-003.wav</ShortName>
-							<Path>SFX\Potion_Pickup-003_10C4C929.wem</Path>
+							<Path>SFX\Potion_Pickup-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="256891344" Language="SFX">
 							<ShortName>Crown_Pickup-003.wav</ShortName>
-							<Path>SFX\Crown_Pickup-003_10C4C929.wem</Path>
+							<Path>SFX\Crown_Pickup-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="258202184" Language="SFX">
 							<ShortName>Crown_Pickup-005.wav</ShortName>
-							<Path>SFX\Crown_Pickup-005_10C4C929.wem</Path>
+							<Path>SFX\Crown_Pickup-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="278043043" Language="SFX">
 							<ShortName>Crown_Pickup-002.wav</ShortName>
-							<Path>SFX\Crown_Pickup-002_10C4C929.wem</Path>
+							<Path>SFX\Crown_Pickup-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="296778723" Language="SFX">
 							<ShortName>Sword_Pickup-001.wav</ShortName>
-							<Path>SFX\Sword_Pickup-001_10C4C929.wem</Path>
+							<Path>SFX\Sword_Pickup-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="341013105" Language="SFX">
 							<ShortName>Player_PickupGeneric.wav</ShortName>
-							<Path>SFX\Player_PickupGeneric_10C4C929.wem</Path>
+							<Path>SFX\Player_PickupGeneric_B09F49DF.wem</Path>
 						</File>
 						<File Id="368345176" Language="SFX">
 							<ShortName>Sword_Pickup-004.wav</ShortName>
-							<Path>SFX\Sword_Pickup-004_10C4C929.wem</Path>
+							<Path>SFX\Sword_Pickup-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="393446171" Language="SFX">
 							<ShortName>Bow_Pickup-003.wav</ShortName>
-							<Path>SFX\Bow_Pickup-003_10C4C929.wem</Path>
+							<Path>SFX\Bow_Pickup-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="403629818" Language="SFX">
 							<ShortName>Bow_Pickup-004.wav</ShortName>
-							<Path>SFX\Bow_Pickup-004_10C4C929.wem</Path>
+							<Path>SFX\Bow_Pickup-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="540378653" Language="SFX">
 							<ShortName>Grimoire_Pickup-002.wav</ShortName>
-							<Path>SFX\Grimoire_Pickup-002_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Pickup-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="541022276" Language="SFX">
 							<ShortName>Sword_Pickup-005.wav</ShortName>
-							<Path>SFX\Sword_Pickup-005_10C4C929.wem</Path>
+							<Path>SFX\Sword_Pickup-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="542655246" Language="SFX">
 							<ShortName>Bow_Pickup-002.wav</ShortName>
-							<Path>SFX\Bow_Pickup-002_10C4C929.wem</Path>
+							<Path>SFX\Bow_Pickup-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="615183584" Language="SFX">
 							<ShortName>Crown_Pickup-004.wav</ShortName>
-							<Path>SFX\Crown_Pickup-004_10C4C929.wem</Path>
+							<Path>SFX\Crown_Pickup-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="710211015" Language="SFX">
 							<ShortName>Bow_Pickup-005.wav</ShortName>
-							<Path>SFX\Bow_Pickup-005_10C4C929.wem</Path>
+							<Path>SFX\Bow_Pickup-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="746233879" Language="SFX">
 							<ShortName>Sword_Pickup-002.wav</ShortName>
-							<Path>SFX\Sword_Pickup-002_10C4C929.wem</Path>
+							<Path>SFX\Sword_Pickup-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="811415338" Language="SFX">
 							<ShortName>Grimoire_Pickup-001.wav</ShortName>
-							<Path>SFX\Grimoire_Pickup-001_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Pickup-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="844577568" Language="SFX">
 							<ShortName>Sword_Pickup-003.wav</ShortName>
-							<Path>SFX\Sword_Pickup-003_10C4C929.wem</Path>
+							<Path>SFX\Sword_Pickup-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="904285259" Language="SFX">
 							<ShortName>Potion_Pickup-002.wav</ShortName>
-							<Path>SFX\Potion_Pickup-002_10C4C929.wem</Path>
+							<Path>SFX\Potion_Pickup-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="989662397" Language="SFX">
 							<ShortName>Potion_Pickup-001.wav</ShortName>
-							<Path>SFX\Potion_Pickup-001_10C4C929.wem</Path>
+							<Path>SFX\Potion_Pickup-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="998388995" Language="SFX">
 							<ShortName>Grimoire_Pickup-003.wav</ShortName>
-							<Path>SFX\Grimoire_Pickup-003_10C4C929.wem</Path>
+							<Path>SFX\Grimoire_Pickup-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="1051986483" Language="SFX">
 							<ShortName>Crown_Pickup-001.wav</ShortName>
-							<Path>SFX\Crown_Pickup-001_10C4C929.wem</Path>
+							<Path>SFX\Crown_Pickup-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="1055915247" Language="SFX">
 							<ShortName>Potion_Pickup-005.wav</ShortName>
-							<Path>SFX\Potion_Pickup-005_10C4C929.wem</Path>
+							<Path>SFX\Potion_Pickup-005_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -837,31 +837,31 @@
 					<IncludedMemoryFiles>
 						<File Id="340131091" Language="SFX">
 							<ShortName>Player_Throw-007.wav</ShortName>
-							<Path>SFX\Player_Throw-007_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-007_B09F49DF.wem</Path>
 						</File>
 						<File Id="396844310" Language="SFX">
 							<ShortName>Player_Throw-001.wav</ShortName>
-							<Path>SFX\Player_Throw-001_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="480580837" Language="SFX">
 							<ShortName>Player_Throw-002.wav</ShortName>
-							<Path>SFX\Player_Throw-002_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="634661697" Language="SFX">
 							<ShortName>Player_Throw-004.wav</ShortName>
-							<Path>SFX\Player_Throw-004_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="649370056" Language="SFX">
 							<ShortName>Player_Throw-003.wav</ShortName>
-							<Path>SFX\Player_Throw-003_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="910610005" Language="SFX">
 							<ShortName>Player_Throw-005.wav</ShortName>
-							<Path>SFX\Player_Throw-005_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="951660010" Language="SFX">
 							<ShortName>Player_Throw-006.wav</ShortName>
-							<Path>SFX\Player_Throw-006_10C4C929.wem</Path>
+							<Path>SFX\Player_Throw-006_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -878,12 +878,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2718570595">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1816157940">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="3487024685">
+		<SoundBank Id="1551306167" Language="SFX" Hash="3645374341">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
@@ -892,7 +892,7 @@
 					<IncludedMemoryFiles>
 						<File Id="880386914" Language="SFX">
 							<ShortName>UI_Back.wav</ShortName>
-							<Path>SFX\UI_Back_10C4C929.wem</Path>
+							<Path>SFX\UI_Back_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -900,7 +900,7 @@
 					<IncludedMemoryFiles>
 						<File Id="906417135" Language="SFX">
 							<ShortName>UI_Hover.wav</ShortName>
-							<Path>SFX\UI_Hover_10C4C929.wem</Path>
+							<Path>SFX\UI_Hover_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -908,7 +908,7 @@
 					<IncludedMemoryFiles>
 						<File Id="163861650" Language="SFX">
 							<ShortName>UI_Select.wav</ShortName>
-							<Path>SFX\UI_Select_10C4C929.wem</Path>
+							<Path>SFX\UI_Select_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -916,13 +916,13 @@
 					<IncludedMemoryFiles>
 						<File Id="674515717" Language="SFX">
 							<ShortName>UI_StartGame.wav</ShortName>
-							<Path>SFX\UI_StartGame_10C4C929.wem</Path>
+							<Path>SFX\UI_StartGame_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2782712965" Language="SFX" Hash="90837673">
+		<SoundBank Id="2782712965" Language="SFX" Hash="88263613">
 			<ObjectPath>\SoundBanks\Default Work Unit\Level</ObjectPath>
 			<ShortName>Level</ShortName>
 			<Path>Level.bnk</Path>
@@ -931,23 +931,23 @@
 					<IncludedMemoryFiles>
 						<File Id="190713847" Language="SFX">
 							<ShortName>Level_Door-001.wav</ShortName>
-							<Path>SFX\Level_Door-001_10C4C929.wem</Path>
+							<Path>SFX\Level_Door-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="221871509" Language="SFX">
 							<ShortName>Level_Door-002.wav</ShortName>
-							<Path>SFX\Level_Door-002_10C4C929.wem</Path>
+							<Path>SFX\Level_Door-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="554526608" Language="SFX">
 							<ShortName>Level_Door-003.wav</ShortName>
-							<Path>SFX\Level_Door-003_10C4C929.wem</Path>
+							<Path>SFX\Level_Door-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="901904304" Language="SFX">
 							<ShortName>Level_Door-005.wav</ShortName>
-							<Path>SFX\Level_Door-005_10C4C929.wem</Path>
+							<Path>SFX\Level_Door-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="1045602469" Language="SFX">
 							<ShortName>Level_Door-004.wav</ShortName>
-							<Path>SFX\Level_Door-004_10C4C929.wem</Path>
+							<Path>SFX\Level_Door-004_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -955,43 +955,43 @@
 					<IncludedMemoryFiles>
 						<File Id="103990794" Language="SFX">
 							<ShortName>Level_RoofFall-002.wav</ShortName>
-							<Path>SFX\Level_RoofFall-002_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofFall-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="182270053" Language="SFX">
 							<ShortName>Level_RoofFall-004.wav</ShortName>
-							<Path>SFX\Level_RoofFall-004_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofFall-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="244667686" Language="SFX">
 							<ShortName>Level_RoofRise-002.wav</ShortName>
-							<Path>SFX\Level_RoofRise-002_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofRise-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="579106117" Language="SFX">
 							<ShortName>Level_RoofFall-005.wav</ShortName>
-							<Path>SFX\Level_RoofFall-005_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofFall-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="632822566" Language="SFX">
 							<ShortName>Level_RoofFall-003.wav</ShortName>
-							<Path>SFX\Level_RoofFall-003_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofFall-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="648224893" Language="SFX">
 							<ShortName>Level_RoofRise-001.wav</ShortName>
-							<Path>SFX\Level_RoofRise-001_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofRise-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="660519050" Language="SFX">
 							<ShortName>Level_RoofRise-004.wav</ShortName>
-							<Path>SFX\Level_RoofRise-004_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofRise-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="836571899" Language="SFX">
 							<ShortName>Level_RoofRise-003.wav</ShortName>
-							<Path>SFX\Level_RoofRise-003_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofRise-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="848232120" Language="SFX">
 							<ShortName>Level_RoofRise-005.wav</ShortName>
-							<Path>SFX\Level_RoofRise-005_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofRise-005_B09F49DF.wem</Path>
 						</File>
 						<File Id="948975430" Language="SFX">
 							<ShortName>Level_RoofFall-001.wav</ShortName>
-							<Path>SFX\Level_RoofFall-001_10C4C929.wem</Path>
+							<Path>SFX\Level_RoofFall-001_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{D48E3D71-EF95-4F62-9A6D-ABD24111EA04}</DefaultSwitchValue>
@@ -1020,23 +1020,23 @@
 					<IncludedMemoryFiles>
 						<File Id="212193479" Language="SFX">
 							<ShortName>Level_Spawn-004.wav</ShortName>
-							<Path>SFX\Level_Spawn-004_10C4C929.wem</Path>
+							<Path>SFX\Level_Spawn-004_B09F49DF.wem</Path>
 						</File>
 						<File Id="297787276" Language="SFX">
 							<ShortName>Level_Spawn-003.wav</ShortName>
-							<Path>SFX\Level_Spawn-003_10C4C929.wem</Path>
+							<Path>SFX\Level_Spawn-003_B09F49DF.wem</Path>
 						</File>
 						<File Id="528165812" Language="SFX">
 							<ShortName>Level_Spawn-002.wav</ShortName>
-							<Path>SFX\Level_Spawn-002_10C4C929.wem</Path>
+							<Path>SFX\Level_Spawn-002_B09F49DF.wem</Path>
 						</File>
 						<File Id="580003169" Language="SFX">
 							<ShortName>Level_Spawn-001.wav</ShortName>
-							<Path>SFX\Level_Spawn-001_10C4C929.wem</Path>
+							<Path>SFX\Level_Spawn-001_B09F49DF.wem</Path>
 						</File>
 						<File Id="1068110762" Language="SFX">
 							<ShortName>Level_Spawn-005.wav</ShortName>
-							<Path>SFX\Level_Spawn-005_10C4C929.wem</Path>
+							<Path>SFX\Level_Spawn-005_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1051,7 +1051,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2478661027">
+		<SoundBank Id="3991942870" Language="SFX" Hash="4141592916">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -1060,15 +1060,23 @@
 					<IncludedMemoryFiles>
 						<File Id="536964545" Language="SFX">
 							<ShortName>XD_ClockFast180.wav</ShortName>
-							<Path>SFX\XD_ClockFast180_D79FB2B7.wem</Path>
+							<Path>SFX\XD_ClockFast180_4811579D.wem</Path>
 						</File>
 						<File Id="679901182" Language="SFX">
 							<ShortName>XD_ClockSlow160.wav</ShortName>
-							<Path>SFX\XD_ClockSlow160_D79FB2B7.wem</Path>
+							<Path>SFX\XD_ClockSlow160_4811579D.wem</Path>
 						</File>
 						<File Id="808146414" Language="SFX">
 							<ShortName>XD_ClockRush180.wav</ShortName>
-							<Path>SFX\XD_ClockRush180_D79FB2B7.wem</Path>
+							<Path>SFX\XD_ClockRush180_4811579D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="734427666" Name="EndWhistle" ObjectPath="\Events\Default Work Unit\EndWhistle" DurationType="OneShot" DurationMin="2.683292" DurationMax="2.683292">
+					<IncludedMemoryFiles>
+						<File Id="1048866118" Language="SFX">
+							<ShortName>XD_EndWhistle.wav</ShortName>
+							<Path>SFX\XD_EndWhistle_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1076,11 +1084,11 @@
 					<IncludedMemoryFiles>
 						<File Id="267581053" Language="SFX">
 							<ShortName>Music_Menu_Intro_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Intro_G_150bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Menu_Intro_G_150bpm_4811579D.wem</Path>
 						</File>
 						<File Id="640894875" Language="SFX">
 							<ShortName>Music_Menu_Loop_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Loop_G_150bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Menu_Loop_G_150bpm_4811579D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1088,39 +1096,39 @@
 					<IncludedMemoryFiles>
 						<File Id="66918242" Language="SFX">
 							<ShortName>Music_Stinger_Win_Eb_130bpm.wav</ShortName>
-							<Path>SFX\Music_Stinger_Win_Eb_130bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Stinger_Win_Eb_130bpm_4811579D.wem</Path>
 						</File>
 						<File Id="113764829" Language="SFX">
 							<ShortName>Music_Gameplay_Frontstore_02_C_180bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_4811579D.wem</Path>
 						</File>
 						<File Id="144058494" Language="SFX">
 							<ShortName>Music_Win_Loop_Eb_130bpm.wav</ShortName>
-							<Path>SFX\Music_Win_Loop_Eb_130bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Win_Loop_Eb_130bpm_4811579D.wem</Path>
 						</File>
 						<File Id="173890151" Language="SFX">
 							<ShortName>Music_Gameplay_Frontstore_01_C_160bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Frontstore_01_C_160bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Gameplay_Frontstore_01_C_160bpm_4811579D.wem</Path>
 						</File>
 						<File Id="188154731" Language="SFX">
 							<ShortName>Music_Gameplay_Backstore_01_C_160bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Backstore_01_C_160bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Gameplay_Backstore_01_C_160bpm_4811579D.wem</Path>
 						</File>
 						<File Id="255489815" Language="SFX">
 							<ShortName>Music_Gameplay_Backstore_02_C_180bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_4811579D.wem</Path>
 						</File>
 						<File Id="618077781" Language="SFX">
 							<ShortName>Music_GameOver_Intro_9beats_F_230bpm.wav</ShortName>
-							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_4811579D.wem</Path>
 						</File>
 						<File Id="1021251280" Language="SFX">
 							<ShortName>XD_WhistleRush.wav</ShortName>
-							<Path>SFX\XD_WhistleRush_D79FB2B7.wem</Path>
+							<Path>SFX\XD_WhistleRush_4811579D.wem</Path>
 						</File>
 						<File Id="1072004486" Language="SFX">
 							<ShortName>Music_GameOver_Intro_loop6bars_F_230bpm.wav</ShortName>
-							<Path>SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem</Path>
+							<Path>SFX\Music_GameOver_Intro_loop6bars_F_230bpm_4811579D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
