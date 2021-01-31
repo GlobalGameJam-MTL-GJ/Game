@@ -1,21 +1,21 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
-	4091656514	GameState			\Default Work Unit\GameState	
+	3879136259	NPCMood			\Default Work Unit\NPCMood	
+	4048174150	MusicType			\Default Work Unit\MusicType	
 
 Switch	ID	Name	Switch Group			Notes
-	89505537	GamePlay	GameState			
-	2197986718	GameEnd	GameState			
+	1206605712	Angry	NPCMood			
+	1427264549	Happy	NPCMood			
+	221232726	Lose	MusicType			
+	979765101	Win	MusicType			
+	1256202815	Play	MusicType			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1992536912	RoomType			\Default Work Unit\RoomType	
-	4158285989	GameOver			\Default Work Unit\GameOver	
 
 State	ID	Name	State Group			Notes
 	748895195	None	RoomType			
 	2915384035	Backstore	RoomType			
 	3572512317	Frontstore	RoomType			
-	748895195	None	GameOver			
-	2452206122	False	GameOver			
-	3053630529	True	GameOver			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

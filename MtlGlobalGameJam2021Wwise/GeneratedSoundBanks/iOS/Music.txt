@@ -1,36 +1,44 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2177735725	Music_Level			\Default Work Unit\Music_Level	
-	2897915005	Music_GameOver			\Default Work Unit\Music_GameOver	
+	193027072	Clock_Start			\Default Work Unit\Clock_Start	
+	202194903	Music_Play			\Default Work Unit\Music_Play	
+	1598298728	Music_Menu			\Default Work Unit\Music_Menu	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4048174150	MusicType			\Default Work Unit\MusicType	
+
+Switch	ID	Name	Switch Group			Notes
+	221232726	Lose	MusicType			
+	979765101	Win	MusicType			
+	1256202815	Play	MusicType			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1992536912	RoomType			\Default Work Unit\RoomType	
-	4158285989	GameOver			\Default Work Unit\GameOver	
 
 State	ID	Name	State Group			Notes
 	748895195	None	RoomType			
 	2915384035	Backstore	RoomType			
 	3572512317	Frontstore	RoomType			
-	748895195	None	GameOver			
-	2452206122	False	GameOver			
-	3053630529	True	GameOver			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	455602417	Backstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore		
-	462428580	Frontstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Backstore		
-	917180558	False	GameOver	\Interactive Music Hierarchy\Default Work Unit\Music_GameOver		
+	455602417	Backstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore		
+	462428580	Frontstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1182830809	Clock			\Default Work Unit\Clock	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	113764829	Music_Gameplay_Frontstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_Gameplay_Frontstore_02_C_180bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore\Music_Gameplay_Frontstore_02_C_180bpm\Music_Gameplay_Frontstore_02_C_180bpm		7168240
-	173890151	Music_Gameplay_Frontstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_Gameplay_Frontstore_01_C_160bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore\Music_Gameplay_Frontstore_01_C_160bpm\Music_Gameplay_Frontstore_01_C_160bpm		29672176
-	188154731	Music_Gameplay_Backstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_Gameplay_Backstore_01_C_160bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\Music_Gameplay_Backstore_01_C_160bpm\Music_Gameplay_Backstore_01_C_160bpm		29632288
-	255489815	Music_Gameplay_Backstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_Gameplay_Backstore_02_C_180bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\Music_Gameplay_Backstore_02_C_180bpm\Music_Gameplay_Backstore_02_C_180bpm		6784192
-	536964545	XD_ClockFast180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\XD_ClockFast180_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockFast\XD_ClockFast180\XD_ClockFast180		256064
-	618077781	Music_GameOver_Intro_9beats_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_GameOver\Music_GameOver_Intro_9beats_F_230bpm\Music_GameOver_Intro_9beats_F_230bpm		751448
-	679901182	XD_ClockSlow160	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\XD_ClockSlow160_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockSlow\XD_ClockSlow160\XD_ClockSlow160		288064
-	808146414	XD_ClockRush180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\XD_ClockRush180_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockRush\XD_ClockRush180\XD_ClockRush180		256064
-	1021251280	XD_WhistleRush	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\XD_WhistleRush_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\XD_WhistleRush\XD_WhistleRush		384068
-	1072004486	Music_GameOver_Intro_loop6bars_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\iOS\SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_GameOver\Music_GameOver_Intro_loop6bars_F_230bpm\Music_GameOver_Intro_loop6bars_F_230bpm		5910404
+	66918242	Music_Stinger_Win_Eb_130bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Stinger_Win_Eb_130bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Win\Music_Stinger_Win_Eb_130bpm\Music_Stinger_Win_Eb_130bpm		1329424
+	113764829	Music_Gameplay_Frontstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Gameplay_Frontstore_02_C_180bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore\Music_Gameplay_Frontstore_02_C_180bpm\Music_Gameplay_Frontstore_02_C_180bpm		7168240
+	144058494	Music_Win_Loop_Eb_130bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Win_Loop_Eb_130bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Win\Music_Win_Loop_Eb_130bpm\Music_Win_Loop_Eb_130bpm		7000808
+	173890151	Music_Gameplay_Frontstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Gameplay_Frontstore_01_C_160bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore\Music_Gameplay_Frontstore_01_C_160bpm\Music_Gameplay_Frontstore_01_C_160bpm		29672176
+	188154731	Music_Gameplay_Backstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Gameplay_Backstore_01_C_160bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\Music_Gameplay_Backstore_01_C_160bpm\Music_Gameplay_Backstore_01_C_160bpm		29632288
+	255489815	Music_Gameplay_Backstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Gameplay_Backstore_02_C_180bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\Music_Gameplay_Backstore_02_C_180bpm\Music_Gameplay_Backstore_02_C_180bpm		6784192
+	267581053	Music_Menu_Intro_G_150bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Menu_Intro_G_150bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Menu\Music_Menu_Intro_G_150bpm\Music_Menu_Intro_G_150bpm		2611392
+	536964545	XD_ClockFast180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\XD_ClockFast180_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockFast\XD_ClockFast180\XD_ClockFast180		256064
+	618077781	Music_GameOver_Intro_9beats_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_GameOver_Intro_9beats_F_230bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_GameOver\Music_GameOver_Intro_9beats_F_230bpm\Music_GameOver_Intro_9beats_F_230bpm		751448
+	640894875	Music_Menu_Loop_G_150bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_Menu_Loop_G_150bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Menu\Music_Menu_Loop_G_150bpm\Music_Menu_Loop_G_150bpm		7142544
+	679901182	XD_ClockSlow160	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\XD_ClockSlow160_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockSlow\XD_ClockSlow160\XD_ClockSlow160		288064
+	808146414	XD_ClockRush180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\XD_ClockRush180_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClockRush\XD_ClockRush180\XD_ClockRush180		256064
+	1021251280	XD_WhistleRush	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\XD_WhistleRush_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\XD_WhistleRush\XD_WhistleRush		384068
+	1072004486	Music_GameOver_Intro_loop6bars_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\iOS\SFX\Music_GameOver_Intro_loop6bars_F_230bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_GameOver\Music_GameOver_Intro_loop6bars_F_230bpm\Music_GameOver_Intro_loop6bars_F_230bpm		5910404
 

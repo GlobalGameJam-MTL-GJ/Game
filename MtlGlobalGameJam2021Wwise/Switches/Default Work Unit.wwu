@@ -3,13 +3,11 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{8E112909-B35A-452A-8CF1-17BDA58F2739}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="GameState" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
+				<SwitchGroup Name="MusicType" ID="{72B409C4-D0A0-4325-A10C-B682A3F30947}">
 					<ChildrenList>
-						<Switch Name="GamePlay" ID="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}"/>
-						<Switch Name="GameEnd" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
+						<Switch Name="Win" ID="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}"/>
+						<Switch Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
+						<Switch Name="Play" ID="{9E480738-C8A4-40E3-AB07-A8A77768BD36}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>
@@ -45,6 +43,53 @@
 						<Switch Name="Crown" ID="{425EC6DF-0071-4708-9B8C-A01B18D7E1E1}"/>
 						<Switch Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
 					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="NPCType" ID="{12943382-4FAB-4FBD-BC23-FB2DA8AD1D56}">
+					<ChildrenList>
+						<Switch Name="Princess" ID="{56531AED-F722-4006-A537-0B7121507920}"/>
+						<Switch Name="Elf" ID="{B816CF23-1529-48E5-92B7-D7B52ECEB15A}"/>
+						<Switch Name="Knight" ID="{7870E674-01BF-4684-9846-05BB0A5DA9DD}"/>
+						<Switch Name="Wizard" ID="{2175A416-C4AF-43AA-89AC-F032AC2657C9}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="NPCMood" ID="{C59DC32A-4540-472A-8946-1A56D159E17A}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Angry" ID="{ED99E926-32F4-4ED7-AB8E-727863DDABE8}"/>
+						<Switch Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="NPC_Timer" ID="{FDA3B0D1-9FA3-4C11-9A0F-D73CBBE34B8B}"/>
+						<Curve Name="" ID="{E1349642-7379-4B18-9940-3A9A222059C9}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>29.999</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>30</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

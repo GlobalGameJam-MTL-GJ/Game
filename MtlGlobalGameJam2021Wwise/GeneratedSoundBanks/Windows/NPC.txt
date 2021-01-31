@@ -1,6 +1,69 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1034569512	NPC_BossStrike			\Default Work Unit\NPC_BossStrike	
+	2571308781	NPC_Voice			\Default Work Unit\NPC_Voice	
 	3226713398	NPC_Bell			\Default Work Unit\NPC_Bell	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3879136259	NPCMood			\Default Work Unit\NPCMood	
+	4239148746	NPCType			\Default Work Unit\NPCType	
+
+Switch	ID	Name	Switch Group			Notes
+	1206605712	Angry	NPCMood			
+	1427264549	Happy	NPCMood			
+	563281696	Elf	NPCType			
+	2837605046	Knight	NPCType			
+	2871106020	Princess	NPCType			
+	3202541808	Wizard	NPCType			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3691762776	NPC_Timer			\Default Work Unit\NPC_Timer	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	804081672	NPC_Bell	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021Wwise\.cache\Windows\SFX\Level_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Bell		349780
+	490251	Mumbles_BossStrike_06	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_BossStrike_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\NPC_Boss\Mumbles_BossStrike_06		812344
+	127113419	Mumbles_PrincessMad_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessMad_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Angry\Mumbles_PrincessMad_05		573652
+	127271707	Mumbles_BossStrike_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_BossStrike_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\NPC_Boss\Mumbles_BossStrike_05		648444
+	129017961	Mumbles_KnightAngry_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightAngry_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Angry\Mumbles_KnightAngry_01		353360
+	131501250	Mumbles_WizardHappy_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardHappy_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Happy\Mumbles_WizardHappy_02		381760
+	173906759	Mumbles_PrincessMad_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessMad_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Angry\Mumbles_PrincessMad_04		541336
+	189667805	Mumbles_PrincessHappy_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessHappy_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Happy\Mumbles_PrincessHappy_01		522644
+	208789235	Mumbles_KnightAngry_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightAngry_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Angry\Mumbles_KnightAngry_03		346284
+	289942089	Mumbles_PrincessHappy_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessHappy_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Happy\Mumbles_PrincessHappy_05		374644
+	297340003	Mumbles_KnightHappy_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightHappy_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Happy\Mumbles_KnightHappy_01		294032
+	351532228	Mumbles_KnightHappy_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightHappy_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Happy\Mumbles_KnightHappy_02		341136
+	362829846	Mumbles_WizardAngry_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardAngry_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Angry\Mumbles_WizardAngry_04		501928
+	374593558	Mumbles_KnightAngry_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightAngry_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Angry\Mumbles_KnightAngry_04		406576
+	438320385	Mumbles_WizardAngry_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardAngry_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Angry\Mumbles_WizardAngry_01		449792
+	467360734	Mumbles_PrincessHappy_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessHappy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Happy\Mumbles_PrincessHappy_04		329444
+	476742448	Mumbles_KnightAngry_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightAngry_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Angry\Mumbles_KnightAngry_05		390384
+	494117789	Mumbles_KnightHappy_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightHappy_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Happy\Mumbles_KnightHappy_03		371904
+	496050525	Mumbles_ElfAngry_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfAngry_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Angry\Mumbles_ElfAngry_02		449812
+	509623129	Mumbles_ElfHappy_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfHappy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Happy\Mumbles_ElfHappy_04		301444
+	512413283	SFX_Strike_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\SFX_Strike_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\Stinger_Strike\SFX_Strike_02		768144
+	518067381	Mumbles_ElfHappy_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfHappy_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Happy\Mumbles_ElfHappy_05		293244
+	528386332	Mumbles_PrincessHappy_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessHappy_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Happy\Mumbles_PrincessHappy_02		475144
+	577980927	Mumbles_ElfHappy_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfHappy_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Happy\Mumbles_ElfHappy_01		209644
+	586901859	Mumbles_ElfHappy_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfHappy_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Happy\Mumbles_ElfHappy_02		250144
+	604073838	Mumbles_ElfHappy_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfHappy_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Happy\Mumbles_ElfHappy_03		289144
+	626424636	Mumbles_ElfAngry_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfAngry_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Angry\Mumbles_ElfAngry_01		471312
+	658540419	Mumbles_BossStrike_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_BossStrike_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\NPC_Boss\Mumbles_BossStrike_04		725244
+	663158529	Mumbles_WizardHappy_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardHappy_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Happy\Mumbles_WizardHappy_05		345416
+	670619239	Mumbles_PrincessHappy_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessHappy_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Happy\Mumbles_PrincessHappy_03		299844
+	702839602	Mumbles_KnightAngry_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightAngry_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Angry\Mumbles_KnightAngry_02		375432
+	744097578	Mumbles_WizardHappy_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardHappy_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Happy\Mumbles_WizardHappy_01		337476
+	770769695	SFX_Strike_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\SFX_Strike_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\Stinger_Strike\SFX_Strike_01		768144
+	799725194	Mumbles_ElfAngry_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfAngry_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Angry\Mumbles_ElfAngry_03		507212
+	804081672	NPC_Bell	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Level_Bell_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Bell		349780
+	808605643	Mumbles_PrincessMad_01	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessMad_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Angry\Mumbles_PrincessMad_01		443028
+	809231405	Mumbles_PrincessMad_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessMad_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Angry\Mumbles_PrincessMad_02		440512
+	837956154	Mumbles_KnightHappy_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightHappy_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Happy\Mumbles_KnightHappy_05		321716
+	905755032	Mumbles_WizardAngry_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardAngry_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Angry\Mumbles_WizardAngry_05		496784
+	949644403	Mumbles_ElfAngry_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfAngry_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Angry\Mumbles_ElfAngry_04		437116
+	951697123	Mumbles_WizardAngry_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardAngry_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Angry\Mumbles_WizardAngry_03		550116
+	956485800	Mumbles_ElfAngry_05	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_ElfAngry_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Elf\NPC_Elf_Angry\Mumbles_ElfAngry_05		508116
+	989983889	Mumbles_KnightHappy_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_KnightHappy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Knight\NPC_Knight_Happy\Mumbles_KnightHappy_04		368832
+	1024286458	Mumbles_WizardHappy_04	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardHappy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Happy\Mumbles_WizardHappy_04		387444
+	1040773399	Mumbles_WizardAngry_02	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardAngry_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Angry\Mumbles_WizardAngry_02		579812
+	1048492323	Mumbles_WizardHappy_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_WizardHappy_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Wizard\NPC_Wizard_Happy\Mumbles_WizardHappy_03		268144
+	1054492542	SFX_Strike_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\SFX_Strike_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_BossStrikes\Stinger_Strike\SFX_Strike_03		768144
+	1073478864	Mumbles_PrincessMad_03	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Windows\SFX\Mumbles_PrincessMad_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPC_Voice\Princess\NPC_Princess_Angry\Mumbles_PrincessMad_03		610292
 
