@@ -233,6 +233,9 @@ public class PropsBuilder : MonoBehaviour
         {
             if (currentActiveProp.activeProps != activePropsToRemove) continue;
             PropsTypesToColorTracker[currentActiveProp.propsType].MakeColorAvailable(currentActiveProp.propsColor);
+            PropsTypesAmountTracker[currentActiveProp.propsType].totalAtThisMoment--;
+            MovementTypesAmountTracker[currentActiveProp.activeProps.GetComponent<PropsMovement>().GetMovementType()]
+                .totalAtThisMoment--;
             currentActiveProps.Remove(currentActiveProp);
             return;
         }

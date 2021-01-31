@@ -59,7 +59,7 @@ public class TimeManager : MonoBehaviour
     private void RefreshTimeText()
     {
         int minutes = Mathf.FloorToInt(currentTimer / 60);
-        int seconds = Mathf.RoundToInt(currentTimer % 60);
+        int seconds = Mathf.FloorToInt(currentTimer % 60);
         timerText.text = minutes + doubleComma + seconds.ToString("00");
     }
 

@@ -16,51 +16,51 @@ MonoBehaviour:
   propsPossibleMovements:
   - propsMovementType: 0
     spawnChance: 0.7
-    adjustedSpawnChance: 0.40144897
+    adjustedSpawnChance: 0.082491554
     minimumOfThisTypeAtOnce: 2
     maximumOfThisTypeAtOnce: 6
     minimumOfThisTypeForTheLevel: 13
-    maximumOfThisTypeForTheLevel: 13
+    maximumOfThisTypeForTheLevel: 25
   - propsMovementType: 1
     spawnChance: 0.15
-    adjustedSpawnChance: 0.08518401
+    adjustedSpawnChance: 0.07417465
     minimumOfThisTypeAtOnce: 1
     maximumOfThisTypeAtOnce: 2
     minimumOfThisTypeForTheLevel: 7
-    maximumOfThisTypeForTheLevel: 7
+    maximumOfThisTypeForTheLevel: 25
   - propsMovementType: 2
     spawnChance: 0.15
-    adjustedSpawnChance: 0.1771561
+    adjustedSpawnChance: 0.14055362
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 2
-    maximumOfThisTypeForTheLevel: 2
+    maximumOfThisTypeForTheLevel: 25
   propsPossibleTypes:
   - propsType: 4
     spawnChance: 0.45
-    adjustedSpawnChance: 0.24532996
+    adjustedSpawnChance: 0.042520177
     minimumOfThisTypeAtOnce: 2
     maximumOfThisTypeAtOnce: 3
     minimumOfThisTypeForTheLevel: 8
-    maximumOfThisTypeForTheLevel: 8
+    maximumOfThisTypeForTheLevel: 20
   - propsType: 0
     spawnChance: 0.13
-    adjustedSpawnChance: 0.11979002
+    adjustedSpawnChance: 0.041235253
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 3
-    maximumOfThisTypeForTheLevel: 3
+    maximumOfThisTypeForTheLevel: 20
   - propsType: 1
     spawnChance: 0.13
-    adjustedSpawnChance: 0.07920001
+    adjustedSpawnChance: 0.09745051
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 3
-    maximumOfThisTypeForTheLevel: 3
+    maximumOfThisTypeForTheLevel: 20
   - propsType: 2
     spawnChance: 0.04
-    adjustedSpawnChance: 0.0484
+    adjustedSpawnChance: 0.032983247
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 1
-    maximumOfThisTypeForTheLevel: 1
+    maximumOfThisTypeForTheLevel: 20

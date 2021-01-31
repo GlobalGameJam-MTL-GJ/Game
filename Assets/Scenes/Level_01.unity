@@ -2116,33 +2116,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _customersDefinitions.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
       propertyPath: _queueController
       value: 
       objectReference: {fileID: 2128841141}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _spawnRate
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _customersDefinitions.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 67571ec58e0f8d54dab29c71602ddd10, type: 2}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _customersDefinitions.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: fa56bb310d0bd6248a9699c5abf23ef5, type: 2}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _customersDefinitions.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2a46d4397c5cc164fa224fd2ab5d6bf6, type: 2}
-    - target: {fileID: 1315505993558906142, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
-      propertyPath: _customersDefinitions.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8740b8d7a3908eb45a6e1c8b254dd62a, type: 2}
     - target: {fileID: 9095492058012059048, guid: 53655e78c09f2d342ad32f43cfa7cc1a, type: 3}
       propertyPath: m_Name
       value: CustomerSpawner
