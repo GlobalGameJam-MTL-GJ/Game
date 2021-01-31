@@ -14,6 +14,10 @@ public class CustomerMover : MonoBehaviour
     public Action OnCustomerWaiting;
 
     public static Action<QueueSpot> OnCustomerRelinquishQueueSpot;
+    private Animator animator;
+    private void Awake()
+    {
+    }
 
     public void OnEnable()
     {
@@ -38,14 +42,23 @@ public class CustomerMover : MonoBehaviour
 
     private void MoveCustomerToQueue()
     {
+        CheckIfAnimatorHasBeenAssigned();
         _queueSpot = _queueController.GetAvailableSpot();
 
         LeanTween.init(800);
-        LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
+        animator.SetBool("Walking", true);
+        LeanTween.move(gameObject, _queueSpot.transform.position, 3.0f).setOnComplete(TriggerEvent);
+    }
+
+    private void CheckIfAnimatorHasBeenAssigned()
+    {
+        if(animator == null)
+            animator = GetComponentInChildren<Animator>();
     }
 
     public void TriggerEvent()
     {
+        animator.SetBool("Walking", false);
         if (!_queueSpot.isQueueFront) { return; }
         AkSoundEngine.PostEvent("NPC_Bell", gameObject);
         OnCustomerWaiting?.Invoke();
@@ -60,8 +73,10 @@ public class CustomerMover : MonoBehaviour
     {
         if(_queueSpot == oldQueueSpot)
         {
+            CheckIfAnimatorHasBeenAssigned();
             _queueSpot = newQueueSpot;
             _queueSpot.IsEmpty = false;
+            animator.SetBool("Walking", true);
             LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
         }
     }

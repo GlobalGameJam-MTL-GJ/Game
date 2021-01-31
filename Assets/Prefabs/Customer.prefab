@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2940701275705178777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.773, y: 1.403, z: -0.05}
+  m_LocalPosition: {x: 0.736, y: 0.9, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7833831331389725271}
@@ -250,6 +250,7 @@ MonoBehaviour:
   _rageBar: {fileID: 6976089878448613597}
   _customerMover: {fileID: 8162376585652855122}
   pointsPer5SecondsRemaining: 1
+  distanceToPlayerToShowBubble: 4
   propsType: 0
   propsColor: 0
   isWaiting: 0

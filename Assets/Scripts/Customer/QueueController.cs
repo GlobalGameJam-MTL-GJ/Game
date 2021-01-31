@@ -135,6 +135,9 @@ public class QueueController : MonoBehaviour
         RelinquishQueueSpot(queueSpot);
         LeanTween.rotateAround(customerGO, customerGO.transform.up, queueSpot.YAngle, 0.6f).setOnComplete(() =>
         {
+            Animator animator = customerGO.GetComponentInChildren<Animator>();
+            animator.SetBool("Walking", true);
+            animator.SetBool("HasObj", true);
             LeanTween.move(customerGO, queueSpot.endPoint, 3.5f).setOnComplete(() => { Destroy(customerGO); });
         });
         
