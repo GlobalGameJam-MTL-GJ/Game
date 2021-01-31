@@ -59,7 +59,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomType: Frontstore
   layer: 22
-  _timeManager: {fileID: 0}
 --- !u!1 &8528380300715872087
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomType: Backstore
   layer: 22
-  _timeManager: {fileID: 0}
 --- !u!1 &8528380301543973569
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +165,7 @@ GameObject:
   - component: {fileID: 8528380301543973573}
   - component: {fileID: 8528380301543973574}
   - component: {fileID: 8528380301543973560}
+  - component: {fileID: 1245574416443814096}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -331,3 +330,16 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1245574416443814096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528380301543973569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4059aebecaa3ae49a91336e2ee6c5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeManager: {fileID: 0}
