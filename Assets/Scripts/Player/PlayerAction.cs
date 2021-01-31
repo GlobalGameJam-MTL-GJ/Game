@@ -126,6 +126,7 @@ public class PlayerAction : MonoBehaviour
 
     public void Throw()
     {
+        if (pickedUpObject == null) return;
         LetGoOfTheItem();
         pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
         pickedUpObject = null;
@@ -140,7 +141,8 @@ public class PlayerAction : MonoBehaviour
 
     private void LetGoOfTheItem()
     {
-        pickedUpObject.transform.parent = null;
+        if(pickedUpObject != null)
+            pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
     }
 
