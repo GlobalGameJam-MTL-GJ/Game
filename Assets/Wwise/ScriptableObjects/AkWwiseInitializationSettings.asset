@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlatformSettingsNameList: []
   PlatformSettingsList: []
-  InvalidReferencePlatforms:
-  - Android
-  - iOS
+  InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
