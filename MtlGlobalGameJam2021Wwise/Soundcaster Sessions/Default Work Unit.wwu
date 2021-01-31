@@ -6,11 +6,103 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{3365B691-6509-4F19-9452-7EC86F26F198}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Music_End" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<ObjectRef Name="Clock_Start" ID="{4BF39750-96B1-4D33-ACA0-8B5A93CC4C98}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_Roof" ID="{5103EAE0-087E-40F4-9652-9864E369AFCB}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Menu" ID="{8B27FE44-3F6E-4B4A-8C81-8F38D59EB669}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Drop" ID="{536D8DDF-C6FA-4AFB-A921-79AC342053A3}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Prop_Impact" ID="{110AFD5A-6DAC-4BA7-A455-EB8730DC1740}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Select" ID="{20E8C382-3659-482A-97C2-7AB25B925630}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="EndWhistle" ID="{0EAC914A-1B9D-4FC3-A51A-882E83873D32}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_Spawn" ID="{74F5E4E8-B037-4154-8B97-1F9CE9F86CC7}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="NPC_Bell" ID="{709ECC4F-A582-433F-A6C8-95B703D75E7E}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Footsteps" ID="{0D51E6D7-EF0D-4CA3-8060-BAAE6F6079E4}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Prop_Success" ID="{59C4339F-5A22-4F58-A66B-25C315323A9F}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_StartGame" ID="{5682C9F5-0954-4C8A-8274-7923141E6887}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_Countdown" ID="{6895C7C7-2FB8-4229-A5AC-698A8692174E}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_End" ID="{DFF3528D-E111-46CF-8197-6D3A05DFA712}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="NPC_BossStrike" ID="{FB242B3F-07A2-4E3B-9E5F-806902D3D027}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Pickup" ID="{3E356842-857E-485D-9AA7-E030E20B640E}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Back" ID="{05BFC0C1-1A28-4B84-B8D7-8291E954D6F3}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_Door" ID="{EA17A94E-5C64-4E72-82A3-D256992986F8}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="NPC_Voice" ID="{46C4777C-AA93-4A91-994E-95A516B41988}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Throw" ID="{1319795F-C799-4003-96E3-EA90EFB1857D}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Hover" ID="{4948F1B3-D50E-4E56-84FC-66FE91383D5F}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="gamestart" ID="{0382B966-738C-4D36-8D4C-D76C85C2E417}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+							<Position X="4" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Sidechain" ID="{C9B9E195-B508-40AB-932D-2CB2973C63C0}"/>
+							<Value>100</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Clock" ID="{15CA22AC-9F76-4586-AB5F-068D84095D8C}"/>
 							<Value>181</Value>
@@ -27,7 +119,7 @@
 						<CurrentSwitchRef Name="Bow" ID="{E305EDD3-F0D9-498D-9987-6923FDC047D9}"/>
 						<CurrentSwitchRef Name="Lose" ID="{55E6F690-C695-4262-B5EA-882240CA3013}"/>
 						<CurrentSwitchRef Name="Happy" ID="{EF7F605B-5661-40A9-B4DE-533F35C9951E}"/>
-						<CurrentSwitchRef Name="Princess" ID="{56531AED-F722-4006-A537-0B7121507920}"/>
+						<CurrentSwitchRef Name="Elf" ID="{B816CF23-1529-48E5-92B7-D7B52ECEB15A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

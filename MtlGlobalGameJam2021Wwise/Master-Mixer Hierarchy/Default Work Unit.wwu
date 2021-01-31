@@ -9,6 +9,32 @@
 							<ObjectRef Name="System" ID="{7BAA28BB-B173-4B84-A62C-38662BF028F4}" WorkUnitID="{299631EE-AF9F-4D79-B575-A96123803F61}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{4736DD66-2ACB-401F-8720-31A253D8B33D}">
+							<PropertyList>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-12"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="Sidechain" ID="{1A8DFFE7-65D4-4050-8A61-4E95EACC9DA8}" WorkUnitID="{9D52B8B6-1B89-46A7-9C33-7D60F4B6CE13}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="NPC" ID="{2170B3E6-FEF1-4436-87EB-0C87DE4A6FFF}">
+							<PropertyList>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-11.5"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="Sidechain" ID="{1A8DFFE7-65D4-4050-8A61-4E95EACC9DA8}" WorkUnitID="{9D52B8B6-1B89-46A7-9C33-7D60F4B6CE13}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="Props" ID="{1DBD59A3-DBFE-47D1-B771-1DBA16C50350}"/>
+						<Bus Name="Player" ID="{69B1EA64-1B5E-4732-B1C2-1C567943946F}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -360,6 +360,30 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="gamestart" ID="{0382B966-738C-4D36-8D4C-D76C85C2E417}">
+					<ChildrenList>
+						<Action Name="" ID="{A6329F7A-3C1D-4359-A003-EAA553192538}" ShortID="602545986">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_LevelStart" ID="{B49A1CF1-ABFF-43B5-9224-11B616367294}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A45060C8-B276-4DAD-B1D3-BF8FFA79776D}" ShortID="436519305">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clock_Start" ID="{4BF39750-96B1-4D33-ACA0-8B5A93CC4C98}" WorkUnitID="{C4C3F051-49F2-4CCF-9D54-22EC8410C70D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="662417162" Language="SFX" Hash="1088990840">
+		<SoundBank Id="662417162" Language="SFX" Hash="734789373">
 			<ObjectPath>\SoundBanks\Default Work Unit\NPC</ObjectPath>
 			<ShortName>NPC</ShortName>
 			<Path>NPC.bnk</Path>
@@ -327,7 +327,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="968010305" Language="SFX" Hash="1641345888">
+		<SoundBank Id="968010305" Language="SFX" Hash="2122711631">
 			<ObjectPath>\SoundBanks\Default Work Unit\Props</ObjectPath>
 			<ShortName>Props</ShortName>
 			<Path>Props.bnk</Path>
@@ -499,7 +499,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="338369364">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3682995168">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -878,12 +878,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1554130729">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3698031594">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="3588213352">
+		<SoundBank Id="1551306167" Language="SFX" Hash="3958919663">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
@@ -1051,7 +1051,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="4198352067">
+		<SoundBank Id="3991942870" Language="SFX" Hash="863462848">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
