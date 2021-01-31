@@ -28,6 +28,7 @@ public class TimeManager : MonoBehaviour
     private void Start()
     {
         GameOverHandler.instance.OnGameOver += OnGameOverHandler;
+        AkSoundEngine.PostEvent("Clock_Start", gameObject);
         LeanTween.delayedCall(3f, StartTheGame);
         currentCountdown = 3f;
         onCountdown = true;

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class MusicController : MonoBehaviour
 
     private static string currentRoomType;
     public static bool isGameOver = false;
+
+
 
     private void OnTriggerEnter(Collider col)
     {
@@ -21,4 +24,6 @@ public class MusicController : MonoBehaviour
             }
         }
     }
+
+
 }
