@@ -18,8 +18,9 @@ namespace AK
         static const AkUniqueID LEVEL_DOOR = 4002963088U;
         static const AkUniqueID LEVEL_ROOF = 3813899962U;
         static const AkUniqueID LEVEL_SPAWN = 1976190133U;
+        static const AkUniqueID MUSIC_END = 2227419164U;
+        static const AkUniqueID MUSIC_LEVELSTART = 1091565391U;
         static const AkUniqueID MUSIC_MENU = 1598298728U;
-        static const AkUniqueID MUSIC_PLAY = 202194903U;
         static const AkUniqueID NPC_BELL = 3226713398U;
         static const AkUniqueID NPC_BOSSSTRIKE = 1034569512U;
         static const AkUniqueID NPC_VOICE = 2571308781U;
@@ -60,7 +61,6 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID LOSE = 221232726U;
-                static const AkUniqueID PLAY = 1256202815U;
                 static const AkUniqueID WIN = 979765101U;
             } // namespace SWITCH
         } // namespace MUSICTYPE

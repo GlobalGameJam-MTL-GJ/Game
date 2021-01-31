@@ -7,7 +7,6 @@ Switch	ID	Name	Switch Group			Notes
 	1427264549	Happy	NPCMood			
 	221232726	Lose	MusicType			
 	979765101	Win	MusicType			
-	1256202815	Play	MusicType			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1992536912	RoomType			\Default Work Unit\RoomType	

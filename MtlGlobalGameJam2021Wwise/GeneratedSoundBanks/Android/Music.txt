@@ -1,8 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	193027072	Clock_Start			\Default Work Unit\Clock_Start	
-	202194903	Music_Play			\Default Work Unit\Music_Play	
 	734427666	EndWhistle			\Default Work Unit\EndWhistle	
+	1091565391	Music_LevelStart			\Default Work Unit\Music_LevelStart	
 	1598298728	Music_Menu			\Default Work Unit\Music_Menu	
+	2227419164	Music_End			\Default Work Unit\Music_End	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	4048174150	MusicType			\Default Work Unit\MusicType	
@@ -10,7 +11,6 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	221232726	Lose	MusicType			
 	979765101	Win	MusicType			
-	1256202815	Play	MusicType			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1992536912	RoomType			\Default Work Unit\RoomType	
@@ -21,26 +21,26 @@ State	ID	Name	State Group			Notes
 	3572512317	Frontstore	RoomType			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	455602417	Backstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore		
-	462428580	Frontstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore		
+	455602417	Backstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore		
+	462428580	Frontstore	RoomType	\Interactive Music Hierarchy\Default Work Unit\Music_Backstore		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1182830809	Clock			\Default Work Unit\Clock	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	66918242	Music_Stinger_Win_Eb_130bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Stinger_Win_Eb_130bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Win\Music_Stinger_Win_Eb_130bpm\Music_Stinger_Win_Eb_130bpm		374016
-	113764829	Music_Gameplay_Frontstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Frontstore_02_C_180bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore\Music_Gameplay_Frontstore_02_C_180bpm\Music_Gameplay_Frontstore_02_C_180bpm		2016240
+	113764829	Music_Gameplay_Frontstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Frontstore_02_C_180bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore\Music_Gameplay_Frontstore_02_C_180bpm\Music_Gameplay_Frontstore_02_C_180bpm		2016240
 	144058494	Music_Win_Loop_Eb_130bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Win_Loop_Eb_130bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Win\Music_Win_Loop_Eb_130bpm\Music_Win_Loop_Eb_130bpm		1969104
-	173890151	Music_Gameplay_Frontstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Frontstore_01_C_160bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Frontstore\Music_Gameplay_Frontstore_01_C_160bpm\Music_Gameplay_Frontstore_01_C_160bpm		8345408
-	188154731	Music_Gameplay_Backstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Backstore_01_C_160bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\Music_Gameplay_Backstore_01_C_160bpm\Music_Gameplay_Backstore_01_C_160bpm		8334288
-	255489815	Music_Gameplay_Backstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Backstore_02_C_180bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\Music_Gameplay_Backstore_02_C_180bpm\Music_Gameplay_Backstore_02_C_180bpm		1908192
+	173890151	Music_Gameplay_Frontstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Frontstore_01_C_160bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Frontstore\Music_Gameplay_Frontstore_01_C_160bpm\Music_Gameplay_Frontstore_01_C_160bpm		8345408
+	188154731	Music_Gameplay_Backstore_01_C_160bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Backstore_01_C_160bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\Music_Gameplay_Backstore_01_C_160bpm\Music_Gameplay_Backstore_01_C_160bpm		8334288
+	255489815	Music_Gameplay_Backstore_02_C_180bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Gameplay_Backstore_02_C_180bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\Music_Gameplay_Backstore_02_C_180bpm\Music_Gameplay_Backstore_02_C_180bpm		1908192
 	267581053	Music_Menu_Intro_G_150bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Menu_Intro_G_150bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Menu\Music_Menu_Intro_G_150bpm\Music_Menu_Intro_G_150bpm		734592
 	536964545	XD_ClockFast180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_ClockFast180_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\ClockFast\XD_ClockFast180\XD_ClockFast180		72064
-	618077781	Music_GameOver_Intro_9beats_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_GameOver_Intro_9beats_F_230bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_GameOver\Music_GameOver_Intro_9beats_F_230bpm\Music_GameOver_Intro_9beats_F_230bpm		211464
+	618077781	Music_GameOver_Intro_9beats_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_GameOver_Intro_9beats_F_230bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Lose\Music_GameOver_Intro_9beats_F_230bpm\Music_GameOver_Intro_9beats_F_230bpm		211464
 	640894875	Music_Menu_Loop_G_150bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_Menu_Loop_G_150bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Menu\Music_Menu_Loop_G_150bpm\Music_Menu_Loop_G_150bpm		4428144
 	679901182	XD_ClockSlow160	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_ClockSlow160_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\ClockSlow\XD_ClockSlow160\XD_ClockSlow160		81064
 	808146414	XD_ClockRush180	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_ClockRush180_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\ClockRush\XD_ClockRush180\XD_ClockRush180		72064
-	1021251280	XD_WhistleRush	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_WhistleRush_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Level\Music_Backstore\XD_WhistleRush\XD_WhistleRush		108064
+	1021251280	XD_WhistleRush	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_WhistleRush_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Backstore\XD_WhistleRush\XD_WhistleRush		108064
 	1048866118	XD_EndWhistle	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\XD_EndWhistle_B09F49DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\XD\XD_EndWhistle		145000
-	1072004486	Music_GameOver_Intro_loop6bars_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_GameOver_Intro_loop6bars_F_230bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_GameOver\Music_GameOver_Intro_loop6bars_F_230bpm\Music_GameOver_Intro_loop6bars_F_230bpm		1662408
+	1072004486	Music_GameOver_Intro_loop6bars_F_230bpm	G:\AltStorage\GPrograms\GGJ\MtlGlobalGameJam2021WwiseLOCAL\.cache\Android\SFX\Music_GameOver_Intro_loop6bars_F_230bpm_4811579D.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Type\Music_Lose\Music_GameOver_Intro_loop6bars_F_230bpm\Music_GameOver_Intro_loop6bars_F_230bpm		1662408
 

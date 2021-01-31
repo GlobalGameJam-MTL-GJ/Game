@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="662417162" Language="SFX" Hash="1358491561">
+		<SoundBank Id="662417162" Language="SFX" Hash="1088990840">
 			<ObjectPath>\SoundBanks\Default Work Unit\NPC</ObjectPath>
 			<ShortName>NPC</ShortName>
 			<Path>NPC.bnk</Path>
@@ -327,12 +327,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="968010305" Language="SFX" Hash="3395167829">
+		<SoundBank Id="968010305" Language="SFX" Hash="1641345888">
 			<ObjectPath>\SoundBanks\Default Work Unit\Props</ObjectPath>
 			<ShortName>Props</ShortName>
 			<Path>Props.bnk</Path>
 			<IncludedEvents>
-				<Event Id="986777071" Name="Prop_Impact" ObjectPath="\Events\Default Work Unit\Prop_Impact" DurationType="OneShot" DurationMin="1.324865" DurationMax="2.675608">
+				<Event Id="986777071" Name="Prop_Impact" ObjectPath="\Events\Default Work Unit\Prop_Impact" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.324865" DurationMax="2.675608">
 					<IncludedMemoryFiles>
 						<File Id="6388350" Language="SFX">
 							<ShortName>Sword_Impact-003.wav</ShortName>
@@ -499,7 +499,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3672729064">
+		<SoundBank Id="1069431850" Language="SFX" Hash="338369364">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -878,17 +878,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1018239699">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2304770474">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="635857360">
+		<SoundBank Id="1551306167" Language="SFX" Hash="3588213352">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Default Work Unit\UI_Back" DurationType="OneShot" DurationMin="0.170208" DurationMax="0.170208">
+				<Event Id="2024222415" Name="UI_Back" ObjectPath="\Events\Default Work Unit\UI_Back" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.170208" DurationMax="0.170208">
 					<IncludedMemoryFiles>
 						<File Id="880386914" Language="SFX">
 							<ShortName>UI_Back.wav</ShortName>
@@ -896,7 +896,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI_Hover" DurationType="OneShot" DurationMin="0.204917" DurationMax="0.204917">
+				<Event Id="2118900976" Name="UI_Hover" ObjectPath="\Events\Default Work Unit\UI_Hover" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.204917" DurationMax="0.204917">
 					<IncludedMemoryFiles>
 						<File Id="906417135" Language="SFX">
 							<ShortName>UI_Hover.wav</ShortName>
@@ -904,7 +904,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI_Select" DurationType="OneShot" DurationMin="0.290229" DurationMax="0.290229">
+				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI_Select" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.290229" DurationMax="0.290229">
 					<IncludedMemoryFiles>
 						<File Id="163861650" Language="SFX">
 							<ShortName>UI_Select.wav</ShortName>
@@ -912,7 +912,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI_StartGame" DurationType="OneShot" DurationMin="1.849875" DurationMax="1.849875">
+				<Event Id="2467171692" Name="UI_StartGame" ObjectPath="\Events\Default Work Unit\UI_StartGame" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.849875" DurationMax="1.849875">
 					<IncludedMemoryFiles>
 						<File Id="674515717" Language="SFX">
 							<ShortName>UI_StartGame.wav</ShortName>
@@ -922,7 +922,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2782712965" Language="SFX" Hash="1676043734">
+		<SoundBank Id="2782712965" Language="SFX" Hash="4032181041">
 			<ObjectPath>\SoundBanks\Default Work Unit\Level</ObjectPath>
 			<ShortName>Level</ShortName>
 			<Path>Level.bnk</Path>
@@ -1051,7 +1051,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2407125228">
+		<SoundBank Id="3991942870" Language="SFX" Hash="4198352067">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -1080,51 +1080,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1598298728" Name="Music_Menu" ObjectPath="\Events\Default Work Unit\Music_Menu" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="267581053" Language="SFX">
-							<ShortName>Music_Menu_Intro_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Intro_G_150bpm_179463A7.wem</Path>
-						</File>
-						<File Id="640894875" Language="SFX">
-							<ShortName>Music_Menu_Loop_G_150bpm.wav</ShortName>
-							<Path>SFX\Music_Menu_Loop_G_150bpm_179463A7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="202194903" Name="Music_Play" ObjectPath="\Events\Default Work Unit\Music_Play" DurationType="Infinite">
+				<Event Id="2227419164" Name="Music_End" ObjectPath="\Events\Default Work Unit\Music_End" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="66918242" Language="SFX">
 							<ShortName>Music_Stinger_Win_Eb_130bpm.wav</ShortName>
 							<Path>SFX\Music_Stinger_Win_Eb_130bpm_179463A7.wem</Path>
 						</File>
-						<File Id="113764829" Language="SFX">
-							<ShortName>Music_Gameplay_Frontstore_02_C_180bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_179463A7.wem</Path>
-						</File>
 						<File Id="144058494" Language="SFX">
 							<ShortName>Music_Win_Loop_Eb_130bpm.wav</ShortName>
 							<Path>SFX\Music_Win_Loop_Eb_130bpm_179463A7.wem</Path>
 						</File>
-						<File Id="173890151" Language="SFX">
-							<ShortName>Music_Gameplay_Frontstore_01_C_160bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Frontstore_01_C_160bpm_179463A7.wem</Path>
-						</File>
-						<File Id="188154731" Language="SFX">
-							<ShortName>Music_Gameplay_Backstore_01_C_160bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Backstore_01_C_160bpm_179463A7.wem</Path>
-						</File>
-						<File Id="255489815" Language="SFX">
-							<ShortName>Music_Gameplay_Backstore_02_C_180bpm.wav</ShortName>
-							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_179463A7.wem</Path>
-						</File>
 						<File Id="618077781" Language="SFX">
 							<ShortName>Music_GameOver_Intro_9beats_F_230bpm.wav</ShortName>
 							<Path>SFX\Music_GameOver_Intro_9beats_F_230bpm_179463A7.wem</Path>
-						</File>
-						<File Id="1021251280" Language="SFX">
-							<ShortName>XD_WhistleRush.wav</ShortName>
-							<Path>SFX\XD_WhistleRush_179463A7.wem</Path>
 						</File>
 						<File Id="1072004486" Language="SFX">
 							<ShortName>Music_GameOver_Intro_loop6bars_F_230bpm.wav</ShortName>
@@ -1138,24 +1106,6 @@
 								<File Id="1072004486"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9E480738-C8A4-40E3-AB07-A8A77768BD36}">
-							<Children>
-								<SwitchContainer SwitchValue="{C4FE1682-F6BA-4BAC-B233-894823A66A3E}">
-									<Media>
-										<File Id="188154731"/>
-										<File Id="255489815"/>
-										<File Id="1021251280"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{A2D5CDBA-CB7A-4F2F-A49C-DB017B970B4B}">
-									<Media>
-										<File Id="113764829"/>
-										<File Id="173890151"/>
-										<File Id="1021251280"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{C187B0A4-56AF-4132-BBA4-BE1B9E02A602}">
 							<Media>
 								<File Id="66918242"/>
@@ -1164,25 +1114,51 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1091565391" Name="Music_LevelStart" ObjectPath="\Events\Default Work Unit\Music_LevelStart" DurationType="OneShot" DurationMin="193.875092" DurationMax="193.875092">
+					<IncludedMemoryFiles>
+						<File Id="113764829" Language="SFX">
+							<ShortName>Music_Gameplay_Frontstore_02_C_180bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Frontstore_02_C_180bpm_179463A7.wem</Path>
+						</File>
+						<File Id="173890151" Language="SFX">
+							<ShortName>Music_Gameplay_Frontstore_01_C_160bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Frontstore_01_C_160bpm_179463A7.wem</Path>
+						</File>
+						<File Id="188154731" Language="SFX">
+							<ShortName>Music_Gameplay_Backstore_01_C_160bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Backstore_01_C_160bpm_179463A7.wem</Path>
+						</File>
+						<File Id="255489815" Language="SFX">
+							<ShortName>Music_Gameplay_Backstore_02_C_180bpm.wav</ShortName>
+							<Path>SFX\Music_Gameplay_Backstore_02_C_180bpm_179463A7.wem</Path>
+						</File>
+						<File Id="1021251280" Language="SFX">
+							<ShortName>XD_WhistleRush.wav</ShortName>
+							<Path>SFX\XD_WhistleRush_179463A7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1598298728" Name="Music_Menu" ObjectPath="\Events\Default Work Unit\Music_Menu" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="267581053" Language="SFX">
+							<ShortName>Music_Menu_Intro_G_150bpm.wav</ShortName>
+							<Path>SFX\Music_Menu_Intro_G_150bpm_179463A7.wem</Path>
+						</File>
+						<File Id="640894875" Language="SFX">
+							<ShortName>Music_Menu_Loop_G_150bpm.wav</ShortName>
+							<Path>SFX\Music_Menu_Loop_G_150bpm_179463A7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1182830809" Name="Clock" ObjectPath="\Game Parameters\Default Work Unit\Clock"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="1992536912" Name="RoomType" ObjectPath="\States\Default Work Unit\RoomType">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\RoomType\None"/>
-						<State Id="3572512317" Name="Frontstore" ObjectPath="\States\Default Work Unit\RoomType\Frontstore"/>
-						<State Id="2915384035" Name="Backstore" ObjectPath="\States\Default Work Unit\RoomType\Backstore"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="4048174150" Name="MusicType" ObjectPath="\Switches\Default Work Unit\MusicType">
 					<Switches>
 						<Switch Id="979765101" Name="Win" ObjectPath="\Switches\Default Work Unit\MusicType\Win"/>
 						<Switch Id="221232726" Name="Lose" ObjectPath="\Switches\Default Work Unit\MusicType\Lose"/>
-						<Switch Id="1256202815" Name="Play" ObjectPath="\Switches\Default Work Unit\MusicType\Play"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
