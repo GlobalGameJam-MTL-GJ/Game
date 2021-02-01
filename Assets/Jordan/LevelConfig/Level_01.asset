@@ -16,21 +16,21 @@ MonoBehaviour:
   propsPossibleMovements:
   - propsMovementType: 0
     spawnChance: 0.554
-    adjustedSpawnChance: 0.616
+    adjustedSpawnChance: 0.37753555
     minimumOfThisTypeAtOnce: 2
     maximumOfThisTypeAtOnce: 6
     minimumOfThisTypeForTheLevel: 13
     maximumOfThisTypeForTheLevel: 40
   - propsMovementType: 1
     spawnChance: 0.383
-    adjustedSpawnChance: 0.18150002
+    adjustedSpawnChance: 0.24512
     minimumOfThisTypeAtOnce: 1
     maximumOfThisTypeAtOnce: 2
     minimumOfThisTypeForTheLevel: 7
     maximumOfThisTypeForTheLevel: 100
   - propsMovementType: 2
     spawnChance: 0.15
-    adjustedSpawnChance: 0.120000005
+    adjustedSpawnChance: 0.17569202
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 2
@@ -38,29 +38,29 @@ MonoBehaviour:
   propsPossibleTypes:
   - propsType: 4
     spawnChance: 0.45
-    adjustedSpawnChance: 0.396
+    adjustedSpawnChance: 0.278784
     minimumOfThisTypeAtOnce: 2
     maximumOfThisTypeAtOnce: 3
     minimumOfThisTypeForTheLevel: 8
     maximumOfThisTypeForTheLevel: 50
   - propsType: 0
     spawnChance: 0.13
-    adjustedSpawnChance: 0.1573
+    adjustedSpawnChance: 0.103999995
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 3
     maximumOfThisTypeForTheLevel: 50
   - propsType: 1
     spawnChance: 0.13
-    adjustedSpawnChance: 0.103999995
+    adjustedSpawnChance: 0.12584
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
     minimumOfThisTypeForTheLevel: 3
     maximumOfThisTypeForTheLevel: 50
   - propsType: 2
-    spawnChance: 0.04
-    adjustedSpawnChance: 0.0484
+    spawnChance: 0.063
+    adjustedSpawnChance: 0.12584
     minimumOfThisTypeAtOnce: 0
     maximumOfThisTypeAtOnce: 1
-    minimumOfThisTypeForTheLevel: 1
+    minimumOfThisTypeForTheLevel: 3
     maximumOfThisTypeForTheLevel: 50
