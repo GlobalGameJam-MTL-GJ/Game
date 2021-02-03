@@ -145,9 +145,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480684282175343696}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.8984495, z: -0, w: 0.4390769}
+  m_LocalPosition: {x: -0, y: 0.0321, z: 0.29620004}
+  m_LocalScale: {x: 0.04000002, y: 0.016, z: 0}
   m_Children:
   - {fileID: 246834563944656225}
   - {fileID: 1932462179548372506}
@@ -333,9 +333,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2354352252680378382}
-  m_LocalRotation: {x: -0.008129275, y: 0, z: -0, w: 0.999967}
-  m_LocalPosition: {x: -0, y: 0.12508726, z: 0.0035895633}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.0035693778, y: 0.89841986, z: 0.0073037446, w: 0.43906245}
+  m_LocalPosition: {x: -0, y: 0.034101397, z: 0.29620004}
+  m_LocalScale: {x: 0.040000014, y: 0.015995773, z: 0}
   m_Children:
   - {fileID: 7986806611750959549}
   m_Father: {fileID: 5838014893390615464}
@@ -689,7 +689,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5881728600947877375}
-  - component: {fileID: 2491207830128015120}
   m_Layer: 20
   m_Name: PrincessMesh
   m_TagString: Untagged
@@ -712,25 +711,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!95 &2491207830128015120
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5988179704544246432}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9e53cc62bdd596f40ad3405b0a2bf415, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6080071626372269982
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5838014893390615464}
+  - component: {fileID: 4330082029720664934}
   m_Layer: 0
   m_Name: Character_chess_meshRIG
   m_TagString: Untagged
@@ -794,6 +775,25 @@ Transform:
   m_Father: {fileID: 5881728600947877375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4330082029720664934
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507449887386011922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e53cc62bdd596f40ad3405b0a2bf415, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6787250412454185806
 GameObject:
   m_ObjectHideFlags: 0

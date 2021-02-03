@@ -11,9 +11,20 @@ public class MainMenuMusicController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPlayButtonClicked()
     {
-        
+        AkSoundEngine.PostEvent("UI_StartGame", gameObject);
+
+    }
+
+    public void OnQuitButtonClicked()
+    {
+        AkSoundEngine.PostEvent("UI_Back", gameObject);
+        Application.Quit();
+    }
+
+    public void OnMouseEntersButton()
+    {
+        AkSoundEngine.PostEvent("UI_Hover", gameObject);
     }
 }
