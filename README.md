@@ -19,15 +19,15 @@ Try to survive the day! Watch out for customers, pay attention to the bell sound
 
 This game was made during the Global Game Jam 2021 with the collaboration of:
 
-Programmer: Jordan Huot-Roberge
-Programmer: Frédéric Lévesque
-Programmer: Robayth Shahrin Dhrubo
-Programmer: Asfandyar Butt
-Artist: Daniel Gomez
-Artist: Gerardo Montaño Téllez
-Sound Designer: Antoine de Passillé
-Music Composer: Wil Helm
-Game / Level Designer: Dominic Lachance-Robidoux
+- Programmer: Jordan Huot-Roberge
+- Programmer: Frédéric Lévesque
+- Programmer: Robayth Shahrin Dhrubo
+- Programmer: Asfandyar Butt
+- Artist: Daniel Gomez
+- Artist: Gerardo Montaño Téllez
+- Sound Designer: Antoine de Passillé
+- Music Composer: Wil Helm
+- Game / Level Designer: Dominic Lachance-Robidoux
 
 ##Gameplay video
 
