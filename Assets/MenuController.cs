@@ -2,25 +2,65 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField] private GameObject _text1;
-    [SerializeField] private GameObject _text2;
-    [SerializeField] private GameObject _text3;
-    [SerializeField] private GameObject _text4;
-    [SerializeField] private GameObject _text5;
-    [SerializeField] private GameObject _text6;
+    [SerializeField] private List<GameObject> _textList;
 
-    // Start is called before the first frame update
+    [SerializeField] private List<GameObject> _mainMenuButton;
+
+    [SerializeField] private List<GameObject> _levelSelectionButtons;
+
     void Start()
     {
         var seq = LeanTween.sequence();
-        seq.append(LeanTween.scale(_text1, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
-        seq.append(LeanTween.scale(_text2, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
-        seq.append(LeanTween.scale(_text3, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
-        seq.append(LeanTween.scale(_text4, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
-        seq.append(LeanTween.scale(_text5, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
-        seq.append(LeanTween.scale(_text6, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
+        foreach (var text in _textList)
+        {
+            seq.append(LeanTween.scale(text, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
+        }
+    }
+
+    public void OnStartButtonClicked()
+    {
+        var seq = LeanTween.sequence();
+        foreach (var button in _mainMenuButton)
+        {
+            seq.append(LeanTween.scale(button, new Vector3(0, 0, 0), 1f).setEaseInOutElastic());
+        }
+
+        foreach (var button in _levelSelectionButtons)
+        {
+            seq.append(LeanTween.scale(button, new Vector3(1, 1, 1), 1f).setEaseInOutElastic());
+        }
+    }
+
+    public void OnQuitButtonClicked()
+    {
+        Application.Quit();
+    }
+
+    public void OnLevel1ButtonClicked()
+    {
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
+        SceneManager.LoadScene("Level_01");
+    }
+    public void OnLevel2ButtonClicked()
+    {
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
+        SceneManager.LoadScene("Level_02");
+
+    }
+    public void OnLevel3ButtonClicked()
+    {
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
+        SceneManager.LoadScene("Level_03");
+
+    }
+    public void OnLevel4ButtonClicked()
+    {
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
+        SceneManager.LoadScene("Level_04");
     }
 }
