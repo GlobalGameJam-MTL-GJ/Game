@@ -13,22 +13,21 @@ public class CustomerMover : MonoBehaviour
 
     public Action OnCustomerWaiting;
 
-    public static Action<QueueSpot> OnCustomerRelinquishQueueSpot;
+    //public static Action<QueueSpot> OnCustomerRelinquishQueueSpot;
     private Animator animator;
+
+    private LTSeq _moveSeq;
     private void Awake()
     {
     }
 
     public void OnEnable()
     {
-        //_customerController = GetComponent<CustomerController>();
-        //_customerController.OnCustomerOrderComplete += RelinquishQueueSpot;
         QueueController.OnQueueSpotOpenedUp += OnQueueSpotOpenedUp;
     }
 
     public void OnDisable()
     {
-        //_customerController.OnCustomerOrderComplete -= RelinquishQueueSpot;
         QueueController.OnQueueSpotOpenedUp -= OnQueueSpotOpenedUp;
 
     }
@@ -46,8 +45,11 @@ public class CustomerMover : MonoBehaviour
         _queueSpot = _queueController.GetAvailableSpot();
 
         LeanTween.init(800);
-        animator.SetBool("Walking", true);
-        LeanTween.move(gameObject, _queueSpot.transform.position, 3.0f).setOnComplete(TriggerEvent);
+        _moveSeq = LeanTween.sequence();
+        _moveSeq.append(
+            LeanTween.move(gameObject, _queueSpot.transform.position, 3.0f)
+            .setOnStart(() => { animator.SetBool("Walking", true); })
+            .setOnComplete(TriggerEvent));
     }
 
     private void CheckIfAnimatorHasBeenAssigned()
@@ -63,21 +65,18 @@ public class CustomerMover : MonoBehaviour
         AkSoundEngine.PostEvent("NPC_Bell", gameObject);
         OnCustomerWaiting?.Invoke();
     }
-    /*
-    private void RelinquishQueueSpot()
-    {
-        OnCustomerRelinquishQueueSpot?.Invoke(_queueSpot);
-    }
-    */
+
     private void OnQueueSpotOpenedUp(QueueSpot oldQueueSpot, QueueSpot newQueueSpot)
     {
-        if(_queueSpot == oldQueueSpot)
+        if (_queueSpot == oldQueueSpot)
         {
             CheckIfAnimatorHasBeenAssigned();
             _queueSpot = newQueueSpot;
             _queueSpot.IsEmpty = false;
-            animator.SetBool("Walking", true);
-            LeanTween.move(gameObject, _queueSpot.transform.position, 1.0f).setOnComplete(TriggerEvent);
+            _moveSeq.append(
+                LeanTween.move(gameObject, _queueSpot.transform.position, 0.5f)
+                .setOnStart(() => { animator.SetBool("Walking", true); })
+                .setOnComplete(TriggerEvent));
         }
     }
 }

@@ -83,7 +83,8 @@ public class PlayerAction : MonoBehaviour
                     if (isOnSubmissionDelay) return;
                     var customerOrderController = customerColliders[0].GetComponent<CustomerController>().CustomerOrderController;
                     Props props = pickedUpObject.GetComponent<Props>();
-                    if(props != null)
+
+                    if (props != null)
                     {
                         isOnSubmissionDelay = true;
                         currentTimerBeforeEnablingSubmission = delayBeforeSubmittingAgain;
@@ -128,17 +129,22 @@ public class PlayerAction : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Player_Throw", gameObject);
         LetGoOfTheItem();
-        pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
-        pickedUpObject = null;
+        if(pickedUpObject)
+        {
+            pickedUpObject.GetComponent<Props>().GetThrown(transform.forward, m_throwForce);
+            pickedUpObject = null;
+        }
     }
     
     private void DropTheProps()
     {
         AkSoundEngine.PostEvent("Player_Drop", gameObject);
         LetGoOfTheItem();
-        pickedUpObject.GetComponent<Props>().GetDropped();
-        
-        pickedUpObject = null;
+        if(pickedUpObject)
+        {
+            pickedUpObject.GetComponent<Props>().GetDropped();
+            pickedUpObject = null;
+        }
     }
 
     private void LetGoOfTheItem()
@@ -148,7 +154,6 @@ public class PlayerAction : MonoBehaviour
             playerMovement.SetSpeedModifier(0);
             pickedUpObject.transform.parent = null;
         }
-        pickedUpObject.transform.parent = null;
         m_IsEquipped = false;
         animator.SetBool("HasObj", m_IsEquipped);
     }

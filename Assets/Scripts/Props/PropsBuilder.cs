@@ -84,11 +84,11 @@ public class PropsBuilder : MonoBehaviour
         propsPrefab = Resources.Load<GameObject>("Prefabs/Props");
         PropsTypeToMeshes = new Dictionary<PropsType, GameObject>()
         {
-            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Sword")},
-            {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Grimoire")},
-            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Bow")},
-            {PropsType.Crown, Resources.Load<GameObject>("Meshes/Crown")},
-            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Potion")}
+            {PropsType.Sword, Resources.Load<GameObject>("Meshes/Props/Sword")},
+            {PropsType.Grimoire, Resources.Load<GameObject>("Meshes/Props/Grimoire")},
+            {PropsType.Bow, Resources.Load<GameObject>("Meshes/Props/Bow")},
+            {PropsType.Crown, Resources.Load<GameObject>("Meshes/Props/Crown")},
+            {PropsType.Potion, Resources.Load<GameObject>("Meshes/Props/Potion")}
         };
         
         PropsTypesToSpeedModifiers = new Dictionary<PropsType, float>()

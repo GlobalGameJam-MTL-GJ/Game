@@ -19,14 +19,12 @@ public class QueueController : MonoBehaviour
 
     void OnEnable()
     {
-        CustomerMover.OnCustomerRelinquishQueueSpot += RelinquishQueueSpot;
         CustomerOrderController.OnCustomerOrderNotComplete += OnCustomerOrderNotComplete;
         CustomerOrderController.OnCustomerOrderComplete += OnCustomerOrderNotComplete;
     }
 
     void OnDisable()
     {
-        CustomerMover.OnCustomerRelinquishQueueSpot -= RelinquishQueueSpot;
         CustomerOrderController.OnCustomerOrderNotComplete -= OnCustomerOrderNotComplete;
         CustomerOrderController.OnCustomerOrderComplete -= OnCustomerOrderNotComplete;
     }
@@ -94,7 +92,7 @@ public class QueueController : MonoBehaviour
 
         for (int j = index; j < queue._queueSpots.Count; j++)
         {
-
+            //Debug.Log($"{queue._queueSpots[j].QueueOrder}");
             queue._queueSpots[j].IsEmpty = true;
             OnQueueSpotOpenedUp?.Invoke(queue._queueSpots[j], queue._queueSpots[j-1]);
         }
@@ -140,6 +138,5 @@ public class QueueController : MonoBehaviour
             animator.SetBool("HasObj", true);
             LeanTween.move(customerGO, queueSpot.endPoint, 3.5f).setOnComplete(() => { Destroy(customerGO); });
         });
-        
     }
 }
