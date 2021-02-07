@@ -46,63 +46,81 @@ public class PlayerAction : MonoBehaviour
 
     private void Update()
     {
-
-        if (isOnSubmissionDelay)
-        {
-            currentTimerBeforeEnablingSubmission -= Time.deltaTime;
-            if (currentTimerBeforeEnablingSubmission <= 0)
-                isOnSubmissionDelay = false;
-        }
+        DecrementSubmissionDelay();
 
         if (playerInputs.CheckIfThrowButtonPressed())
         {
-            if(CanThrowOrDrop)
+            if (CanThrowOrDrop)
                 Throw();
         }
         if (playerInputs.CheckIfMainActionButtonPressed())
         {
             if (!m_IsEquipped)
             {
-                m_SphereCastHits = Physics.SphereCastAll(transform.TransformPoint(Vector3.forward) + m_Offset,
-                    m_PickupSphereRadius, transform.forward, 0, m_PickupLayer);
-                if (m_SphereCastHits.Length > 0)
-                {
-                    if (m_SphereCastHits.Length != 1) //si on a seulement 1 item proche, pas besoin de filter selon la distance
-                    {
-                        m_SphereCastHits = m_SphereCastHits.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).ToArray(); //if performance issues, we could optimize this
-                    }
-                    m_PickableItem = m_SphereCastHits[0].collider.gameObject;
-                    Pickup(m_PickableItem);
-                }
+                TryToPickUp();
             }
             else
             {
-                var customerColliders = Physics.OverlapSphere(transform.position, m_CustomerDetectionRadius, m_CustomerLayer, QueryTriggerInteraction.Collide);
+                var customerColliders = Physics.OverlapSphere(transform.position,
+                                                            m_CustomerDetectionRadius,
+                                                            m_CustomerLayer,
+                                                            QueryTriggerInteraction.Collide);
+
                 if (customerColliders.Length > 0)
                 {
-                    if (isOnSubmissionDelay) return;
-                    var customerOrderController = customerColliders[0].GetComponent<CustomerController>().CustomerOrderController;
-                    Props props = pickedUpObject.GetComponent<Props>();
-
-                    if (props != null)
-                    {
-                        isOnSubmissionDelay = true;
-                        currentTimerBeforeEnablingSubmission = delayBeforeSubmittingAgain;
-                        if (customerOrderController.TryToCompleteOrder(props))
-                        {
-                            PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
-                            m_IsEquipped = false;
-                            animator.SetBool("HasObj", m_IsEquipped);
-                            playerMovement.SetSpeedModifier(0);
-                            pickedUpObject = null;
-                        }
-                    }
+                    TryToCompleteCustomersOrder(customerColliders);
                 }
                 else
                 {
-                    if(CanThrowOrDrop)
+                    if (CanThrowOrDrop)
                         DropTheProps();
                 }
+            }
+        }
+    }
+
+    private void DecrementSubmissionDelay()
+    {
+        if (isOnSubmissionDelay)
+        {
+            currentTimerBeforeEnablingSubmission -= Time.deltaTime;
+            if (currentTimerBeforeEnablingSubmission <= 0)
+                isOnSubmissionDelay = false;
+        }
+    }
+
+    private void TryToPickUp()
+    {
+        m_SphereCastHits = Physics.SphereCastAll(transform.TransformPoint(Vector3.forward) + m_Offset,
+        m_PickupSphereRadius, transform.forward, 0, m_PickupLayer);
+        if (m_SphereCastHits.Length > 0)
+        {
+            if (m_SphereCastHits.Length != 1) //si on a seulement 1 item proche, pas besoin de filter selon la distance
+            {
+                m_SphereCastHits = m_SphereCastHits.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).ToArray(); //if performance issues, we could optimize this
+            }
+            m_PickableItem = m_SphereCastHits[0].collider.gameObject;
+            Pickup(m_PickableItem);
+        }
+    }
+
+    private void TryToCompleteCustomersOrder(Collider[] customerColliders)
+    {
+        if (isOnSubmissionDelay) return;
+        var customerOrderController = customerColliders[0].GetComponent<CustomerController>().CustomerOrderController;
+        Props props = pickedUpObject.GetComponent<Props>();
+
+        if (props != null)
+        {
+            isOnSubmissionDelay = true;
+            currentTimerBeforeEnablingSubmission = delayBeforeSubmittingAgain;
+            if (customerOrderController.TryToCompleteOrder(props))
+            {
+                PropsBuilder.instance.RemoveAnActiveProps(pickedUpObject);
+                m_IsEquipped = false;
+                animator.SetBool("HasObj", m_IsEquipped);
+                playerMovement.SetSpeedModifier(0);
+                pickedUpObject = null;
             }
         }
     }

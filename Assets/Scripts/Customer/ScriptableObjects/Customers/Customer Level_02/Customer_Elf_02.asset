@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3a9f8cfc6907e418956c82e66453e6, type: 3}
   m_Name: Customer_Elf_02
   m_EditorClassIdentifier: 
-  _customerModel: {fileID: 6113836019613721107, guid: f32b2250f131268478a76ac87cdd06d2, type: 3}
+  _customerModel: {fileID: 5988179704544246432, guid: ca16d1f8d10a28744a26d5176795f099, type: 3}
   _customerType: 3
   _customerOrderDefinitions:
   - {fileID: 11400000, guid: cb65057402d33684890793ce7f3b7166, type: 2}
