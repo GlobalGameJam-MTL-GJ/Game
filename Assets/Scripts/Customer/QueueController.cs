@@ -19,14 +19,14 @@ public class QueueController : MonoBehaviour
 
     void OnEnable()
     {
+        CustomerOrderController.OnCustomerOrderComplete += OnCustomerOrderComplete;
         CustomerOrderController.OnCustomerOrderNotComplete += OnCustomerOrderNotComplete;
-        CustomerOrderController.OnCustomerOrderComplete += OnCustomerOrderNotComplete;
     }
 
     void OnDisable()
     {
+        CustomerOrderController.OnCustomerOrderComplete -= OnCustomerOrderComplete;
         CustomerOrderController.OnCustomerOrderNotComplete -= OnCustomerOrderNotComplete;
-        CustomerOrderController.OnCustomerOrderComplete -= OnCustomerOrderNotComplete;
     }
 
 
@@ -126,13 +126,35 @@ public class QueueController : MonoBehaviour
         return null;
     }
 
+    private void OnCustomerOrderComplete(GameObject customerGO)
+    {
+        var queueSpot = customerGO.GetComponent<CustomerMover>()._queueSpot;
+        var customerType = customerGO.GetComponent<CustomerController>().Customer.Type;
+        var customerOrderUI = customerGO.transform.GetChild(0);
+
+        customerOrderUI.GetComponent<CustomerOrderController>().isWaiting = false;
+        RelinquishQueueSpot(queueSpot);
+        MoveCustomerOutOfQueue(customerGO, queueSpot, customerType, "Happy");
+    }
+
     private void OnCustomerOrderNotComplete(GameObject customerGO)
     {
         var queueSpot = customerGO.GetComponent<CustomerMover>()._queueSpot;
-        customerGO.transform.GetChild(0).GetComponent<CustomerOrderController>().isWaiting = false;
+        var customerType = customerGO.GetComponent<CustomerController>().Customer.Type;
+        var customerOrderUI = customerGO.transform.GetChild(0);
+
+        customerOrderUI.GetComponent<CustomerOrderController>().isWaiting = false;
         RelinquishQueueSpot(queueSpot);
-        LeanTween.rotateAround(customerGO, customerGO.transform.up, queueSpot.YAngle, 0.6f).setOnComplete(() =>
+        MoveCustomerOutOfQueue(customerGO, queueSpot, customerType, "Angry");
+    }
+
+    private void MoveCustomerOutOfQueue(GameObject customerGO, QueueSpot queueSpot, CustomerType customerType, string npcMood)
+    {
+        LeanTween.rotateAround(customerGO, customerGO.transform.up, queueSpot.YAngle, 0.6f).setDelay(0.5f).setOnComplete(() =>
         {
+            AkSoundEngine.SetSwitch("NPCType", customerType.ToString(), gameObject);
+            AkSoundEngine.SetSwitch("NPCMood", npcMood, gameObject);
+            AkSoundEngine.PostEvent("NPC_Voice", gameObject);
             Animator animator = customerGO.GetComponentInChildren<Animator>();
             animator.SetBool("Walking", true);
             animator.SetBool("HasObj", true);

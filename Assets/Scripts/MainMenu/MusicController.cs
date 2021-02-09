@@ -11,8 +11,6 @@ public class MusicController : MonoBehaviour
     private static string currentRoomType;
     public static bool isGameOver = false;
 
-
-
     private void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.layer == 22 && !isGameOver)

@@ -247,13 +247,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customerOrderUI: {fileID: 5257372763007773752}
   _propImage: {fileID: 21132995102963886}
+  _successImage: {fileID: 21300000, guid: dd06bb8f4ab80a74cb0348251eebadb9, type: 3}
+  _failureImage: {fileID: 21300000, guid: 4ccf044313ef40541a4c4eadca2ba33c, type: 3}
   _rageBar: {fileID: 6976089878448613597}
   _customerMover: {fileID: 8162376585652855122}
   pointsPer5SecondsRemaining: 1
   distanceToPlayerToShowBubble: 4
-  propsType: 0
-  propsColor: 0
   isWaiting: 0
+  propsColor: 0
+  propsType: 0
 --- !u!114 &6718656086717322286
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class CustomerController : MonoBehaviour
 {
-    private Customer _customer;
     [SerializeField] private Transform objectSnapTransform;
     [SerializeField] private CustomerOrderController _customerOrderController;
 
+    private Customer _customer;
+
+    public Customer Customer => _customer;
     public CustomerOrderController CustomerOrderController => _customerOrderController;
 
     public void Setup(Customer customer, CustomerOrder customerOrder, GameObject wantedPropsObject)

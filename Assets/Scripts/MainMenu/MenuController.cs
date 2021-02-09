@@ -13,6 +13,8 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private List<GameObject> _levelSelectionButtons;
 
+    [SerializeField] private GameObject _helpScreen;
+
     void Start()
     {
         var seq = LeanTween.sequence();
@@ -44,23 +46,33 @@ public class MenuController : MonoBehaviour
     public void OnLevel1ButtonClicked()
     {
         AkSoundEngine.PostEvent("UI_Select", gameObject);
-        SceneManager.LoadScene("Level_01");
+        ChangeScene("Level_01");
     }
+
     public void OnLevel2ButtonClicked()
     {
         AkSoundEngine.PostEvent("UI_Select", gameObject);
-        SceneManager.LoadScene("Level_02");
-
+        ChangeScene("Level_02");
     }
+
     public void OnLevel3ButtonClicked()
     {
         AkSoundEngine.PostEvent("UI_Select", gameObject);
-        SceneManager.LoadScene("Level_03");
+        ChangeScene("Level_03");
 
     }
+
     public void OnLevel4ButtonClicked()
     {
         AkSoundEngine.PostEvent("UI_Select", gameObject);
-        SceneManager.LoadScene("Level_04");
+        ChangeScene("Level_04");
+    }
+
+    private void ChangeScene(string level)
+    {
+        LeanTween.scale(_helpScreen, new Vector3(1f, 1f, 1f), 1f).setOnComplete(() => {
+
+            LeanTween.delayedCall(5f, () => { SceneManager.LoadScene(level); });
+        });
     }
 }

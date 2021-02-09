@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] private GameObject scoreHolder;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private string scoreTextBegin = "Score : ";
+    [SerializeField] private string scoreTextBegin;
     
     private int score = 0;
     private void Awake()
