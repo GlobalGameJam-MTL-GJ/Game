@@ -9,10 +9,9 @@ public class StrikeManager : MonoBehaviour
     public static StrikeManager instance;
     [SerializeField] private GameObject strikesHolder;
     [SerializeField] private Image[] strikeImages;
+    [SerializeField] private Image[] strikeCrossImages;
     [SerializeField] private Color strikeColor;
     private int strikesCount = 0;
-
-    public bool isMenu;
 
     private void Awake()
     {
@@ -34,15 +33,11 @@ public class StrikeManager : MonoBehaviour
 
     private void HandleGameOver(GameOverType obj)
     {
-        if (isMenu) { return; }
-
         LeanTween.delayedCall(gameObject, 1f, () => strikesHolder.SetActive(false));
     }
 
     public void AddStrike()
     {
-        if(isMenu) { return; }
-
         if (strikesCount == 3)
         {
             GameOverHandler.instance.TriggerGameOver(GameOverType.StrikeOut);
@@ -50,6 +45,7 @@ public class StrikeManager : MonoBehaviour
         else
         {
             AkSoundEngine.PostEvent("NPC_BossStrike", gameObject);
+            strikeCrossImages[strikesCount].enabled = true;
             strikeImages[strikesCount].color = strikeColor;
             strikesCount++;
         }
