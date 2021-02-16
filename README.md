@@ -31,4 +31,4 @@ This game was made during the Global Game Jam 2021 with the collaboration of:
 
 ## Gameplay video
 
-[![Alt text](img/tf9DZ1.png)](https://youtu.be/sCBhWvCVyLk)
+[![Alt text](img/tf9DZ1.png)](https://youtu.be/lAdcyILuVP4)
